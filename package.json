@@ -10,7 +10,6 @@
   "engines": {
     "node": "18"
   },
-  "type": "module",
   "private": true,
   "keywords": [],
   "author": "",
