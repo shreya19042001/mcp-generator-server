@@ -1,0 +1,113 @@
+{
+  "PatientCards": [
+    {
+      "css": "./CardStyles.css",
+      "table": [],
+      "Section": {
+        "style": {
+          "width": "90%",
+          "padding": "10px"
+        },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Patient Statistics",
+                  "style": {
+                    "fontSize": "18px",
+                    "fontWeight": "700",
+                    "marginBottom": "12px"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "card_1": {
+                  "labels": ["No of Visits", "Amount Billed"],
+                  "fields": ["25", "₹12000"],
+                  "formattype": "C"
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "card_2": {
+                  "labels": ["Pending Bills", "Amount"],
+                  "fields": ["5", "₹3000"],
+                  "formattype": "C"
+                }
+              }
+            ]
+          },
+          "col_3": {
+            "Fields": [
+              {
+                "card_3": {
+                  "labels": ["Medications Prescribed", "Refills"],
+                  "fields": ["12", "4"],
+                  "formattype": "C"
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+  "col_1": {
+    "style": {
+      "display": "flex",
+      "flexWrap": "wrap",
+      "justifyContent": "center",
+      "gap": "36px"
+    },
+    "Fields": [
+      {
+        "card_4": {
+          "title": "Review & Feedback",
+          "imageUrl": "/images/review.png",
+          "formattype": "B",
+          "pagenation": {
+            "CurrentPage": "1",
+            "Module": "RV",
+            "CommandType": "Next",
+            "Extension": "bottom"
+          }
+        },
+        "card_5": {
+          "title": "Treatment Summary",
+          "imageUrl": "/images/summary.png",
+          "formattype": "B",
+          "pagenation": {
+            "CurrentPage": "1",
+            "Module": "TXSUMMARY",
+            "CommandType": "Next",
+            "Extension": "bottom"
+          }
+        },
+        "card_6": {
+          "title": "Doctor Notes",
+          "imageUrl": "/images/notes.png",
+          "formattype": "B",
+          "pagenation": {
+            "CurrentPage": "1",
+            "Module": "DOCNOTE",
+            "CommandType": "Next",
+            "Extension": "bottom"
+          }
+        }
+      }
+    ]
+  }
+}
+
+      }
+    }
+  ]
+}

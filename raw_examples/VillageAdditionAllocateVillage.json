@@ -1,0 +1,245 @@
+{
+  "VillageAdditionAllocateVillage": [{
+    "css": "/Formstyles.css",
+    "_table": [
+      {
+        "name": "Mast_District_Info",
+        "Alias": "VLG",
+        "type": "select"
+      },
+      {
+        "name": "Mast_BlockMun_Info",
+        "Alias": "VLG1",
+        "type": "select"
+      },
+      {
+        "name": "Mast_GP_Info",
+        "Alias": "VLG2",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Village_Info",
+        "Alias": "VLG3",
+        "type": "select"
+      },
+      {
+        "name": "Mast_User_Privileges",
+        "Alias": "VLG4",
+        "type": "select"
+      }
+    ],
+    "section":{
+      "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+    "Row_1": {
+      "styles": {
+        "width": "85%"
+      },
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Pincode",
+              "style": {}
+            },
+            "text_1": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "number",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "District",
+              "style": {}
+            },
+            "text_2": {
+              "placeholder": "Enter Details",
+              "value": "$VLG#MDI_Name$",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_3": {
+              "children": "Gram Panchayat",
+              "style": {}
+            },
+            "text_3": {
+              "placeholder": "Enter Details",
+              "value": "VLG2#MGPI_Id",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_4": {
+              "children": "Village Census Code",
+              "style": {}
+            },
+            "text_4": {
+              "placeholder": "Enter Details",
+              "value": "VLG3#MVI_Pincode",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_5": {
+              "children": "Address",
+              "style": {}
+            },
+            "text_5": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_6": {
+              "children": "Latitude,Longitude",
+              "style": {}
+            },
+            "text_6": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_7": {
+              "children": "Employee Name",
+              "style": {}
+            },
+            "text_7": {
+              "placeholder": "Enter Details",
+              "value": "VLG4#UserName",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_8": {
+              "children": "Name Of Zone",
+              "style": {}
+            },
+            "text_8": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_9": {
+              "children": "State",
+              "style": {}
+            },
+            "text_9": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_10": {
+              "children": "Block",
+              "style": {}
+            },
+            "text_10": {
+              "placeholder": "Enter Details",
+              "value": "VLG1#MBI_Name",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_11": {
+              "children": "Village",
+              "style": {}
+            },
+            "text_11": {
+              "placeholder": "Enter Details",
+              "value": "VLG3#MVI_Name",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_12": {
+              "children": "Distance From Branch",
+              "style": {}
+            },
+            "text_12": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_13": {
+              "children": "Employee ID",
+              "style": {}
+            },
+            "text_13": {
+              "placeholder": "Enter Details",
+              "value": "VLG4#EII_EMP_ID",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_14": {
+              "children": "Contact No",
+              "style": {}
+            },
+            "text_14": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "col_1": {
+        "Fields": [
+          {
+            "iconButton_3": {
+              "label": "New Village Request",
+              "type": "NormalButton"
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "EventButton": {
+              "command": "NextPage",
+
+              "label": "Allocate"
+            }
+          }
+        ]
+      }
+    }
+  }
+  }]
+}

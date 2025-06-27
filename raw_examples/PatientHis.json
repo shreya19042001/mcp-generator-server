@@ -1,0 +1,120 @@
+{
+  "PatientHistory": [
+    {
+      "css": "/styles.css",
+      "section": {
+        "style": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "width": "100%",
+          "padding": "20px",
+          "background": "#fff",
+          "borderRadius": "10px",
+          "boxShadow": "0 2px 5px rgba(0, 0, 0, 0.1)"
+        },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Patient History",
+                  "style": {
+                    "fontSize": "24px",
+                    "fontWeight": "bold",
+                    "color": "#333"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Patient ID"
+                },
+                "text_1": {
+                  "placeholder": "Enter Patient ID",
+                  "value": "",
+                  "set": "$T1#PatientID$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Name"
+                },
+                "text_1": {
+                  "placeholder": "Enter Name",
+                  "value": "",
+                  "set": "$T1#Name$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Date of Birth"
+                },
+                "date_1": {
+                  "placeholder": "Select Date",
+                  "value": "",
+                  "set": "$T1#DOB$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_4": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Medical History"
+                },
+                "text_1": {
+                  "placeholder": "Enter Medical History",
+                  "value": "",
+                  "set": "$T1#MedicalHistory$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_5": {
+          "col_1": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Save"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+    "LeadBank":[ {
+      "css": "/Formstyles.css",
+    
+
+      "Section":{
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "table": {
+                  "title": "Bank",
+                  "addButtonLabel": "+ Add New",
+                  "Rowvalues": "$T3_Row$",
+                  "columnTitles": ["", " Bank ID", "Bank Name","Click"],
+                  "rowVar": [["", "1","Andhra Bank",""]],
+                  "rowTypes": ["", "checkbox", "", "","status"],
+                  "rowVisible": ["false", "true", "true","true"],
+                  "rowFilter": ["", "", "true", ""],
+                  "rowFilterType": ["", "", "text",""],
+                  "rowFilterValues": ["", "", "", ""]
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

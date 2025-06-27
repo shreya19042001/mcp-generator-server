@@ -1,0 +1,119 @@
+{
+    "BMCBlist": [{
+        "css": "/",
+        "section":{
+          "style":{
+            "marginTop":"60px",
+            "width":"80%"
+          },
+        "Row_1":{
+                "col_1":{
+
+                 "Fields":[{
+                    "label_1": {
+                        "children": "Search Client By"
+                      },
+                      "dropDown_1": {
+                        "options": ["VoterID", "LoanId", "MobileNumber"],
+                        "defaultOption": "Select option",          
+                        "validation": {
+                          "required": true
+                        }
+                      }
+                  }]
+                },
+                "col_2":{
+                 "Fields":[{
+
+                    "label_1": {"children": "Enter Details", "style": {}},
+                    "dropDown_1": {
+                      "options": ["1", "2", "3"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }]
+                }
+          
+        },
+        "Row_2": 
+            {
+              "col_1":{
+              "Fields":[{
+                "EventButton": {
+                    "label": "Search"
+                  }
+            }]} 
+             },
+                "Row_3":{
+          "col_1":{
+          "Fields": [
+            {
+              "title": {"label": "All CB Data","style": {"width":"100%",   "display": "flex", "position": "relative", "margin": "10px"}}
+            }
+          ]}
+        },
+        "Row_4": 
+            {
+              "style":{
+                "background": "#fbfbfb",
+                "borderRadius": "14px",
+                "padding": "20px"      
+              },
+                        "col_1":{
+                         "Fields": [{
+
+                           "label_1": {"children": "Client Name", "style": {}},
+                           "label_4": {"children": "Rejection Reason", "style": {}},
+                           "label_5": {"children": "Raise By", "style": {}}
+
+                           }]
+                        },
+                        "col_2":{
+                         "Fields": [{
+
+                            "label_2": {"children": "Voter ID", "style": {}},
+                            "label_5": {"children": "Reason of request", "style": {}}
+                        }]
+                        },
+                        "col_3":{
+                         "Fields": [{
+
+                            "label_3": {"children": "CB Status", "style": {}}
+                        }]
+                        }
+            },
+            "Row_5": 
+            {
+                        "col_1":{
+                         "Fields": [{
+                          "iconButton": {
+                            "icon": "Visibility",
+                            "label": "View Details",
+                            "type":"ViewBreak"
+                          }
+                        }]
+                        },
+                        "col_2":{
+                         "Fields": [{
+                          "EventButton": {
+                            "icon": "",
+                            "label": "Raise Request",
+                            "type":"NormalButton"
+                          }
+                        }]
+                        },
+                        "col_3":{
+                         "Fields": [{
+
+                          "EventButton": {  
+                            "label": "Reject",
+                            "type":"NormalButton"
+                          }
+                        }]
+                        }
+            }
+          }
+    }]
+}

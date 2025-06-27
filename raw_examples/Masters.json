@@ -1,0 +1,449 @@
+{
+    "Masters": [
+      {
+        "table": [
+          {
+            "name": "Mast_UserRole_API",
+            "Alias": "T1",
+            "type": "select"
+          },
+          {
+            "name": "Mast_UserRole_API",
+            "Alias": "T2",
+            "type": "insert"
+          },
+          {
+            "name": "Mast_UserRole_API",
+            "Alias": "T3",
+            "type": "select",
+            "depends": [
+              "$T3_Row$[0]"
+            ],
+            "wherecolumnname": "$Txn_id$"
+          }
+        ],
+        "Section_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "table": {
+                    "title": "User Lock",
+                    "searchPlaceholder": "Search by Name",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": [
+                      "",
+                      "Code",
+                      "Name",
+                      "Description",
+                      "Actions"
+                    ],
+                    "rowVar": [
+                      "$T1#Txn_id$",
+                      "$T1#UR_Code$",
+                      "$T1#Create_User$",
+                      "$T1#UR_Desctiption$",
+                      "$T1#Auth_Status$"
+                    ],
+                    "rowTypes": [
+                      "",
+                      "",
+                      "",
+                      "",
+                      "status"
+                    ],
+                    "rowVisible": [
+                      "false",
+                      "true",
+                      "true",
+                      "true",
+                      "true"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "User Lock",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Search"
+                  },
+                  "label_2": {
+                    "children": "Partner Name"
+                  },
+                  "label_3": {
+                    "children": "Name"
+                  },
+                  "label_4": {
+                    "children": "Address"
+                  },
+                  "label_5": {
+                    "children": "Mobile number"
+                  },
+                  "label_6": {
+                    "children": "Email"
+                  },
+                  "label_7": {
+                    "children": "Lock Reason"
+                  },
+                  "label_8": {
+                    "children": "Description"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "search": {
+                    "name": "Search",
+                    "placeholder": "Enter ",
+                    "options": "",
+                    "Select":"",
+                    "defaultOption": "search", 
+                    "validation": {
+                      "required": true
+                      }
+      },
+                  "text_1": {
+                    "placeholder": "Enter Partner Name",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_2": {
+                    "placeholder": "Enter Name",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_3": {
+                    "placeholder": "Enter Address",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_4": {
+                    "placeholder": "Enter Mobile Number",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_5": {
+                    "placeholder": "Enter Email",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_6": {
+                    "placeholder": "Enter Lock Reason",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_7": {
+                    "placeholder": "Enter Description",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Submit",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_2": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "style": {
+              "width": "100%",
+              "margin": "auto"
+            },
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "User Lock",
+                    "style": {
+                      "color": "blue"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Search"
+                  },
+                  "label_2": {
+                    "children": "Partner Name"
+                  },
+                  "label_3": {
+                    "children": "Name"
+                  },
+                  "label_4": {
+                    "children": "Address"
+                  },
+                  "label_5": {
+                    "children": "Mobile number"
+                  },
+                  "label_6": {
+                    "children": "Email"
+                  },
+                  "label_7": {
+                    "children": "Lock Reason"
+                  },
+                  "label_8": {
+                    "children": "Description"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "search": {
+                    "name": "Search",
+                    "placeholder": "Enter ",
+                    "options": "",
+                    "Select":"",
+                    "defaultOption": "search", 
+                    "validation": {
+                      "required": true
+                      }
+      },
+                  "text_1": {
+                    "placeholder": "Enter Partner Name",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_2": {
+                    "placeholder": "Enter Name",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_3": {
+                    "placeholder": "Enter Address",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_4": {
+                    "placeholder": "Enter Mobile Number",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_5": {
+                    "placeholder": "Enter Email",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_6": {
+                    "placeholder": "Enter Lock Reason",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_7": {
+                    "placeholder": "Enter Description",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_2": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Update",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_3": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Confirm",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Are you sure you want to remove this Data ?"
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Remove",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        }
+
+      }
+    ]
+  }

@@ -1,0 +1,322 @@
+{
+  "LUCCheckClientDetails": [{
+    "css": "/",
+    "table": [
+      {
+        "name": "Mast_Member_Details_Info",
+        "Alias": "LUCD",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Center_Info",
+        "Alias": "LUCD1",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Group_Info",
+        "Alias": "LUCD2",
+        "type": "select"
+      },
+      {
+        "name": "Mast_FCO_Approval_Status_info",
+        "Alias": "LUCD3",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Village_Info",
+        "Alias": "LUCD4",
+        "type": "select"
+      },
+      {
+        "name": "Mast_LoanRequst_Info",
+        "Alias": "LUCD5",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Purpose_Info",
+        "Alias": "LUCD6",
+        "type": "select"
+      },
+      {
+        "name": "Mast_LUC_CheckSubmit_Info",
+        "Alias": "LUCDI",
+        "type": "insert"
+      }
+    ],
+    "section":{
+      "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+    "Row_1": {
+      "style":{
+        "background": "#fbfbfb",
+        "borderRadius": "14px",
+        "padding": "20px"
+      },
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Date"
+            },
+            "label_12": {
+              "children": "$LUCD#Mem_FormationDate$"
+            },
+            "label_3": {
+              "children": "Center"
+            },
+            "label_4": {
+              "children": "$LUCD1#MCI_Name$"
+            },
+            "label_5": {
+              "children": "Member ID"
+            },
+            "label_6": {
+              "children": "$LUCD#Member_ID$"
+            },
+            "label_7": {
+              "children": "Date of Disbursement"
+            },
+            "label_8": {
+              "children": ""
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Branch"
+            },
+            "label_2": {
+              "children": ""
+            },
+            "label_3": {
+              "children": "Group Name"
+            },
+            "label_4": {
+              "children": "$LUCD2#MGI_Name$"
+            },
+            "label_5": {
+              "children": "Loan No"
+            },
+            "label_6": {
+              "children": "$LUCD#LosUnique_Id$"
+            },
+            "label_7": {
+              "children": "LUC Status"
+            },
+            "label_8": {
+              "children": "$LUCD3#Name$"
+            }
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Village"
+            },
+            "label_2": {
+              "children": "$LUCD4#MVI_Name$"
+            },
+            "label_3": {
+              "children": "Member Name"
+            },
+            "label_4": {
+              "children": "$LUCD#ApplicantName$"
+            },
+            "label_5": {
+              "children": "Loan Amount"
+            },
+            "label_6": {
+              "children": ""
+            },
+            "label_7": {
+              "children": "Purpose"
+            },
+            "label_8": {
+              "children": "$LUCD5#LoanPurposeID$"
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Loan Amount Utilized",
+              "style": {}
+            },
+            "text_1": {
+              "placeholder": "Enter Details",
+              "value": "$LUCDI#LoanAmountUtilized$",
+              "type": "number",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "label_2": {
+              "children": "Remark",
+              "style": {}
+            },
+            "text_2": {
+              "placeholder": "Enter Details",
+              "value": "$LUCDI#Remark$",
+              "label": "",
+              "type": "number",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "label_3": {
+              "children": "Tranche_1 Amount",
+              "style": {}
+            },
+            "text_3": {
+              "placeholder": "Enter Details",
+              "value": "$LUCDI#Tranche_1Amount$",
+              "label": "",
+              "type": "number",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "label_4": {
+              "children": "Tranche_1 Visit",
+              "style": {}
+            },
+            "date_1": {
+              "value": "$LUCDI#Tranche_1Visit$",
+              "label": "",
+              "type": "number",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Select Purpose",
+              "style": {}
+            },
+            "dropDown_1": {
+              "options": "$LUCD6#MPSI_Name$",
+              "select": "$HHLI#SelectPurpose$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label": {
+              "children": "Work Completion Status"
+            },
+            "dropDown_2": {
+              "options": "",
+              "select": "$HHLI#WorkCompletionStatus$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_3": {
+              "children": "Tranche_2 Amount",
+              "style": {
+                "marginTop": "6px"
+              }
+            },
+            "text_4": {
+              "placeholder": "Enter Details",
+              "value": "$LUCDI#Tranche_2Amount$",
+              "label": "",
+              "type": "number",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "label_4": {
+              "children": "Tranche_2 Visit",
+              "style": {
+                "marginTop": "6px"
+              }
+            },
+            "date_2": {
+              "value": "$LUCDI#Tranche_2Visit$",
+              "label": "",
+              "type": "number",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "Fields": [
+        {
+          "label_1": {
+            "children": "Proof Of Tranche",
+            "style": {
+              "width": "100%"
+            }
+          }
+        }
+      ]
+    },
+    "Row_4": {
+      "Fields": [
+        {
+          "camera": {
+            "formatType": "Passbook",
+            "value": "$LUCDI#ProofofTranche$"
+          }
+        }
+      ]
+    },
+    "Row_5": {
+      "col_1": {
+        "Fields": [
+          {
+            "iconButton_3": {
+              "label": "Refresh",
+              "type": "NormalButton",
+              "style": {}
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Submit"
+            }
+          }
+        ]
+      }
+    }
+  }
+  }]
+}

@@ -1,0 +1,46 @@
+{
+  "Branchform": {
+    "css": "/graph.css",
+    "sections": [
+      {
+        "type": "graph",
+        "header": "Statistics",
+        "className": "graph-container",
+         
+        "table": [
+          {
+            "name": "StatisticsDashboardView",
+            "where": "id"
+          }
+        ],
+        "columns": [
+          {
+            "name": "xAxisData",
+            "label": "xAxisData",
+            
+            "value": "",
+            "fields": ["Month_Name"]
+            
+          },
+          {
+            "name": "seriesData",
+            "label": "seriesData",
+            
+            "value": "",
+            "fields": ["Disb_No","Rejected_No"]
+            
+          },
+          {
+            "name": "Linearline",
+            "label": "Linearline",
+            
+            "value": "",
+            "fields": ["LoanApplied_No"]
+            
+          }
+          
+        ]
+      }
+    ]
+  }
+}

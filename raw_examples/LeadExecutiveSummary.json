@@ -1,0 +1,291 @@
+{
+    "LeadExecutiveSummary": [
+      {
+        "Section_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "table": {
+                    "title": "Executive Summary",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["", "Name", "Is Mandatory", "Description","Is Disable","Click"],
+                    "rowVar": [["", "Current Loan Details", "Y", "Summary","N",""]],
+                    "rowTypes": ["", "", "","","", "status"],
+                    "rowVisible": ["false", "true", "true", "true","true","true"],
+                    "rowFilter": ["false", "true", "true", "true","",""],
+                    "rowFilterType": ["", "text", "text","text","",""],
+                    "rowFilterValues": ["","", "","","",""]
+                  }
+                }
+              ]
+            }
+                 }
+        },
+        "Page_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Executive Summary",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Name"
+                  },
+                  "label_2": {
+                    "children": "Description"
+                  },
+                  "label_3": {
+                    "children": "Is Mandatory"
+                  },
+                  "label_4": {
+                    "children": "Is Disable"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "text_1": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_2": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  },
+                  "dropDown_2": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Submit",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_2": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Executive Summary",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Name"
+                  },
+                  "label_2": {
+                    "children": "Description"
+                  },
+                  "label_3": {
+                    "children": "Is Mandatory"
+                  },
+                  "label_4": {
+                    "children": "Is Disable"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "text_1": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_2": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  },
+                  "dropDown_2": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_4": {
+            "col_2": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Update",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_3": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Confirm",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Are you sure you want to remove this Data ?"
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Remove",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        }
+  
+      }
+    ]
+  }

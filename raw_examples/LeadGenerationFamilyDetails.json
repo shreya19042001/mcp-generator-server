@@ -1,0 +1,127 @@
+{
+    "LeadGenerationFamilyDetails":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+  
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Applicant Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Customer Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Family Details",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Employer Details",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Business Details",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "Contact Details",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "Address Details",
+                      "currentPage": 7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Total No of Family Members"
+                },
+                "text_1": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "No of Members above 18 Yrs"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "No of Dependent Members in Family"
+                },
+              "text_3": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "No of Members below 18 Yrs"
+                },
+                "text_1": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": " No of Earning Members in Family"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": " Type of Family"
+                },
+              "dropDown_3": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option"
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

@@ -1,0 +1,230 @@
+{
+    "LeadGenerationCustomerDetails":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+  
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Applicant Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Customer Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Family Details",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Employer Details",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Business Details",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "Contact Details",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "Address Details",
+                      "currentPage": 7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "First Name"
+                },
+                "text_1": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Last Name"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Gender"
+                },
+              "dropDown_3": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "style": {
+                    "width": "100%"
+                  },
+                  "validation": {
+                    "required": true,
+                    "message": "Please select "
+                  }
+                },
+                "label_4": {
+                  "children": "Designation"
+                },
+              "dropDown_4": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "style": {
+                    "width": "100%"
+                  },
+                  "validation": {
+                    "required": true,
+                    "message": "Please select "
+                  }
+                },
+                "label_5": {
+                  "children": "Community"
+                }, 
+                "dropDown_5": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_6": {
+                  "children": "Education"
+                }, 
+                "dropDown_6": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_7": {
+                  "children": "Father Name"
+                },
+                "text_3": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_8": {
+                  "children": "Nationality"
+                }, 
+                "dropDown_7": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "style": {
+                    "width": "100%"
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Middle Name"
+                },
+                "text_1": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "DOB"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Relation With Applicant"
+                },
+              "dropDown_3": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option"
+                },
+                "label_4": {
+                  "children": "Marital Status"
+                },
+              "dropDown_4": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option"
+                },
+                "label_6": {
+                  "children": "category"
+                }, 
+                "dropDown_6": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_7": {
+                  "children": "Profession"
+                }, 
+                "dropDown_7": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_5": {
+                  "children": "Spouse Name"
+                }, 
+                "text_3": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

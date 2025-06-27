@@ -1,0 +1,250 @@
+{
+  "LabDiagnosticsDashboard": [{
+    "css": "/Cards.css",
+    "style": {
+      "maxWidth": "100%"
+    },
+    "section": {
+      "style": {
+        "maxWidth": "100%"
+      },
+
+    
+      "Row_1": {
+        "col_1": {
+          "Fields": [{
+            "card_1": {
+              "labels": [
+                { "text": "Lab Branch",              "className": "left-section"  },
+                { "text": "Sample Date",            "className": "right-section" },
+                { "text": "Login Date & Time",      "className": "right-section" }
+              ],
+              "fields": ["Vizag", "11.06.25", "15.53pm"],
+              "formattype": "A",
+              "style": { "width": "70%" }
+            }
+          }]
+        }
+      },
+
+
+      "Row_2": {
+        "col_1": {
+          "style": {
+            "display": "flex",
+            "flexWrap": "wrap",
+            "justifyContent": "center",
+            "gap": "36px"
+          },
+          "Fields": [{
+            "card_1": {
+              "title": "Total Tests",
+              "imageUrl": "/images/test-total.png",
+              "formattype": "B",
+              "pagenation": {
+                "CurrentPage": "1",
+                "Module": "TOTAL",
+                "commandType": "Next",
+                "Extension": "bottom"
+              }
+            },
+            "card_2": {
+              "title": "Completed",
+              "imageUrl": "/images/test-complete.png",
+              "formattype": "B",
+              "pagenation": {
+                "CurrentPage": "1",
+                "Module": "COMP",
+                "commandType": "Next",
+                "Extension": "bottom"
+              }
+            },
+            "card_3": {
+              "title": "Pending",
+              "imageUrl": "/images/test-pending.png",
+              "formattype": "B",
+              "pagenation": {
+                "CurrentPage": "1",
+                "Module": "PEND",
+                "commandType": "Next",
+                "Extension": "bottom"
+              }
+            },
+            "card_4": {
+              "title": "Rejected",
+              "imageUrl": "/images/test-reject.png",
+              "formattype": "B",
+              "pagenation": {
+                "CurrentPage": "1",
+                "Module": "REJ",
+                "commandType": "Next",
+                "Extension": "bottom"
+              }
+            },
+            "card_5": {
+              "title": "Today’s Samples",
+              "imageUrl": "/images/test-today.png",
+              "formattype": "B",
+              "pagenation": {
+                "CurrentPage": "1",
+                "Module": "TOD",
+                "commandType": "Next",
+                "Extension": "bottom"
+              }
+            },
+            "card_6": {
+              "title": "Critical Results",
+              "imageUrl": "/images/test-critical.png",
+              "formattype": "B",
+              "pagenation": {
+                "CurrentPage": "1",
+                "Module": "CRIT",
+                "commandType": "Next",
+                "Extension": "bottom"
+              }
+            }
+          }]
+        }
+      },
+
+  
+      "Row_3": {
+        "style": { "marginTop": "11px" },
+        "col_1": {
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "nowrap",
+            "justifyContent": "space-between",
+            "alignItems": "stretch",
+            "width": "100%",
+            "padding": "17px",
+            "background": "#fff",
+            "borderRadius": "10px",
+            "boxShadow": "0 2px 5px rgba(0, 0, 0, 0.1)"
+          },
+          "Fields": [{
+            "label": {
+              "children": "Insights",
+              "Label": "Insights",
+              "style": {
+                "fontWeight": "800",
+                "fontSize": "15px",
+                "borderRadius": "5px"
+              }
+            },
+            "iconButton": {
+              "icon": "Refresh",
+              "label": "",
+              "type": "RefreshButton",
+              "style": {
+                "background": "none",
+                "color": "#afa5a5",
+                "marginTop": "-6px",
+                "right": "16vw"
+              }
+            },
+            "iconButton_1": {
+              "label": "Today",
+              "type": "ViewBreak",
+              "style": { "left": "34vw", "bottom": "6px" }
+            },
+            "iconButton_2": {
+              "label": "Week",
+              "type": "ViewBreak",
+              "style": { "left": "16vw", "bottom": "6px" }
+            },
+            "iconButton_3": {
+              "label": "Month",
+              "type": "ViewBreak",
+              "style": { "left": "-2vw", "bottom": "6px" }
+            },
+            "insightName": "Key Insights",
+            "showRefreshIcon": true
+          }]
+        }
+      },
+
+      "Row_4": {
+        "styles": { "background": "#fff" },
+        "table": [{ "name": "DiagnosticStats", "alias": "D" }],
+        "col_1": {
+          "style": {
+            "display": "flex",
+            "flexWrap": "wrap",
+            "justifyContent": "center",
+            "background": "#fff",
+            "gap": "11px"
+          },
+          "Fields": [{
+            "card_1": {
+              "labels": ["Blood Tests", "Count"],
+              "fields": ["320", ""],
+              "formattype": "C"
+            },
+            "card_2": {
+              "labels": ["Urine Tests", "Count"],
+              "fields": ["210", ""],
+              "formattype": "C"
+            },
+            "card_3": {
+              "labels": ["X-Ray Scans", "Count"],
+              "fields": ["140", ""],
+              "formattype": "C"
+            },
+            "card_4": {
+              "labels": ["MRI Scans", "Count"],
+              "fields": ["60", ""],
+              "formattype": "C"
+            },
+            "card_5": {
+              "labels": ["Critical Results", "Count"],
+              "fields": ["15", ""],
+              "formattype": "C"
+            },
+            "card_6": {
+              "labels": ["Rejected Samples", "Count"],
+              "fields": ["8", ""],
+              "formattype": "C"
+            }
+          }]
+        }
+      },
+
+      
+      "Row_5": {
+        "style": {
+          "width": "100%",
+          "textAlign": "-webkit-right",
+          "position": "relative",
+          "top": "52px",
+          "right": "12px"
+        }
+      },
+
+      "Row_6": {
+        "style": {
+          "width": "100%",
+          "background": "#fff",
+          "borderRadius": "10px",
+          "boxShadow": "0 2px 5px rgba(0, 0, 0, 0.1)"
+        },
+        "col_1": {
+          "Fields": [{
+            "barGraph": {
+              "data": [
+                { "label": "JAN", "value1": 120, "value2": 90 },
+                { "label": "FEB", "value1": 95,  "value2": 70 },
+                { "label": "MAR", "value1": 88,  "value2": 60 },
+                { "label": "APR", "value1": 110, "value2": 80 },
+                { "label": "MAY", "value1": 98,  "value2": 72 },
+                { "label": "JUN", "value1": 125, "value2": 90 },
+                { "label": "JUL", "value1": 105, "value2": 82 }
+              ]
+            }
+          }]
+        }
+      }
+    }
+  }]
+}

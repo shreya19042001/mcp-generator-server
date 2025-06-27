@@ -1,0 +1,56 @@
+{
+    "FeesCollectionCharges": [{
+      "css": "",
+      "Options":["$BorrowerSearch$"],
+  
+      
+      "Section_1": {
+        "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "tabs": {
+                    "pages": [
+                      {
+                        "label": "Login Fee Collection",
+                        "currentPage": 1
+                      },
+                      {
+                        "label": "Fees Collection Charges",
+                        "currentPage": 1
+                      },
+                      {
+                        "label": "Document Details",
+                        "currentPage": 1
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+                 
+          },
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "table": {
+                      "title": "Fees Collection Charges",
+                      "Rowvalues": "$T3_Row$",
+                      "columnTitles": ["", "Fees Name", "Fee Amount","Waiver","GST", "Collectable Fee","Fee Collection Status"],
+                      "rowVar": [["", "LSS00014", "Test4", "Testing","THired One", "Non","One"]],
+                      "rowTypes": ["", "", "", "","","",""],
+                      "rowVisible": ["false", "true", "true", "true","true","false","false"],
+                      "rowFilter": ["false", "true", "true", "true","true","true","true"],
+                      "rowFilterType": ["", "", "","text","text","text",""]
+                    }
+                  }
+                ]
+              }
+                   }
+      }
+  }]
+  }
+  
+  
+  

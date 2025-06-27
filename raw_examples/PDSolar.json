@@ -1,0 +1,131 @@
+{
+    "PDSolar": [{
+     "section":{
+      "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+      "Row_1":  {
+        "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Applied  Amount"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                    "label_2": { "children": "Fco Name"},
+                    "text_2": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": { "children": "PD Status"},
+                    "dropDown_1": {
+                      "options": ["VoterID"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                 
+                    "label_1": { "children": "PD Date"},
+                    "date_1": {
+                    "validation": {
+                      "required": true
+                    }}, 
+                     "label_2": { "children": "PD Score"},
+                    "text_2": {"placeholder": "","type":"number",
+                    "validation": {
+                      "required": true
+                    }}
+                  }
+                ]
+              }} ,
+        "Row_3": {
+            "Fields": [ {
+              "label_8": { "children": "Remarks"},
+                    "text": {"placeholder": "Enter Address", "style": {}}
+              }
+            ]
+          },
+        "Row_4": {
+          "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Verified By"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                  
+                    "label_3": { "children": "Reason"},
+                    "text": {
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": { "children": "Total Product Price"},
+                    "text_2": {
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  
+                    
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                    "label_3": { "children": "BM Approval Date"},
+                    "date": {                    "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+  
+                    "label_5": { "children": "  Product Name     "},
+                    "text": {
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                 
+                    "label_7": { "children": "Downpayment Approved by BM    "},
+                    "text_1": {
+                      "validation": {
+                        "required": true
+                      }
+                    }
+
+                  }
+                ]
+              }} ,
+  
+              "Row_5": {
+                "Fields": [ {
+                  "label_8": { "children": "Downpayment need to be paid by Client"},
+                        "text": {"validation": {
+                        "required": true
+                      }}
+                  }
+                ]
+              },
+              "Row_6": {
+                "Fields": [ {
+                  "EventButton": { "label": "Submit"}
+                  }
+                ]
+              }
+            }
+          }]
+    }
+  

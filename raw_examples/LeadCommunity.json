@@ -1,0 +1,273 @@
+{
+    "LeadCommunity": [
+      {
+        "Section_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "table": {
+                    "title": "Community",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["", "Code", "Community Name", "Description","Click"],
+                    "rowVar": [["", "2", "Jain", "Hii",""]],
+                    "rowTypes": ["", "", "","", "status"],
+                    "rowVisible": ["false", "true", "true", "true","true"],
+                    "rowFilter": ["false", "true", "true", "true",""],
+                    "rowFilterType": ["", "text", "text","",""],
+                    "rowFilterValues": ["","", "","",""]
+                  }
+                }
+              ]
+            }
+                 }
+        },
+        "Page_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Community",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Code"
+                  },
+                  "label_2": {
+                    "children": "Community Name"
+                  },
+                  "label_3": {
+                    "children": "Description"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "text_1": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_2": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_3": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "Text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Submit",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_2": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "style": {
+              "width": "100%",
+              "margin": "auto"
+            },
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Community",
+                    "style": {
+                      "color": "blue"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Code"
+                  },
+                  "label_2": {
+                    "children": "Community Name"
+                  },
+                  "label_3": {
+                    "children": "Description"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "text_1": {
+                    "placeholder": "",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_2": {
+                    "placeholder": "",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_3": {
+                    "placeholder": "",
+                    "value": "",
+                    "setvalue": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_4": {
+            "col_2": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Update",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_3": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Confirm",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Are you sure you want to remove this Data ?"
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Remove",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        }
+  
+      }
+    ]
+  }

@@ -1,0 +1,2622 @@
+{
+  "LoanDetails": [
+    {
+      "css": "/Formstyles1.css",
+      "_table": [
+        {
+          "name": "LoanEligbiltyDetails",
+          "Alias": "LON",
+          "type": "select"
+        },
+        {
+          "name": "Mast_ChoiceofRepayment_info",
+          "Alias": "LON1",
+          "type": "select"
+        },
+        {
+          "name": "mast_water_info",
+          "Alias": "LON2",
+          "type": "select"
+        },
+        {
+          "name": "Mast_Sub_Product_info",
+          "Alias": "LON3",
+          "type": "select"
+        },
+        {
+          "name": "Mast_FamilyMember_Details_Info",
+          "Alias": "LDairy",
+          "type": "select"
+        },
+        {
+          "name": "Mast_Mode_of_payment_received_info",
+          "Alias": "LDairy1",
+          "type": "select"
+        },
+        {
+          "name": "Mast_Type_Business_info",
+          "Alias": "LBSNS",
+          "type": "select"
+        },
+        {
+          "name": "Mast_BusinessPlaceOwnershipStatus_info",
+          "Alias": "LBSNS1",
+          "type": "select"
+        },
+        {
+          "name": "Mast_Entity_Type_info",
+          "Alias": "LBSNS2",
+          "type": "select"
+        },
+        {
+          "name": "Mast_Loan_Details_info",
+          "Alias": "LONI",
+          "type": "insert"
+        },
+        {
+          "name": "Mast_Loan_JLG_Details_info",
+          "Alias": "LONI1",
+          "type": "insert"
+        },
+        {
+          "name": "Mast_Loan_BL_List_Details_info",
+          "Alias": "LONI2",
+          "type": "insert"
+        },
+        {
+          "name": "Business_Supplier_List",
+          "Alias": "LONI3",
+          "type": "insert"
+        },
+        {
+          "name": "Mast_Loan_CDProduct_Details_info",
+          "Alias": "LCDL",
+          "type": "insert"
+        }
+      ],
+      "section": {
+        "style":{
+          "width": "75%"
+        },
+        "Row_1": {
+          "styles": {},
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Client Picture",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "ID Verification",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "OKYC Profile Review",
+                      "currentPage": 7
+                    },
+                    {
+                      "label": "Basic Details",
+                      "currentPage": 8
+                    },
+                    {
+                      "label": "Earning Member",
+                      "currentPage": 9
+                    },
+                    {
+                      "label": "HouseHold Details",
+                      "currentPage": 10
+                    },
+                    {
+                      "label": "HH Monthly Income",
+                      "currentPage": 11
+                    },
+                    {
+                      "label": "HH Expenses",
+                      "currentPage": 12
+                    },
+                    {
+                      "label": "HH Liability",
+                      "currentPage": 13
+                    },
+                    {
+                      "label": "Loan Eligibility",
+                      "currentPage": 14
+                    },
+                    {
+                      "label": "Loan Details",
+                      "currentPage": 15
+                    },
+                    {
+                      "label": "Guarantor's Details",
+                      "currentPage": 16
+                    },
+                    {
+                      "label": "Insurance Details",
+                      "currentPage": 17
+                    },
+                    {
+                      "label": "Bank Details",
+                      "currentPage": 18
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "style": {
+            "background": "#fbfbfb",
+            "borderRadius": "14px",
+            "padding": "20px"
+          },
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Loan Eligibility"
+                },
+                "label_2": {
+                  "children": "$LON#LoanEligibilityAmt$"
+                },
+                "label_5": {
+                  "children": "Meeting Day"
+                },
+                "label_6": {
+                  "children": ""
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "ROI"
+                },
+                "label_2": {
+                  "children": "$LON#ROI$"
+                },
+                "label_3": {
+                  "children": "Meeting Week"
+                },
+                "label_4": {
+                  "children": ""
+                }
+              }
+            ]
+          },
+          "col_3": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "EMI"
+                },
+                "label_2": {
+                  "children": "$LON#EMIEligbility$"
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "LoanType"
+                },
+                "dropDown_1": {
+                  "options": "$LON#LoanType$",
+                  "select": "$LONI#LoanType$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Loan Product"
+                },
+                "dropDown_2": {
+                  "options": "$LON#LoanProduct$",
+                  "select": "$LONI#LoanProduct$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Applied Amount"
+                },
+                "text_1": {
+                  "type": "number",
+                  "setvalue": "$LON#Requested_Loan_Amount$",
+                  "value": "$LONI#AppliedAmount$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": "Recommended Amount"
+                },
+                "text": {
+                  "search": true,
+                  "value": "$LONI#RecommededAmount$",
+                  "type": "number",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_5": {
+                  "children": "Is the client Politically Exposed Person"
+                },
+                "dropDown_3": {
+                  "options": "$LON2#Name$",
+                  "select": "$LONI1#ExposedPerson$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Loan Purpose"
+                },
+                "dropDown_4": {
+                  "options": "$LON#LoanPurpose$",
+                  "select": "$LONI#LoanPurpose$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": " Loan Product Code"
+                },
+                "dropDown_5": {
+                  "options": "$LON#LoanProductName$",
+                  "select": "$LONI#LoanProductCodeType$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Tenure (in months)"
+                },
+                "dropDown_6": {
+                  "options": "$LON#LoanTenure$",
+                  "select": "$LONI#Tenure$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": "Choose of Repayment"
+                },
+                "dropDown_7": {
+                  "options": "$LON1#Name$",
+                  "select": "$LONI#ChoiceofRepayment$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_5": {
+                  "children": "Is the client related to any Politically Exposed Person"
+                },
+                "dropDown_8": {
+                  "options": "$LON2#Name$",
+                  "select": "$LONI1#ClientRelatedExposedPerson$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_4": {
+          "Fields": [
+            {
+              "EventButton": {
+                "label": "Next",
+              "command": "NextPage"
+
+              }
+            }
+          ]
+        },
+        "Row_7": {
+          "Fields": [
+            {
+              "title": {
+                "label": "JLG",
+                "style": {
+                  "justifyItems": "flex-start",
+                  "background": "darkgray",
+                  "padding": "10px",
+                  "borderRadius": "5px",
+                  "display": "flex",
+                  "position": "relative",
+                  "top": "5px"
+                }
+              }
+            }
+          ]
+        },
+        "Row_5": {
+          "col_1": {
+            "Fields": [
+              {
+             
+                "label_1": {
+                  "children": "LoanType"
+                },
+                "dropDown_1": {
+                  "options": "$LON#LoanType$",
+                  "select": "$LONI#LoanType$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Loan Product"
+                },
+                "dropDown_2": {
+                  "options": "$LON#LoanProduct$",
+                  "select": "$LONI#LoanProduct$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "JIT Loan Opt-In"
+                },
+                "dropDown_3": {
+                  "options": "$LON2#Name$",
+                  "select": "$LONI1#JITLoanOptIn$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": "JIT Applied Amount"
+                },
+                "text_1": {
+                  "type": "number",
+                  "setvalue": "",
+                  "value": "$LONI1#JITAppliedAmount$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_5": {
+                  "children": "JIT ROI"
+                },
+                "text_2": {
+                  "type": "number",
+                  "setvalue": "$LON#ROI$",
+                  "value": "$LONI1#JITROI$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_6": {
+                  "children": "CDL Loan Opt-In"
+                },
+                "dropDown_4": {
+                  "options": "$LON2#Name$",
+                  "select": "$LONI1#CDLLoanOptIn$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_7": {
+                  "children": "CDL Product Price"
+                },
+                "text_3": {
+                  "type": "number",
+                  "setvalue": "$LON3#ProductPrice$",
+                  "value": "$LONI1#CDLProductPrice$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_8": {
+                  "children": "CDL Applied Amount "
+                },
+                "text_4": {
+                  "type": "number",
+                  "setvalue": "",
+                  "value": "$LONI1#CDLAppliedAmount$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_9": {
+                  "children": "Choice of Repayment"
+                },
+                "dropDown_5": {
+                  "options": "$LON1#Name$",
+                  "select": "$LONI#ChoiceofRepayment$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Loan Purpose"
+                },
+                "dropDown_1": {
+                  "options": "$LON#LoanPurpose$",
+                  "select": "$LONI#LoanPurpose$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": " Loan Product Code"
+                },
+                "dropDown_2": {
+                  "options": "$LON#LoanProductName$",
+                  "select": "$LONI#LoanProductCodeType$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+              
+                "label_3": {
+                  "children": "JIT Tenure (in months)"
+                },
+                "text_1": {
+                  "type": "number",
+                  "setvalue": "$LON#LoanTenure$",
+                  "value": "$LONI1#Tenure$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": "JIT EMI"
+                },
+                "text_2": {
+                  "type": "text",
+                  "setvalue": "",
+                  "value": "$LONI1#JITEMI$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_5": {
+                  "children": "CDL Select Sub product"
+                },
+                "dropDown_7": {
+                  "options": "$LON3#MSP_Name$",
+                  "select": "$LONI1#CDLSubProductName$",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_6": {
+                  "children": "CDL Down Payment (Optional)"
+                },
+                "text_3": {
+                  "type": "text",
+                  "setvalue": "$LON3#DownPayment$",
+                  "value": "$LONI1#CDLDownPayment$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_7": {
+                  "children": "CDL Tenure (in months)"
+                },
+                "text_4": {
+                  "type": "text",
+                  "setvalue": "$LON3#DownPayment$",
+                  "value": "$LONI1#CDLDownPayment$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "EventButton": {
+                  "label": "Next",
+              "command": "NextPage"
+
+                }
+              }
+            ]
+          }
+        },
+        "Row_111": {
+          "Row_7": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "Dairy",
+                  "style": {
+                    "justifyItems": "flex-start",
+                    "background": "darkgray",
+                    "padding": "10px",
+                    "borderRadius": "5px",
+                    "display": "flex",
+                    "position": "relative",
+                    "top": "5px"
+                  }
+                }
+              }
+            ]
+          },
+          "Row_6": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "LoanType"
+                  },
+                  "dropDown_1": {
+                    "options": "$LON#LoanType$",
+                    "select": "$LONI#LoanType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Purpose"
+                  },
+                  "dropDown_4": {
+                    "options": "$LON#LoanPurpose$",
+                    "select": "$LONI#LoanPurpose$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Applied Amount"
+                  },
+                  "text_1": {
+                    "type": "number",
+                    "setvalue": "$LON#Requested_Loan_Amount$",
+                    "value": "$LONI#AppliedAmount$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": " Loan Product Code"
+                  },
+                  "dropDown_5": {
+                    "options": "$LON#LoanProductName$",
+                    "select": "$LONI#LoanProductCodeType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Tenure (in months)"
+                  },
+                  "dropDown_6": {
+                    "options": "$LON#LoanTenure$",
+                    "select": "$LONI#Tenure$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Product"
+                  },
+                  "dropDown_2": {
+                    "options": "$LON#LoanProduct$",
+                    "select": "$LONI#LoanProduct$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Recommended Amount"
+                  },
+                  "text": {
+                    "search": true,
+                    "value": "$LONI#RecommededAmount$",
+                    "type": "number",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Choose of Repayment"
+                  },
+                  "dropDown_7": {
+                    "options": "$LON1#Name$",
+                    "select": "$LONI#ChoiceofRepayment$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "accordion_2": {
+            "title": "Co-Applicant Details",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_7": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Co-Applicant Name"
+                    },
+                    "dropDown_1": {
+                      "options": "$LDairy#FM_Name$",
+                      "select": "$LONI1#DAName$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Co-Applicant Relationship with Client"
+                    },
+                    "text_1": {
+                      "type": "number",
+                      "setvalue": "$LDairy#FM_RelationId$",
+                      "value": "$LONI1#DARelationship$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_3": {
+            "title": "Technical Evaluation",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_8": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Full address/location of the house and cattle farm"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#CattleFarm$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Total Milk Production per Day"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#PrdctionPerDay$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Market Price For Selling Milk"
+                    },
+                    "text_3": {
+                      "type": "text",
+                      "value": "$LONI1#SellingMilk$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Experience In Dairy (In Years)"
+                    },
+                    "text_4": {
+                      "type": "text",
+                      "value": "$LONI1#DaityInYear$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Marketable Surplus"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#SellingMilk$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Total Area of Cattle Shed (Sq.ft)"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#TotalCattleShedSqft$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Mode Of Payment Received"
+                    },
+                    "dropDown_1": {
+                      "options": "$LDairy1#Name$",
+                      "select": "$LONI1#PaymentReceived$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_4": {
+            "title": "Existing Dairy Income Details",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_8": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Name Of Breed"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#NameOfBreed$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Total Avg Milk Production (In Ltr) "
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#TotalAvgMilkProdctInLTR$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Rate At Which Milk Is Solid"
+                    },
+                    "text_3": {
+                      "type": "text",
+                      "value": "$LONI1#MilkSold$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Value Added Product"
+                    },
+                    "dropDown_1": {
+                      "options": "",
+                      "select": "$LONI1#AddProduct$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Total Miliking Animal"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#TotalMilkingAnimal$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Marketable Surplus Per Day (In Ltr)"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Total Income Monthly"
+                    },
+                    "text_4": {
+                      "type": "text",
+                      "value": "$LONI1#TotalIcomeMonthy$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_5": {
+            "title": "If Selling value added Product",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_8": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Name Of The Value Added Product Made"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#AddedProdctMade$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Rate At Which It Is Solid "
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#RateSold$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Cattle Shed Amount"
+                    },
+                    "text_3": {
+                      "type": "text",
+                      "value": "$LONI1#CattleShedAmount$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Quantity"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#Auantity$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Total Income Monthly"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#TotalIncomeMothly$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Cattle Insurance Amount"
+                    },
+                    "text_4": {
+                      "type": "text",
+                      "value": "$LONI1#CattleInsuranceAmount$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "Row_222": {
+          "Row_7": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "Samarth",
+                  "style": {
+                    "justifyItems": "flex-start",
+                    "background": "darkgray",
+                    "padding": "10px",
+                    "borderRadius": "5px",
+                    "display": "flex",
+                    "position": "relative",
+                    "top": "5px"
+                  }
+                }
+              }
+            ]
+          },
+          "Row_6": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "LoanType"
+                  },
+                  "dropDown_1": {
+                    "options": "$LON#LoanType$",
+                    "select": "$LONI#LoanType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Purpose"
+                  },
+                  "dropDown_4": {
+                    "options": "$LON#LoanPurpose$",
+                    "select": "$LONI#LoanPurpose$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Applied Amount"
+                  },
+                  "text_1": {
+                    "type": "number",
+                    "setvalue": "$LON#Requested_Loan_Amount$",
+                    "value": "$LONI#AppliedAmount$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": " Loan Product Code"
+                  },
+                  "dropDown_5": {
+                    "options": "$LON#LoanProductName$",
+                    "select": "$LONI#LoanProductCodeType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Tenure (in months)"
+                  },
+                  "dropDown_6": {
+                    "options": "$LON#LoanTenure$",
+                    "select": "$LONI#Tenure$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Product"
+                  },
+                  "dropDown_2": {
+                    "options": "$LON#LoanProduct$",
+                    "select": "$LONI#LoanProduct$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Recommended Amount"
+                  },
+                  "text": {
+                    "search": true,
+                    "value": "$LONI#RecommededAmount$",
+                    "type": "number",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Choose of Repayment"
+                  },
+                  "dropDown_7": {
+                    "options": "$LON1#Name$",
+                    "select": "$LONI#ChoiceofRepayment$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "accordion_2": {
+            "title": "Co-Applicant Details",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_7": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Co-Applicant Name"
+                    },
+                    "dropDown_1": {
+                      "options": "$LDairy#FM_Name$",
+                      "select": "$LONI1#DAName$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Co-Applicant Relationship with Client"
+                    },
+                    "text_1": {
+                      "type": "number",
+                      "setvalue": "$LDairy#FM_RelationId$",
+                      "value": "$LONI1#DARelationship$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_3": {
+            "title": "Disability Details",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_8": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Enter Disability Type"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#DisabilityType$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Disability Certificate No"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#DisabilityCertificateNO$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Enter Disability Percentage"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#DisabilityPercentage$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Disability Certificate"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#DisabilityCertificate$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "Row_333": {
+          "Row_7": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "HIL",
+                  "style": {
+                    "justifyItems": "flex-start",
+                    "background": "darkgray",
+                    "padding": "10px",
+                    "borderRadius": "5px",
+                    "display": "flex",
+                    "position": "relative",
+                    "top": "5px"
+                  }
+                }
+              }
+            ]
+          },
+          "Row_6": {
+            "col_1": {
+              "Fields": [
+                {
+               
+                  "label_1": {
+                    "children": "LoanType"
+                  },
+                  "dropDown_1": {
+                    "options": "$LON#LoanType$",
+                    "select": "$LONI#LoanType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Purpose"
+                  },
+                  "dropDown_4": {
+                    "options": "$LON#LoanPurpose$",
+                    "select": "$LONI#LoanPurpose$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Applied Amount"
+                  },
+                  "text_1": {
+                    "type": "number",
+                    "setvalue": "$LON#Requested_Loan_Amount$",
+                    "value": "$LONI#AppliedAmount$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": " Loan Product Code"
+                  },
+                  "dropDown_5": {
+                    "options": "$LON#LoanProductName$",
+                    "select": "$LONI#LoanProductCodeType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Tenure (in months)"
+                  },
+                  "dropDown_6": {
+                    "options": "$LON#LoanTenure$",
+                    "select": "$LONI#Tenure$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Product"
+                  },
+                  "dropDown_2": {
+                    "options": "$LON#LoanProduct$",
+                    "select": "$LONI#LoanProduct$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Recommended Amount"
+                  },
+                  "text": {
+                    "search": true,
+                    "value": "$LONI#RecommededAmount$",
+                    "type": "number",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Choose of Repayment"
+                  },
+                  "dropDown_7": {
+                    "options": "$LON1#Name$",
+                    "select": "$LONI#ChoiceofRepayment$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "accordion_2": {
+            "title": "Co-Applicant Details",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_7": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Co-Applicant Name"
+                    },
+                    "dropDown_1": {
+                      "options": "$LDairy#FM_Name$",
+                      "select": "$LONI1#DAName$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Co-Applicant Relationship with Client"
+                    },
+                    "text_1": {
+                      "type": "number",
+                      "setvalue": "$LDairy#FM_RelationId$",
+                      "value": "$LONI1#DARelationship$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_3": {
+            "title": "Land Title/ROR Details",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_8": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Total Land Unit (in acre)"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#TotalLandUnit$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Extent of land Area for Construction"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#AreaForConstruction$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Land Title belongs to"
+                    },
+                    "text_3": {
+                      "type": "text",
+                      "value": "$LONI1# LandTitleBelongsTO$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Plot No"
+                    },
+                    "text_4": {
+                      "type": "text",
+                      "value": "$LONI1# PlotName$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_5": {
+                      "children": "Tehsil Name"
+                    },
+                    "text_5": {
+                      "type": "text",
+                      "value": "$LONI1# TehsilName$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_6": {
+                      "children": "NOC Document"
+                    },
+                    "text_6": {
+                      "type": "text",
+                      "value": "$LONI1#NODocumnet$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_7": {
+                      "children": "Type of Home Improvement"
+                    },
+                    "dropDown_2": {
+                      "options": "",
+                      "select": "$LONI1#TypeOfHomeImprovement$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Total Home Stead Land (in sqft)"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI1#TotalHomeSteadLand$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Type Of Land Document"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI1#TypeOfLandDocument$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Title Holder Name"
+                    },
+                    "text_3": {
+                      "type": "text",
+                      "value": "$LONI1# HolderName$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Record No"
+                    },
+                    "text_4": {
+                      "type": "text",
+                      "value": "$LONI1# RecordNo$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_5": {
+                      "children": "Land Document"
+                    },
+                    "text_5": {
+                      "type": "text",
+                      "value": "$LONI1#LandDocument$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_6": {
+                      "children": "NOC Remarks"
+                    },
+                    "text_6": {
+                      "type": "text",
+                      "value": "$LONI1#NOCRemarks$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "Row_444": {
+          "Row_7": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "Business",
+                  "style": {
+                    "justifyItems": "flex-start",
+                    "background": "darkgray",
+                    "padding": "10px",
+                    "borderRadius": "5px",
+                    "display": "flex",
+                    "position": "relative",
+                    "top": "5px"
+                  }
+                }
+              }
+            ]
+          },
+          "Row_6": {
+            "col_1": {
+              "Fields": [
+                {
+              
+                  "label_1": {
+                    "children": "LoanType"
+                  },
+                  "dropDown_1": {
+                    "options": "$LBSNS#LoanType$",
+                    "select": "$LONI#LoanType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Purpose"
+                  },
+                  "dropDown_4": {
+                    "options": "$LON#LoanPurpose$",
+                    "select": "$LONI#LoanPurpose$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Applied Amount"
+                  },
+                  "text_1": {
+                    "type": "number",
+                    "setvalue": "$LON#Requested_Loan_Amount$",
+                    "value": "$LONI#AppliedAmount$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": " Loan Product Code"
+                  },
+                  "dropDown_5": {
+                    "options": "$LON#LoanProductName$",
+                    "select": "$LONI#LoanProductCodeType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Tenure (in months)"
+                  },
+                  "dropDown_6": {
+                    "options": "$LON#LoanTenure$",
+                    "select": "$LONI#Tenure$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Product"
+                  },
+                  "dropDown_2": {
+                    "options": "$LON#LoanProduct$",
+                    "select": "$LONI#LoanProduct$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Recommended Amount"
+                  },
+                  "text": {
+                    "search": true,
+                    "value": "$LONI#RecommededAmount$",
+                    "type": "number",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Choose of Repayment"
+                  },
+                  "dropDown_7": {
+                    "options": "$LON1#Name$",
+                    "select": "$LONI#ChoiceofRepayment$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "accordion_1": {
+            "title": "Business Details 1",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_7": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Type of Business"
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Area Name"
+                    }
+                  }
+                ]
+              },
+              "col_3": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Total Business Experience"
+                    },
+                    "EventButton": {
+                      "label": "Fill"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Type Of Bussiness"
+                  },
+                  "dropDown_1": {
+                    "options": "$LBSNS#Name$",
+                    "select": "$LONI1#TypeOfBusiness$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Bussiness Address Line 1"
+                  },
+                  "text_2": {
+                    "type": "text",
+                    "value": "$LONI1#BusinessLine1$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "City/Town/Village"
+                  },
+                  "text_3": {
+                    "type": "text",
+                    "value": "$LONI1#CityVillageTown$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "State"
+                  },
+                  "text_4": {
+                    "type": "text",
+                    "value": "$LONI1#State$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_5": {
+                    "children": "Land Mark"
+                  },
+                  "text_5": {
+                    "type": "text",
+                    "value": "$LONI1# LandMark $",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_6": {
+                    "children": "Bussiness Place ownership Status"
+                  },
+                  "dropDown_2": {
+                    "options": "$LBSNS1#BusinessPlaceOwnershipStatusName$",
+                    "select": "$LONI1#OwnershipStatus$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_7": {
+                    "children": "Name of The Business Enterprise"
+                  },
+                  "text_7": {
+                    "type": "text",
+                    "value": "$LONI1#BusinessEnterprice$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_8": {
+                    "children": "Annual Turnover"
+                  },
+                  "text_8": {
+                    "type": "text",
+                    "value": "$LONI1#AnnualTurnover$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_9": {
+                    "children": "present Business Vintage (Years)"
+                  },
+                  "text_9": {
+                    "type": "text",
+                    "value": "$LONI1#BusinessVintage$",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Area Name"
+                  },
+                  "text_1": {
+                    "type": "text",
+                    "value": "$LONI1#AreaName$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "District"
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "$LONI1#District$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Pin Code"
+                  },
+                  "text_2": {
+                    "type": "text",
+                    "value": "$LONI1#PinCode$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Entity Type"
+                  },
+                  "dropDown_2": {
+                    "options": "$LBSNS2#Name$",
+                    "select": "$LONI1#EntityType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_5": {
+                    "children": "Distance From Branch"
+                  },
+                  "text_3": {
+                    "type": "text",
+                    "value": "$LONI1#DistanceFromBranch$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_6": {
+                    "children": "GSTIN No, If Registered With GST"
+                  },
+                  "text_4": {
+                    "type": "text",
+                    "value": "$LONI1#RegisterdWithGST$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_7": {
+                    "children": "Total Business Experience"
+                  },
+                  "text_5": {
+                    "type": "text",
+                    "value": "$LONI1#TotalBusinessExpernice$",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "accordion_2": {
+            "title": "Upload Documents",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_7": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Proof of Business"
+                    },
+                    "dropDown_1": {
+                      "options": "$LBSNS#Name$",
+                      "select": "$LONI1#ProofOfBusinessCap$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "text_9": {
+                      "placeholder": "Capture Document",
+                      "value": "LONI2#Base64_doc",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "text_9": {
+                      "placeholder": "View Sample",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_3": {
+            "title": "Reference Details (Supplier)",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_8": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Supplier Name"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI3#SupplierName$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Supplier Frequency Of purchase"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI3#FrequencyOfPurchase$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Supplier feedback About The Client"
+                    },
+                    "text_3": {
+                      "type": "text",
+                      "value": "$LONI3#FeedbackClient$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Supplier Mobile No"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI3#MobileNumber$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Supplier Know The Client Since"
+                    },
+                    "dropDown_2": {
+                      "options": "",
+                      "select": "$LONI3#ClientSince$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "text_3": {
+                      "placeholder": "Add",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_4": {
+            "title": "Reference Details (Neighbour)",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_9": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": " Name"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI3#NeighbourName$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": " Know The Client Since"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "$LONI3#NeighbourClientSince$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Feedback About The Client"
+                    },
+                    "text_3": {
+                      "type": "text",
+                      "value": "$LONI3#FedbackClient$",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": " Mobile No"
+                    },
+                    "text_1": {
+                      "type": "text",
+                      "value": "$LONI3#NeighbourMoblieNumber$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Client (Enquire About Previous Credit)"
+                    },
+                    "dropDown_2": {
+                      "options": "",
+                      "select": "$LONI3#PreviousCredit$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Row_10": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Next",
+              "command": "NextPage"
+
+                }
+              }
+            ]
+          }
+        },
+        "Row_555": {
+          "Row_7": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "CDL",
+                  "style": {
+                    "justifyItems": "flex-start",
+                    "background": "darkgray",
+                    "padding": "10px",
+                    "borderRadius": "5px",
+                    "display": "flex",
+                    "position": "relative",
+                    "top": "5px"
+                  }
+                }
+              }
+            ]
+          },
+          "Row_6": {
+            "col_1": {
+              "Fields": [
+                {
+               
+                  "label_1": {
+                    "children": "LoanType"
+                  },
+                  "dropDown_1": {
+                    "options": "$LBSNS#LoanType$",
+                    "select": "$LONI#LoanType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Purpose"
+                  },
+                  "dropDown_2": {
+                    "options": "$LON#LoanPurpose$",
+                    "select": "$LONI#LoanPurpose$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Tenure (in months)"
+                  },
+                  "dropDown_6": {
+                    "options": "$LON#LoanTenure$",
+                    "select": "$LONI#Tenure$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Product"
+                  },
+                  "dropDown_2": {
+                    "options": "$LON#LoanProduct$",
+                    "select": "$LONI#LoanProduct$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "accordion_2": {
+            "title": "Product-1",
+            "initialOpen": true,
+            "icon": "plus",
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Sub Product Name"
+                    },
+                    "dropDown_1": {
+                      "options": "$LON3#MSP_Name$",
+                      "select": "$LCDL#SubProductName$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Product Price"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "DownPayment"
+                    },
+                    "text_3": {
+                      "type": "text",
+                      "value": "",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Applied Amount"
+                    },
+                    "text_4": {
+                      "type": "text",
+                      "setvalue": "$LON#Requested_Loan_Amount$",
+                      "value": "$LONI#AppliedAmount$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_5": {
+                      "children": "Choice Of Repayment"
+                    },
+                    "dropDown_2": {
+                      "options": "$LON1#Name$",
+                      "select": "$LONI#ChoiceofRepayment$",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_6": {
+                      "children": "Total Downpayment needs To Be Paid "
+                    },
+                    "dropDown_3": {
+                      "options": "",
+                      "select": "",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_7": {
+                      "children": "Loan Amount"
+                    },
+                    "text_7": {
+                      "type": "text",
+                      "value": "",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": {
+                      "children": "Loan Product Code"
+                    },
+                    "dropDown_1": {
+                      "options": "",
+                      "select": "",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": {
+                      "children": "Total Product Price"
+                    },
+                    "text_2": {
+                      "type": "text",
+                      "value": "",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "text_3": {
+                      "placeholder": "Add",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Recommmended Amount"
+                    },
+                    "text_4": {
+                      "type": "text",
+                      "value": "$LONI#RecommededAmount$",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_5": {
+                      "children": "DownPayment"
+                    },
+                    "text_5": {
+                      "type": "text",
+                      "value": "",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "Row_666": {
+          "Row_7": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "Swasth",
+                  "style": {
+                    "justifyItems": "flex-start",
+                    "background": "darkgray",
+                    "padding": "10px",
+                    "borderRadius": "5px",
+                    "display": "flex",
+                    "position": "relative",
+                    "top": "5px"
+                  }
+                }
+              }
+            ]
+          },
+          "Row_6": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "LoanType"
+                  },
+                  "dropDown_1": {
+                    "options": "$LBSNS#LoanType$",
+                    "select": "$LONI#LoanType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Purpose"
+                  },
+                  "dropDown_4": {
+                    "options": "$LON#LoanPurpose$",
+                    "select": "$LONI#LoanPurpose$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Applied Amount"
+                  },
+                  "text_1": {
+                    "type": "number",
+                    "setvalue": "$LON#Requested_Loan_Amount$",
+                    "value": "$LONI#AppliedAmount$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": " Loan Product Code"
+                  },
+                  "dropDown_5": {
+                    "options": "$LON#LoanProductName$",
+                    "select": "$LONI#LoanProductCodeType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Tenure (in months)"
+                  },
+                  "dropDown_6": {
+                    "options": "$LON#LoanTenure$",
+                    "select": "$LONI#Tenure$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Product"
+                  },
+                  "dropDown_2": {
+                    "options": "$LON#LoanProduct$",
+                    "select": "$LONI#LoanProduct$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Recommended Amount"
+                  },
+                  "text": {
+                    "search": true,
+                    "value": "$LONI#RecommededAmount$",
+                    "type": "number",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Choose of Repayment"
+                  },
+                  "dropDown_7": {
+                    "options": "$LON1#Name$",
+                    "select": "$LONI#ChoiceofRepayment$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_4": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Next",
+              "command": "NextPage"
+
+                }
+              }
+            ]
+          }
+        },
+        "Row_777": {
+          "Row_7": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "Education",
+                  "style": {
+                    "justifyItems": "flex-start",
+                    "background": "darkgray",
+                    "padding": "10px",
+                    "borderRadius": "5px",
+                    "display": "flex",
+                    "position": "relative",
+                    "top": "5px"
+                  }
+                }
+              }
+            ]
+          },
+          "Row_6": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "LoanType"
+                  },
+                  "dropDown_1": {
+                    "options": "$LBSNS#LoanType$",
+                    "select": "$LONI#LoanType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Purpose"
+                  },
+                  "dropDown_4": {
+                    "options": "$LON#LoanPurpose$",
+                    "select": "$LONI#LoanPurpose$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Applied Amount"
+                  },
+                  "text_1": {
+                    "type": "number",
+                    "setvalue": "$LON#Requested_Loan_Amount$",
+                    "value": "$LONI#AppliedAmount$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": " Loan Product Code"
+                  },
+                  "dropDown_5": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_5": {
+                    "children": "Name of school/institution "
+                  },
+                  "text_2": {
+                    "type": "text",
+                    "value": "$LONI1#NameOfSchool$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_6": {
+                    "children": "Student Date of birth"
+                  },
+                  "date": {
+                    "placeholder": "Select",
+                    "value": "$LONI1#DateOfBrith$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_7": {
+                    "children": "Relationship with student"
+                  },
+                  "dropDown_6": {
+                    "options": "",
+                    "select": "$LONI1#RelationshipWithStudent$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_8": {
+                    "children": "Class of the student"
+                  },
+                  "text_3": {
+                    "type": "text",
+                    "value": "$LONI1#classoftheStudent$",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_9": {
+                    "children": "Aadhaar Card/Birth Certificate proof"
+                  },
+                  "text_4": {
+                    "placeholder": "Capture Document",
+                    "value": "$LONI1#Base64_AadhaarBrithCerificateProof$"
+                  },
+                  "label_10": {
+                    "children": "Admission offer letter"
+                  },
+                  "text_5": {
+                    "placeholder": "Capture Document",
+                    "value": "$LONI1#Base64_Admissionofferletter$"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Tenure (in months)"
+                  },
+                  "dropDown_6": {
+                    "options": "$LON#LoanTenure$",
+                    "select": "$LONI#Tenure$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Loan Product"
+                  },
+                  "dropDown_2": {
+                    "options": "$LON#LoanProduct$",
+                    "select": "$LONI#LoanProduct$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Recommended Amount"
+                  },
+                  "text_1": {
+                    "value": "$LONI#RecommededAmount$",
+                    "type": "number",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Choicee of Repayment"
+                  },
+                  "dropDown_7": {
+                    "options": "$LON1#Name$",
+                    "select": "$LONI#ChoiceofRepayment$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_5": {
+                    "children": "Name of the Student"
+                  },
+                  "text_2": {
+                    "value": "$LONI1#StudentName$",
+                    "type": "text",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_6": {
+                    "children": "Age"
+                  },
+                  "text_3": {
+                    "value": "$LONI1#Age$",
+                    "type": "text",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_7": {
+                    "children": "Admission Number"
+                  },
+                  "text_4": {
+                    "value": "$LONI1#AdmissionNumber$",
+                    "type": "text",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_8": {
+                    "children": "Annual course Fee"
+                  },
+                  "text_5": {
+                    "value": "$LONI1#AnnualCourseFee$",
+                    "type": "text",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_9": {
+                    "children": "Fee Structure"
+                  },
+                  "text_6": {
+                    "placeholder": "Capture Document",
+                    "value": "$LONI1#Base64_Feestructure$"
+                  }
+                }
+              ]
+            }
+          },
+          "Row_4": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Next",
+              "command": "NextPage"
+
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

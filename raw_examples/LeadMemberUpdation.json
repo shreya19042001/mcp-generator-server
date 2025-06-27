@@ -1,0 +1,28 @@
+{
+    "LeadMemberUpdation": [{
+      "css": "", 
+      "Section_1": {
+            "Row_1": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "table": {
+                      "title": "Lead Member Updation",
+                      "Rowvalues": "$T3_Row$",
+                      "columnTitles": ["", "Lead Id", " Branch","Customer Name","Product Category", "Product ","Loan Amount","Mobile No","PAN Number","Voter Id"],
+                      "rowVar": [["", "LSS00014", "Test4", "Testing","THired One", "Non","One","Two","Three","Four"]],
+                      "rowTypes": ["", "", "", "","","","","","","status"],
+                      "rowVisible": ["false", "true", "true", "true","true","false","false","false","false","false"],
+                      "rowFilter": ["false", "true", "true", "true","true","true","true","true","true","true"],
+                      "rowFilterType": ["", "text", "text","text","text","text","","","",""]
+                    }
+                  }
+                ]
+              }
+                   }
+      }
+  }]
+  }
+  
+  
+  

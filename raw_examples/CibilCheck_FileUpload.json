@@ -1,0 +1,52 @@
+{
+    "CibilCheck_FileUpload": [{
+      "css": "",
+     
+      
+      "Section_1": {
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Cibil Check/File Upload ",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Member Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Document Upload",
+                      "currentPage": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "table": {
+                      "title": "Cibil Check",
+                      "Rowvalues": "$T3_Row$",
+                      "columnTitles": ["", "Lead Id", " Branch","Customer Name","Product Category", "Product ","Loan Amount","Mobile No","PAN Number","Voter Id"],
+                      "rowVar": [["", "LSS00014", "Test4", "Testing","THired One", "Non","One","Two","Three","Four"]],
+                      "rowTypes": ["", "", "", "","","","","","","status"],
+                      "rowVisible": ["false", "true", "true", "true","true","false","false","false","false","false"],
+                      "rowFilter": ["false", "true", "true", "true","true","true","true","true","true","true"],
+                      "rowFilterType": ["", "text", "text","text","text","text","","","",""]
+                    }
+                  }
+                ]
+              }
+                   }
+      }
+  }]
+  }

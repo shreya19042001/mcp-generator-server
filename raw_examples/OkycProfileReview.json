@@ -1,0 +1,869 @@
+{
+  "OkycProfileReview": [{
+    "css": "./Formstyles1.css",
+"Options":["$Mast_POI_Info$","$Mast_Marital_Status_Info$","$Mast_LoanTypeData_Info$"],
+
+    "_table":[
+      
+  {
+    "_name": "Mast_SignalEarning_info",
+    "_Alias":"M2",
+    "_type":"insert"
+  } ,
+  {
+    "name": "TMP_Mast_Aadhar_Photo_Details_Info",
+    "Alias":"E",
+    "type":"select"
+  }, 
+  {
+    "name": "TMP_VoterMaster_UplodeData_Audit",
+    "Alias":"VOCR",
+    "type":"select"
+  },  
+  {
+    "name": "TMP_VoterMaster_UplodeData",
+    "Alias":"VEDT",
+    "type":"select"
+  },  
+  {
+    "name": "TMP_Mast_Voter_VID_Data_Info",
+    "Alias":"VVRF",
+    "type":"select"
+  },  
+  {
+    "name": "TMP_Mast_Aadhar_Photo_Details_Info_Audit",
+    "Alias":"AOCR",
+    "type":"select"
+  },
+  {
+    "name": "TMP_Mast_Aadhar_Photo_Details_Info",
+    "Alias":"AEDT",
+    "type":"select"
+  }, 
+  {
+    "name": "Mast_POI_Info",
+    "Alias":"OKYC",
+    "type":"select"
+  },
+  {
+    "name": "Mast_POI_Info",
+    "Alias":"OKYC1",
+    "type":"select"
+  },
+  {
+    "name": "Mast_POI_Info",
+    "Alias":"OKYC2",
+    "type":"select"
+  },
+  {
+    "name": "Mast_Marital_Status_Info",
+    "Alias":"sa",
+    "type":"select"
+  },
+  {
+    "name": "Mast_Purpose_Info",
+    "Alias":"OKYC4",
+    "type":"select"
+  },
+  {
+    "name": "Mast_LoanTypeData_Info",
+    "Alias":"OKYC5",
+    "type":"select"
+  },
+  {
+    "name": "Mast_LoanProductType_Info",
+    "Alias":"OKYC6",
+    "type":"select"
+  },
+  {
+    "name": "Mast_Loan_Product_Info",
+    "Alias":"OKYC7",
+    "type":"select"
+  },
+  {
+    "name": "Mast_POI_Info",
+    "Alias":"OKYC8",
+    "type":"select"
+  }
+    
+    ],
+    "section":{  "Row_1": {
+      "styles": {},
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                {
+                  "label": "Client Picture",
+                  "currentPage": 5
+                },
+                {
+                  "label": "ID Verification",
+                  "currentPage": 6
+                },
+                {
+                  "label": "OKYC Profile Review",
+                  "currentPage": 7
+                },
+                {
+                  "label": "HouseHold Details",
+                  "currentPage": 8
+                },
+                {
+                  "label": "HH Monthly Income",
+                  "currentPage": 9
+                },
+                {
+                  "label": "HH Expenses",
+                  "currentPage": 10
+                },
+                {
+                  "label": "HH Liability",
+                  "currentPage": 11
+                },
+                {
+                  "label": "Loan Eligibility",
+                  "currentPage": 12
+                },
+                {
+                  "label": "Loan Details",
+                  "currentPage": 13
+                },
+                {
+                  "label": "Guarantor's Details",
+                  "currentPage": 14
+                },
+                {
+                  "label": "Insurance Details",
+                  "currentPage": 15
+                },
+                {
+                  "label": "Bank Details",
+                  "currentPage": 16
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "accordion_1": {
+      "title": "Existing Data",
+      "initialOpen": true,
+      "icon": "plus",
+      "style": {
+      },
+      "Row_2": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Customer ID"
+              },
+              "label_2": {
+                "children": ""
+              },
+              "label_3": {
+                "children": "Spouse",
+                "style":{"color":"blue"}
+              },
+              "label_4": {
+                "children": "$E#SpouseName$",
+                "style":{"color":"blue"}
+              },
+              "label_5": {
+                "children": "Voter No"
+              },
+              "label_6": {
+                "children": ""
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Applicant's Name"
+              },
+              "label_2": {
+                "children": "$E#Name1$"
+              },
+              "label_3": {
+                "children": "Father"
+              },
+              "label_4": {
+                "children": "$E#fathersName$"
+              },
+              "label_5": {
+                "children": "Address"
+              },
+              "label_6": {
+                "children": "$E#Address$"
+              }
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Gender"
+              },
+              "label_2": {
+                "children": "$E#Gender$"
+              },
+              "label_3": {
+                "children": "DOB"
+              },
+              "label_4": {
+                "children": "$E#DateofBirth$"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "accordion": {
+      "title": "Voter OCR Data",
+      "initialOpen": false,
+      "icon": "plus",
+      "Row_3": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Customer ID"
+              },
+              "label_2": {
+                "children": "$$"
+              },
+              "label_3": {
+                "children": "Spouse"
+              },
+              "label_4": {
+                "children": "$VOCR#SpouseName$"
+              },
+              "label_5": {
+                "children": "Voter No"
+              },
+              "label_6": {
+                "children": "$VOCR#voterid$"
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Applicant's Name"
+              },
+              "label_2": {
+                "children": "$VOCR#Name$"
+              },
+              "label_3": {
+                "children": "Father"
+              },
+              "label_4": {
+                "children": "$VOCR#FatherName$"
+              },
+              "label_5": {
+                "children": "Address"
+              },
+              "label_6": {
+                "children": "$VOCR#Address$"
+              }
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Gender"
+              },
+              "label_2": {
+                "children": "$VOCR#Gender$"
+              },
+              "label_3": {
+                "children": "DOB"
+              },
+              "label_4": {
+                "children": "$VOCR#Dob$"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "accordion_2": {
+      "title": "Voter Edited Data",
+      "initialOpen": false,
+      "icon": "plus",
+      "Row_4": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Customer ID"
+              },
+              "label_2": {
+                "children": ""
+              },
+              "label_3": {
+                "children": "Spouse"
+              },
+              "label_4": {
+                "children": "$VEDT#SpouseName$"
+              },
+              "label_5": {
+                "children": "Voter No"
+              },
+              "label_6": {
+                "children": "$VEDT#voterid$"
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Applicant's Name"
+              },
+              "label_2": {
+                "children": "$VEDT#Name$"
+              },
+              "label_3": {
+                "children": "Father"
+              },
+              "label_4": {
+                "children": "$VEDT#FatherName$"
+              },
+              "label_5": {
+                "children": "Address"
+              },
+              "label_6": {
+                "children": "$VEDT#Address$"
+              }
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Gender"
+              },
+              "label_2": {
+                "children": "$VEDT#Gender$"
+              },
+              "label_3": {
+                "children": "DOB"
+              },
+              "label_4": {
+                "children": "$VEDT#Dob$"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "accordion_3": {
+      "title": "Voter Verified Data",
+      "initialOpen": false,
+      "icon": "plus",
+      "Row_5": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Customer ID"
+              },
+              "label_2": {
+                "children": ""
+              },
+              "label_3": {
+                "children": "Spouse"
+              },
+              "label_4": {
+                "children": ""
+              },
+              "label_5": {
+                "children": "Voter No"
+              },
+              "label_6": {
+                "children": "$VVRF#EpicNo$"
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Applicant's Name"
+              },
+              "label_2": {
+                "children": "$VVRF#RlnName$"
+              },
+              "label_3": {
+                "children": "Father"
+              },
+              "label_4": {
+                "children": ""
+              },
+              "label_5": {
+                "children": "Address"
+              },
+              "label_6": {
+                "children": "$VVRF#PsName$"
+              }
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Gender"
+              },
+              "label_2": {
+                "children": "$VVRF#gender$"
+              },
+              "label_3": {
+                "children": "DOB"
+              },
+              "label_4": {
+                "children": "$VVRF#dob$"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "accordion_4": {
+      "title": "Aadhar OCR Data",
+      "initialOpen": false,
+      "icon": "plus",
+      "Row_6": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Customer ID"
+              },
+              "label_2": {
+                "children": ""
+              },
+              "label_3": {
+                "children": "Spouse"
+              },
+              "label_4": {
+                "children": "$AOCR#SpouseName$"
+              },
+              "label_5": {
+                "children": "Aadhaar No"
+              },
+              "label_6": {
+                "children": "$AOCR#Aadharid1$"
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Applicant's Name"
+              },
+              "label_2": {
+                "children": "$AOCR#Name1$"
+              },
+              "label_3": {
+                "children": "Father"
+              },
+              "label_4": {
+                "children": "$AOCR#fathersName$"
+              },
+              "label_5": {
+                "children": "Address"
+              },
+              "label_6": {
+                "children": "$AOCR#Address$"
+              }
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Gender"
+              },
+              "label_2": {
+                "children": "$AOCR#Gender$"
+              },
+              "label_3": {
+                "children": "DOB"
+              },
+              "label_4": {
+                "children": "$AOCR#DateofBirth$"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "accordion_5": {
+      "title": "Aadhar Edited Data",
+      "initialOpen": false,
+      "icon": "plus",
+      "Row_7": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Customer ID"
+              },
+              "label_2": {
+                "children": ""
+              },
+              "label_3": {
+                "children": "Spouse"
+              },
+              "label_4": {
+                "children": "$AEDT#SpouseName$"
+              },
+              "label_5": {
+                "children": "Voter No"
+              },
+              "label_6": {
+                "children": "$AEDT#Aadharid1$"
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Applicant's Name"
+              },
+              "label_2": {
+                "children": "$AEDT#Name1$"
+              },
+              "label_3": {
+                "children": "Father"
+              },
+              "label_4": {
+                "children": "$AEDT#fathersName$"
+              },
+              "label_5": {
+                "children": "Address"
+              },
+              "label_6": {
+                "children": "$AEDT#Address$"
+              }
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Gender"
+              },
+              "label_2": {
+                "children": "$AEDT#Gender$"
+              },
+              "label_3": {
+                "children": "DOB"
+              },
+              "label_4": {
+                "children": "$AEDT#DateofBirth$"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Row_8": {
+      "style":{  "padding": "10px"},
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "POI Type"
+            },
+            "dropDown_1": {
+              "options": ["$Mast_POI_Info#SequenceID$","$Mast_POI_Info#OptionValue$"],
+              "select": "$OKYC44#Name$",
+              "defaultOption": "Select option",          
+              "style": {
+                "width": "100%"
+              }, 
+              "validation": {
+                "required": true
+              }
+            },
+           
+            "label_2": {
+              "children": "POA Type",
+              "style": {
+              }
+            },
+            "dropDown_2": {
+              "options": ["$Mast_POI_Info#SequenceID$","$Mast_POI_Info#OptionValue$"],
+            "select":"",
+              "defaultOption": "Select option",                       
+              "validation": {
+                "required": true
+              }
+            },
+            "label_3": {
+              "children": "Alternate Kyc Type",
+              "style": {              }
+            },
+            "dropDown_3": {
+              "options":  ["$Mast_POI_Info#SequenceID$","$Mast_POI_Info#OptionValue$"],
+            "select":"",
+              "defaultOption": "Select option",          
+              "validation": {
+                "required": true
+              }
+            },
+            "label_4": {
+              "children": "Marital Status",
+              "style": {
+              }
+            },
+            "dropDown_4": {
+              "options": ["$Mast_Marital_Status_Info#SequenceID$","$Mast_Marital_Status_Info#OptionValue$"],
+            "select":"",
+              "defaultOption": "Select option",                        
+              "validation": {
+                "required": true
+              }
+            },
+            "label_5": {
+              "children": "Loan Purpose",
+              "style": {
+              }
+            },
+            "dropDown_5": {
+              "options": "$OKYC4#MPSI_Name$",
+            "select":"",
+              "defaultOption": "Select option",              
+              "validation": {
+                "required": true
+              }
+            },
+            "label_6": {
+              "children": "Loan Product",
+              "style": {
+              }
+            },
+            "dropDown_6": {
+              "options": "$OKYC6#LoanProductName$",
+            "select":"",
+              "defaultOption": "Select option",          
+              
+              "validation": {
+                "required": true
+              }
+            }
+            
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "POI No"
+            },
+            "text_1": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "number",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "label_2": {
+              "children": "POA No",
+              "style": {
+              }
+            },
+            "text_2": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "number",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "label_3": {
+              "children": "Alternate Kyc No"
+            },
+            "text_3": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "number",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "label_4": {
+              "children": "Permanent Address",
+              "style": {
+              }
+            },
+            "dropDown_1": {
+              "options":"$OKYC8#Name$",
+            "select":"",
+              "defaultOption": "Select option",          
+             
+              "validation": {
+                "required": true
+              }
+            },
+            "label_5": {
+              "children": "Applied Amount",
+              "style": {
+              }
+            },
+            "text_4": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "type": "number",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "label_6": {
+              "children": "Loan Type",
+              "style": {
+              }
+            },
+            "dropDown_5": {
+              "options": ["$Mast_LoanTypeData_Info#SequenceID$","$Mast_LoanTypeData_Info#OptionValue$"],
+            "select":"",
+              "defaultOption": "Select option",          
+              
+              "validation": {
+                "required": true
+              }
+            },
+            "label_7": {
+              "children": "Loan Product Code",
+              "style": {
+              }
+            },
+            "dropDown_6": {
+              "options": "$OKYC7#MLP_Name$",
+            "select":"",
+              "defaultOption": "Select option",          
+              
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_9": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_7": {
+              "children": "Permanent Address"
+            },
+            "label_8": {
+              "children": ""
+            }
+          }
+        ]
+      }
+    },
+    "Row_10": {
+      "col_1": {
+        "Fields": [
+          {
+            "title": {
+              "name": "Image Data"
+            },
+            "label_1": {
+              "children": "Click on the thumbnail for Full Image Preview",
+              "style": {
+                "textAlign": "-webkit-center",
+                "color": "blue"
+              }
+            },
+            "img": {
+     
+                
+                  "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFaMfnIqUSEfHAF8ljzN6tvOZr-aUjzF44Tg&s",
+                  "label": "POI Front "
+                }
+               
+              
+            
+          }
+        ]
+      }
+    },
+    "Row_11": {
+      "col_1": {
+        "Fields": [
+          {
+            "iconButton": {
+              "icon": "",
+              "label": "VID Verification",
+              "type": "IconButton",
+              "style": {
+                 "background":"#fff",
+                "color":"black"
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Proceed",
+              "command": "NextPage"
+
+            }
+          }
+        ]
+      }
+    }}
+  }]
+}

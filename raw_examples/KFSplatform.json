@@ -1,0 +1,33 @@
+{
+    "KFSplatform":[ {
+      "css": "/Formstyles.css",
+    
+
+      "Section":{
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "table": {
+                  "title": "KFS Platform",
+                  "addButtonLabel": "+ Add New",
+                  "Rowvalues": "$T3_Row$",
+                  "columnTitles": ["","", "Group ID", "Loan ID","Client Name","ROI","Mobile Number","Insurance","EM Client","Status"],
+                  "rowVar": [["fsdfe","adf", "adsf", "adfa","adfs","asdf","asdf","asdf","asdf","dfassdf"]],
+                  "rowTypes": ["", "checkbox", "", "","","","","","",""],
+                  "rowVisible": ["false", "true", "true", "true","true","true","true","true","true","true"],
+                  "rowFilter": ["", "", "", "","","","","","",""],
+                  "rowFilterType": ["", "", "", "","","","","","",""],
+                  "rowFilterValues": ["", "", "", "","","","","","",""]
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

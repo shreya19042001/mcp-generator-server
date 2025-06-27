@@ -1,0 +1,67 @@
+{
+    "LeadGenDocumentUpload":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "All Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Loan Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Documents Upload",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Charges",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Balance Transfer Details",
+                      "currentPage": 5
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+            {
+                "table": {
+                    "title": "Documents Upload",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["","Document Type", "Remarks", "File"],
+                    "rowVar": [["","7576", "BOI", "Test"]],
+                    "rowTypes": ["", "", "", ""],
+                    "rowVisible": ["false", "true", "true", "true"],
+                    "rowFilter": ["", "", "", ""],
+                    "rowFilterType": ["", "", "", ""],
+                    "rowFilterValues": ["", "", "", ""]
+                }
+            }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

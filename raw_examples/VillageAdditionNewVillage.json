@@ -1,0 +1,222 @@
+{
+  "VillageAdditionNewVillage":[ {
+    "css": "/Formstyles.css",
+    "section":{
+      "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+    "_table": [
+      {
+        "name": "Mast_District_Info",
+        "Alias": "VLG",
+        "type": "select"
+      },
+      {
+        "name": "Mast_BlockMun_Info",
+        "Alias": "VLG1",
+        "type": "select"
+      },
+      {
+        "name": "Mast_GP_Info",
+        "Alias": "VLG2",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Village_Info",
+        "Alias": "VLG3",
+        "type": "select"
+      },
+      {
+        "name": "Mast_User_Privileges",
+        "Alias": "VLG4",
+        "type": "select"
+      }
+    ],
+    "Row_1": {
+      "styles": {
+        "width": "85%"
+      },
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Pincode"
+            },
+            "text_1": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "District"
+            },
+            "search_1": {
+              "name": "Search",
+              "value": "$VLG#MDI_Name$",
+              "placeholder": "Search",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_3": {
+              "children": "Gram Panchayat"
+            },
+            "search_2": {
+              "placeholder": "Search",
+              "value": "VLG2#MGPI_Id",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_4": {
+              "children": "Address"
+            },
+            "text_3": {
+              "placeholder": "Search",
+              "value": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_5": {
+              "children": "Latitude,Longitude"
+            },
+            "text_5": {
+              "placeholder": "Search",
+              "value": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_6": {
+              "children": "Closest Village Name"
+            },
+            "dropDown": {
+              "options": "",
+              "select": "",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_7": {
+              "children": "Employee Name"
+            },
+            "text_6": {
+              "placeholder": "Enter Details",
+              "value": "VLG4#UserName",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_8": {
+              "children": "Name Of Zone"
+            },
+            "text_7": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_8": {
+              "children": "State"
+            },
+            "text_8": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_9": {
+              "children": "Block"
+            },
+            "search_3": {
+              "name": "Search",
+              "value": "VLG1#MBI_Name",
+              "placeholder": "Search",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_10": {
+              "children": "Village"
+            },
+            "search_4": {
+              "name": "Search",
+              "value": "VLG3#MVI_Name",
+              "placeholder": "Search",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_11": {
+              "children": "Distance From Branch"
+            },
+            "text_11": {
+              "placeholder": "Search",
+              "value": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_12": {
+              "children": "Closest Village ID"
+            },
+            "text_12": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_13": {
+              "children": "Employee ID"
+            },
+            "text_13": {
+              "placeholder": "Enter Details",
+              "value": "VLG4#EII_EMP_ID",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_14": {
+              "children": "Contact No"
+            },
+            "text_14": {
+              "placeholder": "Enter Details",
+              "value": "",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "col_2": {
+        "Fields": [
+          {
+            "EventButton": {
+              "command": "NextPage",
+
+              "label": "Request for Approval"
+            }
+          }
+        ]
+      }
+    }
+  }
+  }]
+}

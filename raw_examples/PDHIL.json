@@ -1,0 +1,205 @@
+{
+    "PDHIL":[ {
+      "css": "/Formstyles1.css",
+     "section":{
+      "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+      "Row_1":  {
+        "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Applied Amount"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                    "label_2": { "children": "PD Score"},
+                    "text_2": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": { "children": "PD Status"},
+                    "dropDown_2": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                    "label_1": { "children": " PD Date"},
+                    "date": {
+                      "placeholder": "Select",
+                      "validation": {
+                        "required": true
+                      }},
+                    "label_2": { "children": "FCO Name"},
+                    "text_1": {"placeholder": "Select","type":"number",
+                    "validation": {
+                      "required": true
+                    }}
+                  }
+                ]
+              }} ,
+        "Row_3": {
+            "Fields": [ {
+              "label_8": { "children": "Remarks"},
+                    "text": {"placeholder": "Enter Address", "style": {}}
+              }
+            ]
+          },
+        "Row_4": {
+          "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Verified By"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                    "label_2": { "children": "Legal Documents of House"},
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": { "children": "Age of the Applicant"},
+                    "dropDown_2": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": { "children": "Dependents  "},
+                    "dropDown_6": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_5": { "children": "Credit of Applications   "},
+                    "dropDown_3": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                    ,
+                    "label_6": { "children": "Market value of House"},
+                    "dropDown_4": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_7": { "children": "Monthly Househole"},
+                    "dropDown_5": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                    "label_3": { "children": "Accomodation Type"},
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": { "children": "Location of the house  "},
+                    "dropDown_2": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_5": { "children": "Age of the Co-Applicant   "},
+                    "dropDown_3": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                    ,
+                    "label_6": { "children": "Applicant's Savings"},
+                    "dropDown_4": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_7": { "children": "Applicant's Contributaion"},
+                    "dropDown_5": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_8": { "children": "Sanitation Unit "},
+                    "dropDown_6": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_9": { "children": "Income Source of HouseHold"},
+                    "dropDown_7": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }} ,
+  
+              "Row_5": {
+                "Fields": [ {
+                  "label_8": { "children": "Affordability of Applicant"},
+                  "dropDown_1": {
+                    "options": ["VoterID"],
+                    "defaultOption": "Select option",          
+                    "validation": {
+                      "required": true
+                    }
+                  }                  }
+                ]
+              },
+              "Row_6": {
+                "Fields": [ {
+                  "EventButton": { "label": "Submit"}
+                  }
+                ]
+              }
+            }
+          }]
+    }
+  

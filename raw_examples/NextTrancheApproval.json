@@ -1,0 +1,72 @@
+{
+    "NextTrancheApproval":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section_1":{
+        "_Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Subject to Conditions",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Next Tranche Approval",
+                      "currentPage": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "table": {
+                  "title": "Subject to Conditions",
+                  "Rowvalues": "$T3_Row$",
+                  "columnTitles": ["","Subject to Condition", "Remarks", "Status","Upload","Click"],
+                  "rowVar": [["","", "", "","",""]],
+                  "rowTypes": ["", "text", "text", "dropdown","upload","button"],
+                  "rowVisible": ["false", "true", "true", "true","true","true"],
+                  "rowFilter": ["", "", "true", "true","true","true"],
+                  "rowFilterType": ["", "", "text", "text","text","text"],
+                  "rowFilterValues": ["", "", "", "","",""]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_3": {
+          "col_1": {
+            "Fields": [
+              {
+                "table": {
+                  "title": "Next Tranche Approval",
+                  "Rowvalues": "$T3_Row$",
+                  "columnTitles": ["", "Hierarchy", " Employee Name","Employee ID","Designation","Recommend Loan Amount", "Recommend ROI ","Recommend Tenure","NTA Disbursment Amount","NTA Pending Amount","NTA Comments"],
+                  "rowVar": [["", "LSS00014", "Test4", "142776","Testing","THired One", "Non","One","Two","Three","Four"]],
+                  "rowTypes": ["", "", "","", "","","","","","","status"],
+                  "rowVisible": ["false", "true", "true","true", "true","true","false","false","false","false","false"],
+                  "rowFilter": ["false", "true", "true", "true","true","true","true","true","true","true","true"],
+                  "rowFilterType": ["", "text", "text","text","text","text","text","","","",""]
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

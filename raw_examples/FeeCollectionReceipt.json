@@ -1,0 +1,91 @@
+{
+    "FeeCollectionReceipt":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "_Section": {
+        "_Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Final Disbursement Data",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Member Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Loan Application",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Executive Summary",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Subject to Conditions",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Credit Commitee Approval",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Post-soft Approval",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Waiver Deviation",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Final Committee Approval",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Final Disburement Date",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Risk Analysis",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Photographs",
+                      "currentPage": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                  "table": {
+                      "title": "Lead Details",
+                      "Rowvalues": "$T3_Row$",
+                      "columnTitles": ["", "Lead Id", " Branch","Customer ID","Customer Name", "Product Category ","Product","Loan Amount","Mobile No","PAN Number","Transaction Date","Week_Dt"],
+                      "rowVar": [["", "LSS00014", "Test4", "142776","Testing","THired One", "Non","One","Two","Three","Four","",""]],
+                      "rowTypes": ["", "", "","", "","","","","","","",""],
+                      "rowVisible": ["false", "true", "true","true", "true","true","false","false","false","false","false","false"],
+                      "rowFilter": ["false", "true", "true", "true","true","true","true","true","true","true","true","true"],
+                      "rowFilterType": ["", "text", "text","text","text","text","text","","","","",""]
+                    }
+              }
+            ]
+          }
+               }
+      }
+    }]
+  }
+  
+  
+  

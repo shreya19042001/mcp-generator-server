@@ -1,0 +1,303 @@
+{
+  "ID": {
+    "css": "/Formstyles.css",
+    "sections": [
+      {
+        "type": "form",
+        "table":[
+          {
+            "name": "Samplefun"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID",
+            "label": "ID",
+            "type": "text",
+            "value": "",
+            "field": "ID"
+          }
+        
+        
+        ]
+      }
+    ]
+  },
+
+
+
+"accordion": {
+  "title": "Organization Profile",
+  "initialOpen": true,
+  "icon": "plus",
+  "Row_2": {
+    "col_1": {
+      "Fields": [
+        {
+          "label_1": {
+            "children": "Name"
+          },
+          "text_1": {
+            "Placeholder": "Enter Name",
+            "setvalue": "",
+            "value": "",
+            "validation": {
+              "required": true,
+              "pattern": "^[a-zA-Z ]+$",
+              "message": "Name must only contain letters"
+            }
+          },
+          "label_2": {
+            "children": "Caption"
+          },
+          "text_2": {
+            "Placeholder": "Enter Caption",
+            "setvalue": "",
+            "value": "",
+            "validation": {
+              "required": true,
+              "pattern": "^[a-zA-Z ]+$",
+              "message": "Name must only contain letters"
+            }
+          },
+          "label_3": {
+            "children": "Phone No"
+          },
+          "text_3": {
+            "Placeholder": "Enter Phone No",
+            "value":"$HHMBI#Noofdaysinamonth$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_4": {
+            "children": "Fax"
+          },
+          "text_4": {
+            "Placeholder": "Enter Fax",
+            "value":"$HHMBI#RawMaterialsconsumeMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_5": {
+            "children": "Email-ID"
+          },
+          "text_5": {
+            "Placeholder": "Enter Email-ID",
+            "value":"$HHMBI#LabourWagessMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_6": {
+            "children": "URL"
+          },
+          "text_6": {
+            "Placeholder": "Enter URL",
+            "value":"$HHMBI#ConveyanceFuelMaintenanceMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_7": {
+            "children": "GST"
+          },
+          "text_7": {
+            "Placeholder": "Enter GST",
+            "value":"$HHMBI#AdminandOperatingExpensesMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_8": {
+            "children": "CGT"
+          },
+          "text_8": {
+            "Placeholder": "Enter CGT",
+            "value":"$HHMBI#AvgDailyExpenditure$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          }
+        }
+      ]
+    },
+    "col_2": {
+      "Fields": [
+        {
+          "label_1": {
+            "children": "Registration"
+          },
+          "text_1": {
+            "Placeholder": "Enter Registration",
+            "setvalue": "",
+            "value": "",
+            "validation": {
+              "required": true,
+              "pattern": "^[a-zA-Z ]+$",
+              "message": "Only letters are allowed"
+            }
+          },
+          "label_2": {
+            "children": "Avg Daily Transaction"
+          },
+          "text_2": {
+            "name": "Avg Daily Transaction",
+            "Placeholder": "Enter Avg Daily Transaction",
+            "value": "$HHMBI#AvgDailyTransaction$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_3": {
+            "children": "Monthly Gross Sale"
+          },
+          "text_3": {
+            "name": "Monthly Gross Sale",
+            "Placeholder": "Enter Monthly Gross Sale",
+            "value": "$HHMBI#MonthlyGrossSale$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_4": {
+            "children": "Rent For Shop (Monthly)"
+          },
+          "text_4": {
+            "name": "Rent For Shop",
+            "Placeholder": "Enter Rent For Shop",
+            "value": "$HHMBI#RentforShopMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_5": {
+            "children": "Electricity"
+          },
+          "text_5": {
+            "name": "Electricity",
+            "Placeholder": "Enter Electricity",
+            "value": "$HHMBI#ElectricityMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_6": {
+            "children": "Other Manufacturing (Monthly)",
+            "style": {
+              "width": "100%"
+            }
+          },
+          "text_6": {
+            "name": "Other Manufacturing",
+            "Placeholder": "Enter Other Manufacturing",
+            "value": "$HHMBI#OtherManufacturingMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_7": {
+            "children": "Total Business Expenses (Monthly)"
+          },
+          "text_7": {
+            "name": "Total Business Expenses",
+            "Placeholder": "Enter Total Business Expenses",
+            "value": "$HHMBI#TotalBusinessExpensesMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_8": {
+            "children": "Avg Net Profit Daily"
+          },
+          "text_8": {
+            "name": "Total Avg Net Profit Daily",
+            "Placeholder": "Enter Avg Net Profit Daily",
+            "value": "$HHMBI#AvgNetProfitDaily$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_9": {
+            "children": "Net Business Income Monthly"
+          },
+          "text_9": {
+            "name": "Net Business Income",
+            "Placeholder": "Enter Net Business Income",
+            "value": "$HHMBI#NetBusinessIncomeMonthly$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          "label_10": {
+            "children": "Annual Income"
+          },
+          "text_10": {
+            "name": "Annual Income",
+            "Placeholder": "Enter Annual Income",
+            "value": "$HHMBI#Annuuallncome$",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]+$",
+              "message": "Must be a numeric value"
+            }
+          },
+          
+          "iconButton_2": {
+            "icon": "Add",
+            "label": "Add More Income",
+            "style": {
+              "background": "rgb(70, 70, 163)",
+              "width": "100%",
+              "marginTop": "6px",
+              "borderRadius": "5px",
+              "color": "white",
+              "height": "6vh"
+            }
+          }
+        }
+      ]
+    }
+  }
+},
+"Row_3": {
+  "col_1": {
+    "Fields": [
+      {
+        "EventButton": {
+          "label": "Save & Next"
+        }
+      }
+    ]
+  }
+}
+}

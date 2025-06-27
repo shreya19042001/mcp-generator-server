@@ -1,0 +1,166 @@
+{
+  "AOClientList": [{
+    "css": "/",
+    "table": [
+      {
+        "name": "Mast_Village_Info",
+        "Alias": "BMC",
+        "type": "select"
+      },
+      {
+        "name": "Mast_User_Privileges",
+        "Alias": "BMC1",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Member_Details_Info",
+        "Alias": "BMC2",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Loan_Details_Info",
+        "Alias": "BMC3",
+        "type": "select"
+      }
+    ],
+    "section":{
+      "style":{
+        "background":"#fbfbfb",
+        "width": "75%"
+
+      },
+
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Select Village"
+            },
+            "search": {
+              
+              "options":"",
+              "select":"",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "FCO Name",
+              "style": {}
+            },
+            "search": {
+              "options":"",
+              "select":"",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "col_1": {
+        "Fields": [
+          {
+            "iconButton": {
+              "icon": "",
+              "label": "Reset",
+              "type": "NormalButton"
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Save & Next"
+            }
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "col_1": {
+        "Fields": [
+          {
+            "title": {
+              "label": "Total Searched",
+              "style": {
+                "width": "100%",
+                "display": "flex",
+                "position": "relative",
+                "top": "10px"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_4": {
+      "style":{
+        "background": "#fbfbfb",
+        "borderRadius": "14px",
+        "padding": "20px"      },
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Applicant Name"
+            },
+            "label_2": {
+              "children": "$BMC2#ApplicantName$"
+            },
+            "label_3": {
+              "children": "Date"
+            },
+            "label_4": {
+              "children": ""
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Spouse"
+            },
+            "label_2": {
+              "children": "$BMC2#Mem_SpouseName$"
+            },
+            "iconButton": {
+              "icon": "Visibility",
+              "label": "View Details",
+              "type": "ViewBreak"
+            }
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "label_3": {
+              "children": "Voter ID"
+            },
+            "label_2": {
+              "children": "$BMC2#VoterId$"
+            }
+            
+          }
+        ]
+      }
+    }
+  }
+  }]
+}

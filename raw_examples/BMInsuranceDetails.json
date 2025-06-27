@@ -1,0 +1,338 @@
+{
+  "BMInsuranceDetails": [{
+    "css": "./Formstyles1.css",
+    
+    "table":[
+      {
+          "name": "InsuranceDetailsSubmit",
+          "Alias":"T1",
+          "type":"select"
+      }
+    ],
+    "Section":{
+      "style":{
+        "width":"80%"
+      },
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                { "label": "Basic Details", "currentPage": 2 },
+                { "label": "Earning Member", "currentPage": 3 },
+                { "label": "Household Details", "currentPage": 4 },
+                {
+                  "label": "HH Monthly Income",
+                  "currentPage": 5
+                },
+                {
+                  "label": "HH Expenses",
+                  "currentPage": 6
+                },
+                {
+                  "label": "HH Liability",
+                  "currentPage": 7
+                },
+                {
+                  "label": "Loan Eligibility",
+                  "currentPage": 8
+                },
+                {
+                  "label": "Loan Details",
+                  "currentPage": 9
+                },
+                {
+                  "label": "Guarantor's Details",
+                  "currentPage": 10
+                },
+                {
+                  "label": "Insurance Details",
+                  "currentPage": 11
+                },
+                {
+                  "label": "Bank Details",
+                  "currentPage": 12
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Row": {
+      "style": {
+        "gap": "10px"
+      },
+      "accordion_1": {
+        "title": "Nominee Details",
+        "initialOpen": true,
+        "icon": "plus",
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Nominee"
+                },
+                "label_2": {
+                  "children": "$T1#Nominee$"
+                },
+                "label_3": {
+                  "children": "Relationship with client"
+                },
+                "label_4": {
+                  "children": "$T1#Relationship$"
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Nominee Name"
+                },
+                "label_2": {
+                  "children": "$T1#NomineeName$"
+                },
+                "label_3": {
+                  "children": "Date of Birth"
+                },
+                "label_4": {
+                  "children": "$T1#DateofBirth$"
+                }
+              }
+            ]
+          },
+          "col_3": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Nominee Age"
+                },
+                "label_2": {
+                  "children": "$T1NomineeAge$"
+                },
+                "label_3": {
+                  "children": "Nominee Guardian Name"
+                },
+                "label_4": {
+                  "children": "$T1#NomineeGuardianName$"
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "style": {
+            "float": "right"
+          },
+          "col_1": {
+            "Fields": [
+              {
+                "iconButton": {
+                  "icon": "Edit",
+                  "label": "Update Details",
+                  "type": "ViewBreak",
+                  "style": {
+                    "textDecoration": "none",
+                    "marginLeft": "22px"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "accordion_2": {
+        "title": "Insurance Details",
+        "initialOpen": true,
+        "icon": "plus",
+        "Row_4": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Applicant Insurance"
+                },
+                "label_2": {
+                  "children": ""
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Sum Assured"
+                },
+                "label_2": {
+                  "children": "$T1#SumAssured$"
+                }
+              }
+            ]
+          },
+          "col_3": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Premium"
+                },
+                "label_2": {
+                  "children": ""
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Row_5": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Nominee Insurance"
+              },
+              "dropDown_1": {
+                "options":"",
+                "select":"",
+                "set":"$T1#NomineeInsurance$",
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Row_6": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Sum Assured"
+              },
+              "label_2": {
+                "children": ""
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Premium"
+              },
+              "label_2": {
+                "children": ""
+              }
+            }
+          ]
+        }
+      }
+      
+    },
+    "accordion_3": {
+      "title": "Insurance Details",
+      "initialOpen": false,
+      "icon": "plus",
+      "Row_2": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Select Nominee"
+              },
+              "dropDown_1": {
+                "options": "",
+                "select": "",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_2": {
+                "children": "Date of Birth"
+              },
+              "date": {
+                "placeholder": "DD/MM/YYYY",
+                "value": "",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_3": {
+                "children": "Nominee Guardian Name"
+              },
+              "text_2": {
+                "placeholder": "Enter",
+                "type": "text",
+                "value": "",
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_3": {
+                "children": "Nominee Name"
+              },
+              "text_2": {
+                "placeholder": "Enter",
+                "type": "text",
+                "value": "",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_1": {
+                "children": "Relationship with Client"
+              },
+              "dropDown_1": {
+                "options": "",
+                "select": "",
+                "defaultOption": "Select ",
+                "style": {
+                  "width": "100%"
+                },
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_2": {
+                "children": "Nominee Age"
+              },
+              "text": {
+                "placeholder": "Enter",
+                "type": "number",
+                "value": "",
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Row_7": {
+        "col_1": {
+          "Fields": [
+            {
+              "EventButton": {
+                "label": " Next"
+              }
+            }
+          ]
+        }
+      }
+  }
+  }]
+}

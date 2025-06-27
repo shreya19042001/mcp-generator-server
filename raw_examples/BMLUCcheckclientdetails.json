@@ -1,0 +1,190 @@
+{
+    "BMLUCcheckclientdetails": [{
+      "section":{
+        "style":{
+          "marginTop":"60px",
+          "width":"80%"
+        },
+        "Row_1": 
+            {
+              "style":{
+                "background": "#fbfbfb",
+                "borderRadius": "14px",
+                "padding": "20px"      
+              },
+              "col_1":{
+                "Fields": [{
+                        "label_1": {
+                            "children": "Date"
+                          },
+                          "label_4": {
+                            "children": "Center"
+                          },
+                          "label_7": {
+                            "children": "Member ID"
+                          },
+                          "label_10": {
+                            "children": "Date of Disbursement"
+                          }
+                    }]
+                        },
+                    "col_2":{
+                      "Fields":[{
+                        "label_2": {
+                            "children": "Spouse"
+                          },
+                          "label_5": {
+                            "children": "Group Name"
+                          },
+                          "label_8": {
+                            "children": "LUC Status"
+                          },
+                          "label_11": {
+                            "children": "Product Name"
+                          }
+                    }]
+                     },
+                    "col_3":{
+                      "Fields":[{
+                        "label_3": {
+                            "children": "Voter Id"
+                          },
+                          "label_6": {
+                            "children": "Member Name"
+                          },
+                          "label_9": {
+                            "children": "Loan Amount"
+                          },
+                          "label_12": {
+                            "children": "Purpose"
+                          }
+                    }]
+                    }
+                
+            },
+         "Row_2":{
+          "col_1":{
+            "Fields":[{
+                    "label_1": {"children": "Loan Amount Utilized"},
+                    "text_1": {
+                      "placeholder":"Enter Details", 
+                                  
+                      "label": "",
+                      "type": "number",
+                      "validation": {
+                        "required": true,
+                        "min": 1,
+                        "max": 1000
+                      }
+                    },
+                    "label_2": {"children": "Remark", "style": {}},
+                    "text_2": {
+                      "placeholder":"Enter Details", 
+                                  
+                      "label": "",
+                      "type": "number",
+                      "validation": {
+                        "required": true,
+                        "min": 1,
+                        "max": 1000
+                      }
+                    },
+                    "label_3": {"children": "Tranche_1 Amount"},
+                    "text_3": {
+                      "placeholder":"Enter Details", 
+                                  
+                      "label": "",
+                      "type": "number",
+                      "validation": {
+                        "required": true,
+                        "min": 1,
+                        "max": 1000
+                      }
+                    },
+                    "label_4": {"children": "Tranche_2 Visit"},
+                    "date_1": {
+                                  
+                      "label": "",
+                      "type": "number",
+                      "validation": {
+                        "required": true,
+                        "min": 1,
+                        "max": 1000
+                      }
+                    }
+                }]
+                  },
+                "col_2":{
+                  "Fields":[{
+                    "label_1": {"children": "Select Purpose","style": {} },
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option", 
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label": {"children": "Work Completion Status" },
+                    "dropDown_2": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option", 
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {"children": "Tranche_1 Amount", "style": {"marginTop": "6px"}},
+                    "date_1": {
+                      "label": "",
+                      "type": "number",
+                      "validation": {
+                        "required": true,
+                        "min": 1,
+                        "max": 1000
+                      }
+                    },
+                    "label_4": {"children": "Tranche_2 Visit", "style": {"marginTop": "6px"}},
+                    "date_2": {
+                      "label": "",
+                      "type": "number",
+                      "validation": {
+                        "required": true,
+                        "min": 1,
+                        "max": 1000
+                      }
+                    }
+                }]
+            }
+         },
+         "Row_3":{
+            "Fields":[{
+                "label_1": {
+                  "children": "Proof Of Tranche","style": {"width":"100%"}
+                }
+            }]
+          },
+         "Row_4":{
+          "Fields":[{
+            "camera":{
+              "formatType":"Passbook"
+            }
+          }]
+        },
+         "Row_5":{
+          "col_1":{
+            "Fields":[{
+                  "EventButton": {
+                    "label": "Reject"
+                }
+                }]
+              },
+                "col_2":{
+            "Fields":[{
+                    "EventButton": {
+                        "label": "Submit"
+                    }
+                }]
+            }
+         }
+      }    
+     }]
+  }

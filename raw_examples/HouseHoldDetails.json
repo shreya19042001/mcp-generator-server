@@ -1,0 +1,527 @@
+{
+  "HouseHoldDetails": [{
+    "css": "/Formstyles1.css",
+    "Modulevariable":["$LosUnique_Id$"],
+"Options":["$Mast_FamilyType_Info$","$Mast_AccomodationType_Info$","$Mast_TypeOfOwnership_Info$","$MAST_LOCALITY_TYPE$","$Mast_Religion_info$","$Mast_SocialStatus_Info$","$Mast_water_info$"],
+
+    "table": [
+      {
+        "name": "Mast_FamilyType_Info",
+        "Alias": "HH",
+        "type": "select"
+      },
+      {
+        "name": "Mast_AccomodationType_Info",
+        "Alias": "HH1",
+        "type": "select"
+      },
+      {
+        "name": "Mast_TypeOfOwnership_Info",
+        "Alias": "HH2",
+        "type": "select"
+      },
+      {
+        "name": "MAST_LOCALITY_TYPE",
+        "Alias": "HH3",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Religion_info",
+        "Alias": "HH4",
+        "type": "select"
+      },
+      {
+        "name": "Mast_SocialStatus_Info",
+        "Alias": "HH5",
+        "type": "select"
+      },
+      {
+        "name": "Mast_water_info",
+        "Alias": "HH6",
+        "type": "select"
+      },
+      
+      {
+        "_name": "HouseHold_Submit_FCO_API",
+        "_Alias": "T6",
+        "_type": "select",
+        "_wherecolumnname":"LosUnique_Id"
+      },
+      {
+    
+        "_type": "custominsert",
+     
+        "_query": [
+          "MERGE INTO HouseHold_Submit_FCO_API AS target USING (SELECT $LosUnique_Id$ AS LosUnique_Id,$HHI#Totalhouseholdfamilymembers$ AS Totalhouseholdfamilymembers, $HHI#FamilyType$ AS FamilyType,$HHI#NoofDependents$ AS NoofDependents,$HHI#TypeofOwnership$ AS TypeofOwnership,$HHI#ReligionCommunity$ AS ReligionCommunity,$HHI#NonEarningMembers$ AS NonEarningMembers,$HHI#NoofUnmarriedChildren$ AS NoofUnmarriedChildren,$HHI#TypeofRoof$ AS TypeofRoof,$HHI#Locality$ AS Locality,$HHI#CasteCategory$ AS CasteCategory,$HHI#Electricity$ AS Electricity,$HHI#Toilet$ AS Toilet,$HHI#Sewage$ AS Sewage,$HHI#LPG$ AS LPG,$HHI#Livestock$ AS Livestock,$HHI#Furniture$ AS Furniture,$HHI#Electronicitems$ AS Electronicitems,$HHI#Water$ AS Water,$HHI#Land$ AS Land,$HHI#Vehicle$ AS Vehicle,$HHI#Smartphone$ AS Smartphone)AS source ON target.LosUnique_Id = source.LosUnique_Id WHEN MATCHED THEN UPDATE SET target.Totalhouseholdfamilymembers = source.Totalhouseholdfamilymembers, target.FamilyType = source.FamilyType,target.NoofDependents = source.NoofDependents,target.TypeofOwnership = source.TypeofOwnership,target.ReligionCommunity = source.ReligionCommunity,target.NonEarningMembers = source.NonEarningMembers,target.NoofUnmarriedChildren = source.NoofUnmarriedChildren,target.TypeofRoof = source.TypeofRoof,target.Locality = source.Locality,target.CasteCategory = source.CasteCategory,target.Electricity = source.Electricity,target.Toilet = source.Toilet,target.Sewage = source.Sewage,target.LPG = source.LPG,target.Livestock = source.Livestock,target.Furniture = source.Furniture,target.Electronicitems = source.Electronicitems,target.Water = source.Water,target.Land = source.Land,target.Vehicle = source.Vehicle,target.Smartphone = source.Smartphone WHEN NOT MATCHED THEN INSERT (LosUnique_Id, Totalhouseholdfamilymembers,FamilyType,NoofDependents,TypeofOwnership,ReligionCommunity,NonEarningMembers,NoofUnmarriedChildren,TypeofRoof,Locality,CasteCategory,Electricity,Toilet,Sewage,LPG,Livestock,Furniture,Electronicitems,Water,Land,Vehicle,Smartphone) VALUES (source.LosUnique_Id, source.Totalhouseholdfamilymembers, source.FamilyType,source.NoofDependents,source.TypeofOwnership,source.ReligionCommunity,source.NonEarningMembers,source.NoofUnmarriedChildren,source.TypeofRoof,source.Locality,source.CasteCategory,source.Electricity,source.Toilet,source.Sewage,source.LPG, source.Livestock,source.Furniture,source.Electronicitems,source.Water,source.Land,source.Vehicle,source.Smartphone );"
+        ]
+      },
+      {
+        "_name": "Mast_LoanRequst_Info",
+        "_Alias": "T4",
+        "_type": "insert"
+      }
+    ],
+    "section":{ "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                {
+                  "label": "Client Picture",
+                  "currentPage": 5
+                },
+                {
+                  "label": "ID Verification",
+                  "currentPage": 6
+                },
+                {
+                  "label": "OKYC Profile Review",
+                  "currentPage": 7
+                },
+                {
+                  "label": "HouseHold Details",
+                  "currentPage": 8
+                },
+                {
+                  "label": "HH Monthly Income",
+                  "currentPage": 9
+                },
+                {
+                  "label": "HH Expenses",
+                  "currentPage": 10
+                },
+                {
+                  "label": "HH Liability",
+                  "currentPage": 11
+                },
+                {
+                  "label": "Loan Eligibility",
+                  "currentPage": 12
+                },
+                {
+                  "label": "Loan Details",
+                  "currentPage": 13
+                },
+                {
+                  "label": "Guarantor's Details",
+                  "currentPage": 14
+                },
+                {
+                  "label": "Insurance Details",
+                  "currentPage": 15
+                },
+                {
+                  "label": "Bank Details",
+                  "currentPage": 16
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Family Type"
+            },
+            "dropDown_1": {
+              "options": ["$Mast_FamilyType_Info#SequenceID$","$Mast_FamilyType_Info#OptionValue$"],
+              "select": "$HHI#FamilyType$",
+              "set": "$T6#FamilyType$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "Total Household Family members",
+              "style": {}
+            },
+            "text_2": {
+              "placeholder": "Enter Details",
+              "label": "",
+              "type": "number",
+              "value": "$HHI#Totalhouseholdfamilymembers$",
+              "setvalue": "$T6#Totalhouseholdfamilymembers$",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "label_3": {
+              "children": "No of Dependents",
+              "style": {}
+            },
+            "text_3": {
+              "placeholder": "Enter Details",
+              "label": "",
+              "type": "number",
+              "value": "$HHI#NoofDependents$",
+              "setvalue": "$T6#NoofDependents$",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "label_4": {
+              "children": "Type Of Ownership",
+              "style": {}
+            },
+            "dropDown_2": {
+              "options": ["$Mast_TypeOfOwnership_Info#SequenceID$","$Mast_TypeOfOwnership_Info#OptionValue$"],
+              "select": "$HHI#TypeofOwnership$",
+              "set":"$T6#TypeofOwnership$",
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_5": {
+              "children": "Religion/Community",
+              "style": {}
+            },
+            "dropDown_3": {
+              "options": ["$Mast_Religion_info#SequenceID$","$Mast_Religion_info#OptionValue$"],
+              "select": "$HHI#ReligionCommunity$",
+              "set":"$T6#ReligionCommunity$",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Non-Earning members",
+              "style": {}
+            },
+            "text_1": {
+              "placeholder": "Enter Details",
+              "label": "",
+              "type": "number",
+              "value": "$HHI#NonEarningMembers$",
+              "setvalue": "$T6#NonEarningMembers$",
+
+              "style": {
+                "width": "100%"
+              }
+            },
+            "label_2": {
+              "children": "No of unmarried Children"
+            },
+            "text_2": {
+              "placeholder": "Enter Details",
+              "label": "",
+              "type": "number",
+              "value": "$HHI#NoofUnmarriedChildren$",
+              "setvalue": "$T6#NoofUnmarriedChildren$",
+
+              "style": {
+                "width": "100%"
+              }
+            },
+            "label_3": {
+              "children": "Type Of Roof",
+              "style": {}
+            },
+            "dropDown_1": {
+              "options": ["$Mast_AccomodationType_Info#SequenceID$","$Mast_AccomodationType_Info#OptionValue$"],
+              "select": "$HHI#TypeofRoof$",
+              "set": "$T6#TypeofRoof$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_4": {
+              "children": "Locality",
+              "style": {}
+            },
+            "dropDown_2": {
+              "options": ["$MAST_LOCALITY_TYPE#SequenceID$","$MAST_LOCALITY_TYPE#OptionValue$"],
+              "select": "$HHI#Locality$",
+              "set": "$T6#Locality$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_5": {
+              "children": "Caste/Category",
+              "style": {}
+            },
+            "dropDown_3": {
+              "options": ["$Mast_SocialStatus_Info#SequenceID$","$Mast_SocialStatus_Info#OptionValue$"],
+
+              "select": "$HHI#CasteCategory$",
+              "set": "$T6#CasteCategory$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "col_1": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Save & Next",
+              "command": "NextPage"
+            }
+          }
+        ]
+      }
+    },
+    "Row_4": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Electricity",
+              "style": {}
+            },
+            "dropDown_1": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+              "select": "$HHI#Electricity$",
+              "set": "$T6#Electricity$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "Toilet",
+              "style": {}
+            },
+            "dropDown_2": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+
+              "select": "$HHI#Toilet$",
+              "set": "$T6#Toilet$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_3": {
+              "children": "Sewage",
+              "style": {}
+            },
+            "dropDown_3": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+
+              "select": "$HHI#Sewage$",
+              "set": "$T6#Sewage$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_4": {
+              "children": "LPG",
+              "style": {}
+            },
+            "dropDown_4": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+
+              "select": "$HHI#LPG$",
+              "set": "$T6#LPG$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_5": {
+              "children": "Livestock",
+              "style": {}
+            },
+            "dropDown_5": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+
+              "select": "$HHI#Livestock$",
+              "set": "$T6#Livestock$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_6": {
+              "children": "Furniture",
+              "style": {}
+            },
+            "dropDown_6": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+
+              "select": "$HHI#Furniture$",
+              "set": "$T6#Furniture$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_7": {
+              "children": "Electronic Iteams",
+              "style": {}
+            },
+            "dropDown_7": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+
+              "select": "$HHI#Electronicitems$",
+              "set": "$T6#Electronicitems$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "_label_1": {
+              "children": "Water",
+              "style": {}
+            },
+            "_dropDown_1": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+              "select": "$HHI#Water$",
+              "set": "$T6#Water$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "Land",
+              "style": {}
+            },
+            "dropDown_2": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+              "select": "$HHI#Land$",
+              "set": "$T6#Land$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_3": {
+              "children": "Vehicle",
+              "style": {}
+            },
+            "dropDown_3": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+              "select": "$HHI#Vehicle$",
+              "set": "$T6#Vehicle$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            },
+            "label_4": {
+              "children": "Smartphone",
+              "style": {}
+            },
+            "dropDown_4": {
+              "options": ["$Mast_water_info#SequenceID$","$Mast_water_info#OptionValue$"],
+              "select": "$HHI#Smartphone$",
+              "set": "$T6#Smartphone$",
+
+              "defaultOption": "Select option",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_5": {
+      "col_1": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Save & Next",
+              "command": "NextPage"
+
+            }
+          }
+        ]
+      }
+    }}
+  }]
+}

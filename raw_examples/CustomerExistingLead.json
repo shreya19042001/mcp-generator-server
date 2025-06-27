@@ -1,0 +1,57 @@
+{
+    "CustomerExistingLead":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Existing Lead",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Existing Customer",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "New Customer",
+                      "currentPage": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "table": {
+                  "title": "Existing Lead",
+                  "Rowvalues": "$T3_Row$",
+                  "columnTitles": ["","", "Lead ID", "Customer ID","Branch","Customer Name","Mobile Number","Email ID"],
+                  "rowVar": [["","", "adsf", "adfa","adfs","asdf","asdf","asdf"]],
+                  "rowTypes": ["", "checkbox", "", "","","","",""],
+                  "rowVisible": ["false", "true", "true", "true","true","true","true","true"],
+                  "rowFilter": ["", "", "true", "true","true","true","true","true"],
+                  "rowFilterType": ["", "", "text", "text","text","text","text","text","text","text"],
+                  "rowFilterValues": ["", "", "", "","","","",""]
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

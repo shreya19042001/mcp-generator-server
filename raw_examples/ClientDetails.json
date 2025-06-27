@@ -1,0 +1,224 @@
+{
+  "ClientDetails": {
+    "css": "/Formstyles.css",
+    "sections": [
+      {
+        "type": "form",
+        "fields": [
+          {
+            "name": "name",
+            "label": "Name",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "name": "number",
+            "label": "Number",
+            "type": "number",
+            "value": ""
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "value": ""
+          },{
+            "name": "Branch",
+            "label": "Branch",
+            "value": "",
+            "validation": {
+              "required": true,
+              "minLength": 2,
+              "maxLength": 50
+            }
+          },
+          {
+            "name": "Village",
+            "label": "Village",
+            "value": "",
+            "validation": {
+              "required": true,
+              "minLength": 2,
+              "maxLength": 50
+            }
+          },
+          {
+            "name": "Center Name",
+            "label": "Center Name",
+            "value": "",
+            "validation": {
+              "required": true,
+              "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+            }
+          },
+        
+          {
+            "name": "Existing Client Code",
+            "label": "Existing Client Code",
+            "value": "",
+            "validation": {
+              "required": true,
+              "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+            }
+          },
+          {
+            "name": "gender",
+            "label": "Gender",
+            "value": "",
+            "type": "select",
+            "options": [
+              {
+                "value": "",
+                "label": "Select Gender"
+              },
+              {
+                "value": "male",
+                "label": "Male"
+              },
+              {
+                "value": "female",
+                "label": "Female"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "validation": {
+              "required": true
+            }
+          },
+          {
+            "name": "maritalStatus",
+            "label": "Marital Status",
+            "value": "",
+            "type": "radio",
+            "options": [
+              {
+                "value": "single",
+                "label": "Single"
+              },
+              {
+                "value": "married",
+                "label": "Married"
+              }
+            ],
+            "validation": {
+              "required": true
+            }
+          },
+          {
+            "name": "Group Name",
+            "label": "Group Name",
+            "value": "",
+            "validation": {
+              "required": true,
+              "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+            }
+          },
+          {
+            "name": "Form NO",
+            "label": "Form NO",
+            "value": "",
+            "validation": {
+              "required": true,
+              "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+            }
+          },
+          {
+            "name": "Client ID Proof",
+            "label": "Client ID Proof",
+            "value": "",
+            "validation": {
+              "required": true,
+              "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+            }
+          },
+          {
+            "name": "AddressProof",
+            "label": "Address Proof",
+            "value": "",
+            "type": "select",
+            "options": [
+              {
+                "value": "",
+                "label": " Address Proof"
+              },
+              {
+                "value": "AAdhar",
+                "label": "AAdhar card"
+              },
+              {
+                "value": "Voter ID",
+                "label": "Voter ID"
+              },
+              {
+                "value": "PAN",
+                "label": "PAN"
+              }
+            ],
+            "validation": {
+              "required": true
+            }
+          },
+          {
+            "name": "remarks",
+            "label": "Remarks",
+            "value": "",
+            "type": "text",
+            "validation": {
+              "required": false
+            }
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "columns": [
+          {
+            "name": "name",
+            "label": "Name"
+          },
+          {
+            "name": "age",
+            "label": "Age"
+          },
+          {
+            "name": "email",
+            "label": "Email"
+          },
+          {
+            "name": "gender",
+            "label": "Gender"
+          }
+        ],
+        "rows": [
+          {
+            "name": "John Doe",
+            "age": 30,
+            "email": "john.doe@example.com",
+            "gender": "Male"
+          },
+          {
+            "name": "Jane Smith",
+            "age": 25,
+            "email": "jane.smith@example.com",
+            "gender": "Female"
+          },
+          {
+            "name": "Alice Johnson",
+            "age": 28,
+            "email": "alice.johnson@example.com",
+            "gender": "Female"
+          },
+          {
+            "name": "Bob Brown",
+            "age": 35,
+            "email": "bob.brown@example.com",
+            "gender": "Male"
+          }
+        ]
+      }
+    ]
+  }
+}

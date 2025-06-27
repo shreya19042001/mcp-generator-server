@@ -1,0 +1,47 @@
+{
+    "LeadDecicion": [{
+      "css": "/Formstyles.css",
+      "Options":["$BorrowerSearch$"],
+      "_table":[
+        {
+      "name": "Mast_Borrower_Search",
+      "Alias":"T1",
+      "type":"select"
+    },
+    {
+      "name": "Mast_water_info",
+      "Alias": "HHL1",
+      "type": "select"
+    },
+    {
+      "name": "surya_details",
+      "Alias":"T2",
+      "type":"insert"
+    }    
+      ],
+      
+      "Section_1": {
+            "Row_1": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "table": {
+                      "title": "Lead Decision",
+                      "Rowvalues": "$T3_Row$",
+                      "columnTitles": ["", "Lead Id","Cibil Details", " Branch","Customer Name","EMP Name","Contact Mobile No","Product Name", "Loan Amount","Decicion ","Next Contact Date","Remarks"],
+                      "rowVar": [["", "LSS00014","", "Test4", "Testing","","THired One", "Non","one","One","Two","Three"]],
+                      "rowTypes": ["", "checkbox", "","", "","","","","","","","status"],
+                      "rowVisible": ["false", "true","true", "true", "true","true","false","false","false","false","false","false"],
+                      "rowFilter": ["false", "true","true", "true", "true","true","true","true","true","true","true","true"],
+                      "rowFilterType": ["", "text","text", "text","text","text","text","text","text","","",""]
+                    }
+                  }
+                ]
+              }
+                   }
+      }
+  }]
+  }
+  
+  
+  

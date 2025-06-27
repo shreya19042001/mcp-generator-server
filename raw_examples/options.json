@@ -1,0 +1,171 @@
+{
+  "options": [
+    {
+      "css": "/Formstyles.css",
+      "calculationlist": [ "$T2#SequenceID$(max) + 1 = $T4#SequenceID$" ],
+      "page_variables": [ "$T4#SequenceID$" ],
+      "table": [
+        {
+          "name": "Common_Options",
+          "Alias": "T1",
+
+          "type": "select"
+        },
+        {
+          "name": "Common_Options",
+          "Alias": "T2",
+          "depends": [ "$T4#ID$" ],
+          "wherecolumnname": [ "$ParentID$" ],
+          "type": "select"
+        },
+        {
+          "name": "Common_Options",
+          "Alias": "T3",
+
+          "type": "insert"
+        }
+      ],
+
+      "Section": {
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Search"
+
+                },
+                "search": {
+                  "name": "Search",
+                  "placeholder": "Enter Pincode",
+                  "options": [ "$T1#OptionValue$", "$T1#ID$" ],
+                  "Select": "$T4#ID$",
+                  "defaultOption": "search",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "table": {
+                  "title": "Options",
+                  "addButtonLabel": "+ Add New",
+
+                  "Rowvalues": "$T3_Row$",
+                  "columnTitles": [ "option_value", "Sequence_ID" ],
+                  "rowVar": [ "$T2#OptionValue$", "$T2#SequenceID$" ],
+                  "rowTypes": [ "", "" ],
+                  "rowVisible": [ "true", "true" ],
+                  "rowFilter": [ "true", "true" ],
+                  "rowFilterType": [ "text", "text" ],
+                  "rowFilterValues": [ "", "" ]
+                }
+
+              }
+            ]
+          }
+        }
+
+      },
+      "Page_1": {
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "ADD Options",
+                  "style": {
+                    "background": "rgb(161, 197, 205)",
+                    "color": "white",
+                    "textAlign": "center",
+                    "padding": "10px",
+                    "fontSize": "18px",
+                    "fontWeight": "bold"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "style": {
+              "display": "grid",
+              "gridTemplateColumns": "1fr 2fr",
+              "alignItems": "center",
+              "gap": "15px",
+              "padding": "10px"
+            },
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Search"
+                },
+                "text_1": {
+                  "placeholder": "Option",
+                  "value": "$T3#optionvalue$",
+                  "type": "text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "label_2": {
+                  "children": "Sequence ID :"
+                },
+                "text_3": {
+                  "placeholder": "Sequence ID",
+                  "value": "$T3#sequenceID$",
+                  "type": "text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                }
+
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "col_1": {
+            "style": {
+              "display": "flex",
+              "justifyContent": "center",
+              "gap": "15px",
+              "marginTop": "20px"
+            },
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Submit",
+                  "style": {
+                    "backgroundColor": "#4a90e2",
+                    "color": "white",
+                    "padding": "10px 20px",
+                    "border": "none",
+                    "borderRadius": "5px",
+                    "cursor": "pointer",
+                    "fontSize": "16px"
+                  }
+                },
+                "EventButton_1": {
+                  "label": "Cancel",
+                  "style": {
+                    "backgroundColor": "#4a90e2",
+                    "color": "white",
+                    "padding": "10px 20px",
+                    "border": "none",
+                    "borderRadius": "5px",
+                    "cursor": "pointer",
+                    "fontSize": "16px"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
+
+

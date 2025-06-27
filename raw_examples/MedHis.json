@@ -1,0 +1,159 @@
+{
+  "MedicalHistory": [
+    {
+      "css": "./MedicalHistoryStyles.css",
+      "table": [
+        { "name": "MedicalForm", "Alias": "MH", "type": "select" }
+      ],
+      "Section": {
+        "style": { "width": "95%" },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Past Medical History",
+                  "style": {
+                    "fontWeight": "bold",
+                    "fontSize": "18px",
+                    "paddingBottom": "10px"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+  "col_1": {
+    "Fields": [
+      {
+        "label_2": {
+          "children": "Known Conditions",
+          "style": {
+            "fontWeight": "600",
+            "marginBottom": "5px"
+          }
+        }
+      },
+      {
+        "dropDown_1": {
+          "options": [
+            "Diabetes",
+            "Hypertension",
+            "Asthma",
+            "Thyroid Disorder",
+            "None"
+          ],
+          "bind": "$MH#KnownConditions$"
+        }
+      }
+    ]
+  },
+  "col_2": {
+    "Fields": [
+      {
+        "label_3": {
+          "children": "Surgical History",
+          "style": {
+            "fontWeight": "600",
+            "marginBottom": "5px"
+          }
+        }
+      },
+      {
+        "dropDown_2": {
+          "options": [
+            "Appendectomy",
+            "CABG",
+            "Gallbladder Removal",
+            "C-section",
+            "None"
+          ],
+          "bind": "$MH#SurgicalHistory$"
+        }
+      }
+    ]
+  }
+},
+       "Row_3": {
+  "col_1": {
+    "Fields": [
+      {
+        "card_1": {
+          "labels": [
+            { "text": "Diagnosed With",    "className": "left-section"  },
+            { "text": "Diagnosis Date",    "className": "right-section" },
+            { "text": "Treatment Taken",   "className": "right-section" }
+          ],
+          "fields": [
+            "$MH#Diagnosis$",
+            "$MH#DiagnosisDate$",
+            "$MH#Treatment$"
+          ],
+          "formattype": "A",
+          "style": { "width": "100%" }
+        }
+      }
+    ]
+  },
+  "col_2": {
+    "Fields": [
+      {
+        "card_2": {
+          "labels": [
+            { "text": "Family History",      "className": "left-section"  },
+            { "text": "Chronic Conditions",  "className": "right-section" },
+            { "text": "Medication History",  "className": "right-section" }
+          ],
+          "fields": [
+            "$MH#FamilyHistory$",
+            "$MH#ChronicConditions$",
+            "$MH#MedicationHistory$"
+          ],
+          "formattype": "A",
+          "style": { "width": "100%" }
+        }
+      }
+    ]
+  }
+},
+        "Row_4": {
+          "col_1": {
+            "Fields": [
+              {
+                "barGraph": {
+                  "data": [
+                    { "label": "2019", "value1": 2, "value2": 1 },
+                    { "label": "2020", "value1": 3, "value2": 2 },
+                    { "label": "2021", "value1": 4, "value2": 2 },
+                    { "label": "2022", "value1": 5, "value2": 3 },
+                    { "label": "2023", "value1": 6, "value2": 4 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row_5": {
+          "col_1": {
+            "Fields": [
+              {
+                "iconButton_1": {
+                  "icon": "pdf",
+                  "label": "Download Medical Summary",
+                  "type": "pdf",
+                  "style": {
+                    "backgroundColor": "#2196f3",
+                    "color": "#fff",
+                    "padding": "8px 16px",
+                    "borderRadius": "6px"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

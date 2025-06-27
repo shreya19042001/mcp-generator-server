@@ -1,0 +1,106 @@
+{
+    "PDApplicantlist": [{
+      "section":{
+        "Row_1":{
+                "col_1":{
+
+                 "Fields":[{
+                    "label_1": {
+                        "children": "Select Village"
+                      },
+                      "dropDown_1": {
+                        "options": ["VoterID", "LoanId", "MobileNumber"],
+                        "defaultOption": "Select option",          
+                        "validation": {
+                          "required": true
+                        }
+                      }
+                  }]
+                },
+                "col_2":{
+                 "Fields":[{
+
+                    "label_1": {"children": "Select center", "style": {}},
+                    "dropDown_1": {
+                      "options": ["1", "2", "3"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }]
+                }
+          
+        },
+        "Row_2":{
+          "col_1":{
+
+           "Fields":[{
+              "label_1": {
+                  "children": "FCO Name"
+                },
+                "dropDown_1": {
+                  "options": ["1", "2", "3"],
+                  "defaultOption": "Select option",          
+                  "validation": {
+                    "required": true
+                  }
+                }
+            }]
+          }
+       
+    
+  },
+        "Row_3":  {
+              "col_2":{
+                "Fields": [{
+                 "EventButton": {
+                   "icon": "",
+                   "label": "Reset"
+                 }
+               }]
+               },
+               "col_3":{
+                "Fields": [{
+
+                 "EventButton": {  
+                   "label": "Search"
+                 }
+               }]
+               }
+   },
+            
+        "Row_4":{
+          "col_1":{
+          "Fields": [
+            {
+              "title": {"label": "Total Searched 23","style": {"width":"100%",   "display": "flex", "position": "relative", "top": "10px"}}
+            }
+          ]}
+        },
+        "Row_5": 
+            {
+                        "col_1":{
+                         "Fields": [{
+
+                           "label_1": {"children": "Applicant Name", "style": {}},
+                           "label_4": {"children": "Product name ", "style": {}}
+
+                           }]
+                        },
+                        "col_2":{
+                         "Fields": [{
+
+                            "label_2": {"children": "Spouse ", "style": {}}
+                        }]
+                        },
+                        "col_3":{
+                         "Fields": [{
+
+                            "label_3": {"children": "Voter Id", "style": {}}
+                        }]
+                        }
+            }}
+          
+    }]
+}

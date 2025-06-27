@@ -1,0 +1,139 @@
+{
+  "CervicalCancerLabDashboard": [
+    {
+      "css": "./CervicalLabStyle.css",
+      "table": [
+        {
+          "name": "CervicalLabTable",
+          "Alias": "CCL1",
+          "type": "select"
+        }
+      ],
+      "Section": {
+        "style": {
+          "width": "95%"
+        },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    { "label": "Pap Smear", "currentPage": 1 },
+                    { "label": "HPV DNA", "currentPage": 2 },
+                    { "label": "Histopathology", "currentPage": 3 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row": {
+          "accordion_1": {
+            "title": "Cervical Cancer Screening",
+            "initialOpen": true,
+            "icon": "dna",
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Patient ID" },
+                    "text_1": {
+                      "placeholder": "Enter Patient ID",
+                      "value": "",
+                      "set": "$CCL1#PatientID$",
+                      "validation": { "required": true }
+                    },
+                    "label_2": { "children": "Screening Method" },
+                    "dropDown_1": {
+                      "options": ["Pap Smear", "HPV DNA Test", "Colposcopy"],
+                      "select": "",
+                      "set": "$CCL1#ScreeningMethod$",
+                      "validation": { "required": true }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Sample Status" },
+                    "dropDown_2": {
+                      "options": ["Pending", "Analyzed", "Contaminated"],
+                      "select": "",
+                      "set": "$CCL1#SampleStatus$",
+                      "validation": { "required": true }
+                    },
+                    "label_2": { "children": "Collection Date" },
+                    "date_1": {
+                      "value": "",
+                      "set": "$CCL1#CollectionDate$",
+                      "validation": { "required": true }
+                    }
+                  }
+                ]
+              }
+            },
+          "Row_3": {
+  "col_1": {
+    "Fields": [
+      {
+        "card_1": {
+          "labels": [
+            { "text": "Cell Type",    "className": "left-section"  },
+            { "text": "Abnormality",  "className": "right-section" }
+          ],
+          "fields": [
+            "$CCL1#CellType$",
+            "$CCL1#AbnormalityDetected$"
+          ],
+          "formattype": "A",
+          "style": {
+            "border": "1px solid #ddd",
+            "padding": "10px",
+            "width": "100%"
+          }
+        }
+      }
+    ]
+  },
+  "col_2": {
+    "Fields": [
+      {
+        "card_2": {
+          "labels": [
+            { "text": "Slide 1", "className": "left-section"  },
+            { "text": "Slide 2", "className": "right-section" }
+          ],
+          "fields": [
+            "$CCL1#SlideImage1$",
+            "$CCL1#SlideImage2$"
+          ],
+          "formattype": "A",
+          "style": {
+            "border": "1px solid #ddd",
+            "padding": "10px",
+            "width": "100%"
+          }
+        }
+      }
+    ]
+  }
+},
+            "Row_4": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "EventButton": {
+                      "label": "Save Report"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

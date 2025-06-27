@@ -1,0 +1,263 @@
+{
+    "FeeAndchargeLoanProcessingData": [{
+        "css": "/",
+        "table": [
+            {
+              "name": "Mast_LoanProductType_Info",
+              "Alias": "FEE",
+              "type": "select"
+            },
+            {
+              "name": "Mast_Loan_Details_info",
+              "Alias": "FEE1",
+              "type": "select"
+            },
+            {
+              "name": "Mast_Member_Details_Info",
+              "Alias": "FEE2",
+              "type": "select"
+            },
+            {
+              "name": "mast_Group_info",
+              "Alias": "FEE3",
+              "type": "select"
+            },
+            {
+              "name": "Mast_Loan_Product_Info",
+              "Alias": "FEE4",
+              "type": "select"
+            },
+            {
+              "name": "Mast_Loan_CDProduct_Details_info",
+              "Alias": "FEE5",
+              "type": "select"
+            },
+            {
+              "name": "Mast_User_Privileges",
+              "Alias": "FEE6",
+              "type": "select"
+            }
+          ],
+          "Section":{
+            "style":{
+                "marginTop":"60px",
+                "width":"80%"
+              },
+        "Row_1": {
+            "style": {},
+            "col_1": {
+                "Fields": [
+                    {
+                        "label_1": { "children": "Select Product" },
+                        "dropDown_1": {
+                            "options":"$FEE#LoanProductName$",
+                            "select":"",
+                            "defaultOption": "Select option",
+                            "validation": { "required": true }
+                        }
+                    }
+                ]
+            }
+        },
+        "Row_2": {
+            "style": {
+                "background": "#fbfbfb",
+                "borderRadius": "14px",
+                "padding": "20px",
+                "marginBottom": "20px"
+            },
+            "col_1": {
+                "Fields": [
+                    { "label_1": { "children": "Date" } ,
+                     "label_2": { "children": "$FEE1#Loan_FormationDate$" } ,
+                    "label_3": { "children": "Applicant Name" } ,
+                     "label_4": { "children": "$FEE2#ApplicantName$" } ,
+                     "label_5": { "children": "Present Address"  },
+                     "label_6": { "children": "$FEE2#AadharAddress$"  }
+                }
+
+                ]
+            },
+            "col_2": {
+                "Fields": [
+                    { "label_1": { "children": "Loan ID" } },
+                    { "label_2": { "children": "$FEE1#LosUnique_Id$" } },
+                    { "label_3": { "children": "Group Name" } },
+                    { "label_4": { "children": "$FEE3#MGI_Name$" } }
+                ]
+            },
+            "col_3": {
+                "Fields": [
+                    { "label_1": { "children": "Offer Order ID" } },
+                    { "label_2": { "children": "" } }
+                ]
+            }
+        },
+        "Row_3": {
+            "col_1": {
+                "Fields": [
+                    {
+                        "title": {
+                            "label": "Product Details",
+                            "style": {
+                                "width": "100%",
+                                "background": "rgb(224, 224, 235)",
+                                "padding": "10px",
+                                "borderRadius": "5px",
+                                "marginBottom": "10px",
+                                "display": "flex"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "Row_4": {
+            "style": {
+                "background": "#fbfbfb",
+                "borderRadius": "14px",
+                "padding": "20px",
+                "marginBottom": "20px"
+            },
+            "col_1": {
+                "Fields": [
+                    { "label_1": { "children": "Product Name" } },
+                    { "label_2": { "children": "$FEE4#MLP_Name$" } },
+                    { "label_3": { "children": "Downpayment To Pay" } },
+                    { "label_4": { "children": "$FEE4#DownPayment$" } }
+                ]
+            },
+            "col_2": {
+                "Fields": [
+                    { "label_1": { "children": "Product Code" } },
+                    { "label_2": { "children": "$FEE4#LoanProduct$" } }
+                ]
+            },
+            "col_3": {
+                "Fields": [
+                    { "label_1": { "children": "Product Price" } },
+                    { "label_2": { "children": "$FEE4#ProductPrice$" } }
+                ]
+            }
+        },
+        "Row_5": {
+            "col_1": {
+                "Fields": [
+                    { "label_1": { "children": "Total Product Price" } },
+                    { "label_2": { "children": "$FEE5#ProductPrice$" } },
+                    { "label_3": { "children": "Loan Processing Fee" } },
+                    { "label_4": { "children": "" } },
+                    { "label_5": { "children": "Insurance Of Client" } },
+                    { "label_6": { "children": "" } }
+                ]
+            },
+            "col_2": {
+                "Fields": [
+                    { "label_1": { "children": "Total Downpayment" } },
+                    { "label_2": { "children": "$FEE5#DownPayment$" } },
+                    { "label_3": { "children": "GST" } },
+                    { "label_4": { "children": "" } }
+                ]
+            },
+            "col_3": {
+                "Fields": [
+                    { "label_1": { "children": "Sanction Amount" } },
+                    { "label_2": { "children": "$FEE1#RecommededAmount$" } },
+                    { "label_3": { "children": "Member Insurance" } }, 
+                    { "label_4": { "children": "" } } 
+                ]
+            }
+        },
+        "Row_6": {
+            "col_1": {
+                "Fields": [
+                    {
+                        "title": {
+                            "label": "Total Fee to be Collected",
+                            "style": {
+                                "width": "100%",
+                                "background": "rgb(224, 224, 235)",
+                                "padding": "10px",
+                                "borderRadius": "5px",
+                                "marginBottom": "10px",
+                                "display": "flex"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "Row_7": {
+            "col_1": {
+                "Fields": [
+                    { "label_2": { "children": "Downpayment MR No"} },
+                    { "text_1": { "placeholder": "Enter Downpayment MR No",
+                    "value":"",
+                     "type": "number",
+                    "validation": {
+                        "required": true
+                      }} },
+                    { "label_3": { "children": "Spouse Insurance MR No"} },
+                    { "text_2": { "placeholder": "Enter Spouse Insurance MR No",
+                    "value":"",
+                     "type": "number",
+                    "validation": {
+                        "required": true
+                      } } }
+                ]
+            },
+            "col_2": {
+                "Fields": [
+                    { "label_3": { "children": "Client Insurance MR No" } },
+                    { "text_2": { "placeholder": "Enter Client Insurance MR No",
+                    "value":"",
+                     "type": "number",
+                    "validation": {
+                        "required": true
+                      } } }
+                ]
+            }
+        },
+        "Row_8": {
+            "col_1": {
+                "Fields": [
+                    {
+                        "title": {
+                            "label": "FCO Details",
+                            "style": {
+                                "width": "100%",
+                                "borderRadius": "5px",
+                                "padding": "10px",
+                                "background": "rgb(224, 224, 235)",
+                                "marginBottom": "10px",
+                                "display": "flex"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "Row_9": {
+            "style": {
+                "background": "rgb(243, 243, 246)",
+                "borderRadius": "5px"
+            },
+            "col_1": {
+                "Fields": [
+                    { "label_1": { "children": "FCO Name" } },
+                    { "label_2": { "children": "$FEE6#UserName$" } },
+                    { "label_3": { "children": "FCO Employee ID"} },
+                    { "label_4": { "children": "$FEE6#EII_EMP_ID$"} }
+                ]
+            }
+        },
+        "Row_10": {
+            "col_1": {
+                "Fields": [
+                    { "EventButton": { "label": "Confirm & Exit" } }
+                ]
+            }
+        }
+    }
+    }]
+}

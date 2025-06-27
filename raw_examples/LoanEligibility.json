@@ -1,0 +1,366 @@
+{
+  "LoanEligibility": [
+    {
+      "css": "/Formstyles1.css",
+      "_table": [
+        {
+          "name": "Txn_Applicante_Eligibility_Check_Info_los",
+          "Alias": "LNEI",
+          "type": "insert"
+        },
+        {
+          "name": " Txn_AffordableEMI_Manual_Data_Los",
+          "Alias": "LNEI1",
+          "type": "insert"
+        },
+        {
+          "name": "Mast_LoanOptions_Los",
+          "Alias": "LNEI2",
+          "type": "insert"
+        },
+        {
+          "name": "LoanEligbiltyDetails",
+          "Alias": "LNEI3",
+          "type": "insert"
+        },
+        {
+          "name": "Mast_LoanRequest_Info",
+          "Alias": "LNE",
+          "type": "select"
+        },
+        {
+          "name": "Mast_HH_Income_Annualy_API",
+          "Alias": "LNE1",
+          "type": "insert"
+        },
+        {
+          "name": "RegularExpensesMonthlyDetails",
+          "Alias": "LNE2",
+          "type": "insert"
+        },
+        {
+          "name": "IrRegularExpensesAnnuallyDetalis",
+          "Alias": "LNE3",
+          "type": "insert"
+        },
+        {
+          "name": "Mast_FCO_Approval_Status_info",
+          "Alias": "LNE4",
+          "type": "insert"
+        }
+      ],
+      "section": {
+        "style":{
+          "width": "75%"
+        },
+        "Row_1": {
+          "styles": {},
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Client Picture",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "ID Verification",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "OKYC Profile Review",
+                      "currentPage": 7
+                    },
+                    {
+                      "label": "Basic Details",
+                      "currentPage": 8
+                    },
+                    {
+                      "label": "Earning Member",
+                      "currentPage": 9
+                    },
+                    {
+                      "label": "HouseHold Details",
+                      "currentPage": 10
+                    },
+                    {
+                      "label": "HH Monthly Income",
+                      "currentPage": 11
+                    },
+                    {
+                      "label": "HH Expenses",
+                      "currentPage": 12
+                    },
+                    {
+                      "label": "HH Liability",
+                      "currentPage": 13
+                    },
+                    {
+                      "label": "Loan Eligibility",
+                      "currentPage": 14
+                    },
+                    {
+                      "label": "Loan Details",
+                      "currentPage": 15
+                    },
+                    {
+                      "label": "Guarantor's Details",
+                      "currentPage": 16
+                    },
+                    {
+                      "label": "Insurance Details",
+                      "currentPage": 17
+                    },
+                    {
+                      "label": "Bank Details",
+                      "currentPage": 18
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "style": {
+            "background": "#fbfbfb",
+            "borderRadius": "14px",
+            "padding": "20px"
+          },
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Member Cycle Loan",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_2": {
+                  "children": "",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_3": {
+                  "children": "Loan Eligibility   ",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_4": {
+                  "children": "",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_7": {
+                  "children": "Household Expenditure",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_8": {
+                  "children": "$LNE2#TotalRegularExpensesMothly$",
+                  "style": {
+                    "width": "100%"
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "ROI",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_2": {
+                  "children": "",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_3": {
+                  "children": "Tenure ",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_4": {
+                  "children": "$LNE#Tenure$",
+                  "style": {
+                    "width": "100%"
+                  }
+                }
+              }
+            ]
+          },
+          "col_3": {
+            "Fields": [
+              {
+                "label_3": {
+                  "children": "Emi Eligibility ",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_4": {
+                  "children": "",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_5": {
+                  "children": "Household Income   ",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "label_6": {
+                  "children": "$LNE1#HHTotalIncomeMonthly$",
+                  "style": {
+                    "width": "100%"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "LoanType",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "dropDown_1": {
+                  "options": "$LNE#Lonetype$",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Loan Product",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "dropDown_2": {
+                  "options": "$LNE#LoanProduct$",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Tenure",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "dropDown_3": {
+                  "options": "$LNE#Tenure$",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Loan Purpose",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "dropDown_4": {
+                  "options": "$LNE#LoanPurposeID$",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": " Loan Product Code",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "dropDown_5": {
+                  "options": "$LNE#MLP_Name$",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "FCO Approval Status",
+                  "style": {
+                    "width": "100%"
+                  }
+                },
+                "dropDown_6": {
+                  "options": "$LNE4#Name$",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_4": {
+          "col_1": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Check Loan Eligibility"
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Loan Options"
+                }
+              }
+            ]
+          },
+          "col_3": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Save & Next",
+              "command": "NextPage"
+
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+
+
+{
+  "BMBankDetails":[ {
+    "css": "./Formstyles1.css",
+    "table":[
+    {
+        "name": "AccountdetailsSubmit",
+        "Alias":"T1",
+        "type":"select"
+    }
+  ],
+    "Section":{
+      "style":{
+        "width": "80%"
+      },
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                { "label": "Basic Details", "currentPage": 2 },
+                { "label": "Earning Member", "currentPage": 3 },
+                { "label": "Household Details", "currentPage": 4 },
+                { "label": "HH Monthly Income", "currentPage": 5 },
+                { "label": "HH Expenses", "currentPage": 6 },
+                { "label": "HH Liability", "currentPage": 7 },
+                { "label": "Loan Eligibility", "currentPage": 8 },
+                { "label": "Loan Details", "currentPage": 9 },
+                { "label": "Guarantor's Details", "currentPage": 10 },
+                { "label": "Insurance Details", "currentPage": 11 },
+                { "label": "Bank Details", "currentPage": 12 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Row_2":{
+    "accordion_1": {
+      "title": "Bank Details",
+      "initialOpen": true,
+      "icon": "plus",
+      "Row_2": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": { "children": "IFSC Code" },
+              "label_2": { "children": "$T1#IFSC_Code$" }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": { "children": "Bank Branch Name" },
+              "label_2": { "children": "$T1#BankBranchName$" }
+
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": { "children": "Branch Address" },                
+              "label_2": { "children": "$T1#BranchAddress$" }                
+            }
+          ]
+        }
+      }
+    },
+    "accordion_2": {
+      "title": "Insurance Details",
+      "initialOpen": true,
+      "icon": "plus",
+      "Row_3": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": { "children": "A/C Holder Name" },
+              "label_2": { "children": "$T1#AccountHolderName$" },
+              "label_3": { "children": "A/C No" },
+              "label_4": { "children": "$T1#AccountNo$" },
+              "label_5": { "children": "UPI ID" },
+              "label_6": { "children": "$T1#UPIID$" }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": { "children": "A/C Holder Name" },
+              "label_2": { "children": "$T1#AccountHolderName$" },
+              "label_3": { "children": "Confirm A/C No" },
+              "label_4": { "children": "$T1#ConfimAccountNo$" },
+              "label_5": { "children": "Bene Validation" },
+              "label_6": { "children": "" }
+
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": { "children": "A/C Type" },              
+              "label_2": { "children": "$T1#AccountType$" },              
+              "label_3": { "children": "Digital Payment" },               
+              "label_4": { "children": "$T1#DigitalPayment$" },               
+              "label_5": { "children": "Bank Passbook" },
+              "iconButton": {
+              "icon": "eye",
+              "label": "Click Here",
+              "type":"ViewBreak"
+            }               
+            }
+          ]
+        }
+      }
+    },
+    "accordion_3": {
+      "title": "Bene Status",
+      "initialOpen": true,
+      "icon": "plus",
+      "Row_2": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": { "children": "Beneficiary Name" },
+              "label_2": { "children": "$T1#BeneficiaryName$" }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": { "children": "Account Validation Status" },
+              "label_2": { "children": "$T1#AccountValidationstatus$" }
+
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": { "children": "Match Status" },         
+              "label_2": { "children": "$T1#MatchStatus$" }            
+            }
+          ]
+        }
+      }
+    },
+    "Row_6": {
+      "col_1": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": " Next"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+  }]
+}

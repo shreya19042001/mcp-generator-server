@@ -1,0 +1,177 @@
+{
+  "MedicalHistory": [
+    {
+      "css": "./MedicalHistoryStyles.css",
+      "table": [
+        {
+          "name": "MedicalHistorySubmit",
+          "Alias": "MH1",
+          "type": "select"
+        }
+      ],
+      "Section": {
+        "style": { "width": "80%" },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    { "label": "Overview", "currentPage": 1 },
+                    { "label": "Surgical History", "currentPage": 2 },
+                    { "label": "Family History", "currentPage": 3 },
+                    { "label": "Medications", "currentPage": 4 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row": {
+          "style": { "gap": "10px" },
+          "accordion_1": {
+            "title": "Known Conditions",
+            "initialOpen": true,
+            "icon": "stethoscope",
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Select Condition" },
+                    "dropDown_1": {
+                      "options": ["Diabetes", "Hypertension", "Asthma", "None"],
+                      "select": "",
+                      "set": "$MH1#Conditions$",
+                      "validation": { "required": true }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_2": { "children": "Diagnosis Date" },
+                    "date_1": {
+                      "placeholder": "DD/MM/YYYY",
+                      "value": "",
+                      "set": "$MH1#DiagDate$"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_2": {
+            "title": "Surgical History",
+            "initialOpen": false,
+            "icon": "scalpel",
+            "Row_3": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Procedure Name" },
+                    "text_1": {
+                      "placeholder": "Enter procedure",
+                      "type": "text",
+                      "value": "",
+                      "set": "$MH1#Procedure$"
+                    }
+                  },
+                  {
+                    "label_2": { "children": "Year" },
+                    "text_2": {
+                      "placeholder": "YYYY",
+                      "type": "number",
+                      "value": "",
+                      "set": "$MH1#SurgeryYear$"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "accordion_3": {
+            "title": "Family History",
+            "initialOpen": false,
+            "icon": "users",
+            "Row_4": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Select Family Member" },
+                    "dropDown_2": {
+                      "options": ["Mother", "Father", "Sibling", "Other"],
+                      "select": "",
+                      "set": "$MH1#FamilyMember$",
+                      "validation": { "required": true }
+                    }
+                  },
+                  {
+                    "label_2": { "children": "Condition" },
+                    "text_3": {
+                      "placeholder": "e.g. Heart Disease",
+                      "type": "text",
+                      "value": "",
+                      "set": "$MH1#FamilyCondition$"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Row_5": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": { "children": "Current Medications" },
+                  "text_4": {
+                    "placeholder": "List meds",
+                    "type": "textarea",
+                    "value": "",
+                    "set": "$MH1#Medications$"
+                  }
+                }
+              ]
+            }
+          },
+          "Row_6": {
+  "col_1": {
+    "Fields": [
+      {
+        "barGraph": {
+          "data": [
+            {
+              "label": "Diabetes",
+              "value1": 45,
+              "value2": 60
+            },
+            {
+              "label": "Hypertension",
+              "value1": 85,
+              "value2": 68
+            },
+            {
+              "label": "Asthma",
+              "value1": 75,
+              "value2": 62
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+          "Row_7": {
+            "col_1": {
+              "Fields": [
+                {
+                  "EventButton": { "label": "Save Medical History" }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

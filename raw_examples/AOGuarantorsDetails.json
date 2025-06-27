@@ -1,0 +1,229 @@
+
+{
+  "AOGuarantorsDetails": [{
+    "css": "./Formstyles1.css",
+    "table":[
+      {
+          "name": "GuarantorsDetailsDetails",
+          "Alias":"T1",
+          "type":"select"
+      }
+    ],
+    "Section":{
+      "style":{
+        "width": "75%"
+      },
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                { "label": "Basic Details", "currentPage": 2 },
+                { "label": "Earning Member", "currentPage": 3 },
+                { "label": "Household Details", "currentPage": 4 },
+                { "label": "HH Monthly Income", "currentPage": 5 },
+                { "label": "HH Expenses", "currentPage": 6 },
+                { "label": "HH Liability", "currentPage": 7 },
+                { "label": "Loan Eligibility", "currentPage": 8 },
+                { "label": "Loan Details", "currentPage": 9 },
+                { "label": "Guarantor's Details", "currentPage": 10 },
+                { "label": "Insurance Details", "currentPage": 11 },
+                { "label": "Bank Details", "currentPage": 12 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "style":{
+        "background": "#fbfbfb",
+        "borderRadius": "14px",
+        "padding": "20px"      },
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": { "children": "Guarantor's name" },
+            "label_2": { "children": "$T1#GuarantorName$" },
+            "label_3": { "children": "Mobile No" },
+            "label_4": { "children": "$T1#MobileNumber$" },
+            "label_5": { "children": "KYC No" },
+            "label_6": { "children": "$T1#KYCNo$" },
+            "label_7": { "children": "Present Address" },
+            "label_8": { "children": "$T1#PresentAddress$" }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": { "children": "Guarantor's Age" },
+            "label_2": { "children": "$T1#GuarantorAge$" },
+            "label_3": { "children": "Date Of Birth" },
+            "label_4": { "children": "$T1#DateodBirth$" },
+            "label_5": { "children": "Father" },
+            "label_6": { "children": "$T1#Father$" },
+            "label_7": { "children": "Guarantors Occupation" },
+            "label_8": { "children": "$T1# GuarantorOccupation$" }
+
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "label_1": { "children": "Spouse" },
+            "label_2": { "children": "$T1#Spouse$" },
+            "label_3": { "children": "Marital Status" },
+            "label_4": { "children": "$T1#MaritalStatus$" },
+            "label_5": { "children": "Primary KYC" },
+            "label_6": { "children": "$T1#PrimaryKYC$" }
+            
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "style":{
+        "float": "right"
+      },
+      "col_1": {
+        "Fields": [
+          {
+            "iconButton": {
+              "icon": "Edit",
+              "label": "Update Details",
+              "type":"ViewBreak",
+              "style": {
+                "textDecoration": "none",
+                "marginLeft": "22px"
+              }
+            }
+          }
+        ]
+      }
+    },
+  
+
+    "accordion_1": {
+      "title": "Guarantors Details",
+      "initialOpen": false,
+      "icon": "plus",
+      "Row_2":  {
+        "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Guarantor Name"},
+                    "dropDown_1": {
+                      "options":"",
+                      "select":"",
+                      "defaultOption": "Select option",          
+                      
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_2": { "children": "Date of Birth"},
+                    "date": {
+                      "placeholder": "Select",
+                      "value":"",
+                      "validation": {
+                        "required": true
+                      }},
+                    "label_3": { "children": "Gender"},
+                    "dropDown_2": {
+                      "options":"",
+                      "select":"",
+                      "defaultOption": "Select option",          
+                      
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": { "children": "Spouse"},
+                    "text_1": {"placeholder": "Enter Name",
+                    "value":"",
+                    "validation": {
+                      "required": true
+                    }}, 
+                    "label_5": { "children": "Mobile Number"},
+                    "text_2": {"placeholder": "Enter ","type":"number",
+                    "value":"",
+                    "validation": {
+                      "required": true
+                    }},
+                    "label_7": { "children": " Guarantor`s Occupation"},
+                    "text": {"placeholder": "Enter Guarantor`s Occupation","value":"",
+                    "validation": {
+                      "required": true
+                    }}
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                    "label_2": { "children": "Guarantor’ Age"},
+                    "text_1": {"placeholder": "Select","type":"number",
+                      "value":"",
+                    "validation": {
+                      "required": true
+                    }},
+                    "label_3": { "children": "Marital Status"},
+                    "dropDown_3": {
+                      "options":"",
+                      "select":"",
+                      "defaultOption": "Select option",          
+                      
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": { "children": " Father"},
+                    "text_2": {"placeholder": "Enter Father",
+                    "value":"",
+                    "validation": {
+                      "required": true
+                    }},
+                     "label_6": { "children": " KYC No" },
+                     "text_3": {"placeholder": "Enter Primary KYC", "value":"",
+                     "validation": {
+                       "required": true
+                     }},
+                     "label_8": { "children": "Primary Kyc"},
+                     "dropDown_4": {
+                       "options":"",
+                       "select":"",
+                       "defaultOption": "Select option",          
+                       
+                       "validation": {
+                         "required": true
+                       }
+                     }
+                  }
+                ]
+              }
+          } ,
+        "Row_3": {
+            "Fields": [ {
+              "label_8": { "children": " Present Address"},
+                    "text": {"placeholder": "Enter Address","value":"", "style": {}}
+              }
+            ]
+          }
+    },
+    "Row_4": {
+      "col_1": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": " Next"
+            }
+          }
+        ]
+      }
+    }
+
+
+  }
+  }]
+}

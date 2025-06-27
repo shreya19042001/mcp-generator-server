@@ -1,0 +1,158 @@
+{
+  "Client": [{
+"Modulevariable":["$LosUnique_Id$"],
+"Options":[{
+  "DataModule":"redis",
+  "optionValues": ["$Mast_Salutation_info$","$Mast_SignalEarning_info$"]
+}
+],
+
+    "table":[
+      {
+    "name": "Mast_Salutation_info",
+    "Alias":"T1",
+    "type":"select"
+  },
+  {
+    "name": "Mast_SignalEarning_info",
+    "Alias":"T2",
+    "type":"select"
+  }
+  
+  
+  
+  
+      
+    ],
+    "style": {
+      "width": "50%",
+      "display": "flex",
+      "flexDirection": "column",
+      "justifyContent": "center",
+       "maxWidth": "650px"
+    },
+    "section":{
+      "style":{
+      "width": "50%"
+
+      },
+      "Row_1": {
+      "style": {
+      },
+      "col_1": {
+        "Fields": [{
+          "image": {
+            "image": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/add-new.svg",
+            "style": {
+              "width": "140px","height": "155px","marginTop": "20px","margin": "auto"
+            }
+          },
+          "title_2": {
+            "label": "Client Consent",
+            "style": {
+              "justifyItems": "flex-start"
+            }
+          }
+        }]
+      }
+    },
+    "Row_2": {
+      "style": {
+      },
+      "col_1": {
+        "Fields": [{
+          "label_1": {
+            "children": "Select",
+            "style": {
+              "width": "8vw"
+            }
+          },
+          
+          "dropDown_1": {
+            "options":  ["$Mast_Salutation_info#SequenceID$","$Mast_Salutation_info#OptionValue$"],
+          "select":"$T3#Type$",
+          "defaultOption": "Select", 
+          "style": {
+            "width": "8vw"
+          },
+            "validation": { "required": true}}
+        }]
+      },
+      "col_2": {
+        "Fields": [{
+          "label_1": {
+            "children": "Name"
+          },
+          "text_1": {
+            "placeholder": "Enter Name",
+            "value":"$T3#ApplicantName$",
+            "style": {
+              "width": "38vw"
+            },
+            "validation": { "required": true,"pattern": "^[a-zA-Z ]+$"}
+
+          }
+          
+        }]
+      }
+    },
+    "Row_3": {
+      "style": {
+      },
+      "col_2": {
+        "Fields": [{
+          "label_1": {
+            "children": "Relationship Details",
+            "style": {
+            }
+          },
+          "dropDown_1": {
+            "options":  ["$Mast_SignalEarning_info#SequenceID$","$Mast_SignalEarning_info#OptionValue$"],
+            "select": "$T3#ApplicantRelation$",
+            "defaultOption": "Select Relationship",          
+            "validation": {
+              "required": true
+            }
+          },
+          "label_2": {
+            "children": "Mobile Number"
+          },
+          "text_2": {
+            "placeholder": "Enter No",
+            "value":"$T3#MobileNumber$",
+            "type": "number",
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]{10}$",
+              "minLength": 10,
+              "maxLength": 10,
+              "errorMessage": "Please enter a valid mobile number with 10 digits."
+            }
+          },
+          "label": {
+            "children": "(Aadhar registered Mobile Number Preferable)"
+          },
+         
+          "OTP": {
+            "children": "OTP",
+            "style": {
+              "marginTop": "15px"
+            },
+            "validation": {
+              "required": true,
+              "pattern": "^[0-9]{6}$"  }
+          },
+          
+          "EventButton": {
+            "label": "Save & Next",
+            "command": "NextPage"
+
+
+          }
+        }]
+      }
+    }
+  }
+  }]
+}
+

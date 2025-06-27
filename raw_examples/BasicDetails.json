@@ -1,0 +1,103 @@
+{
+  "Basicdetails": {
+    "css": "/",
+    "Row_1": 
+      {
+        "col_1":{
+        "Fileds": [
+          {
+            "title": {
+              "label": "FCO Details"
+            },
+            "label_1": {
+              "name": " Name",
+              "Label": " Name",
+              "value": ""
+            },
+            "label_2": {
+              "name": "Spouse",
+              "Label": "Spouse",
+              "value": ""
+            },
+            "label_3": {
+              "name": "Father",
+              "Label": "SpouFatherse",
+              "value": ""
+            },
+            "label_4": {
+              "name": "Mobile Number",
+              "Label": "Mobile Number",
+              "value": ""
+            },
+            "label_5": {
+              "name": "POI KYC Type",
+              "Label": "POI KYC Type",
+              "value": ""
+            },
+            "label_6": {
+              "name": "POI KYC ID",
+              "Label": "POI KYC ID",
+              "value": ""
+            },
+            "label_7": {
+              "name": "KYC Images",
+              "Label": "KYC Images",
+              "value": ""
+            },
+            "label_8": {
+              "name": "Earning members",
+              "Label": "Earning members",
+              "value": ""
+            },
+            "text_1": {
+              "name": "PAN ID ",
+              "Label": "PAN ID",
+              "Placeholder": "Enter Details"
+            },
+            "text_2": {
+              "name": "Loan Purpose ",
+              "Label": "Loan Purpose",
+              "Placeholder": "Enter Details"
+            },
+            "text_3": {
+              "name": "Applied Amount ",
+              "Label": "Loan Purpose",
+              "Placeholder": "Enter Details"
+            }
+          }
+        ]}
+      },
+    "ROw_2": 
+      {
+        "col_1":{
+        "Fileds": [
+          {
+            "title": {
+              "label": "FCO Details"
+            },
+            "text_1": {
+              "name": "PAN ID ",
+              "Label": "PAN ID",
+              "Placeholder": "Enter Details"
+            },
+            "text_2": {
+              "name": "Loan Purpose ",
+              "Label": "Loan Purpose",
+              "Placeholder": "Enter Details"
+            },
+            "text_3": {
+              "name": "Applied Amount ",
+              "Label": "Loan Purpose",
+              "Placeholder": "Enter Details"
+            },
+            "EventButton": {
+              "label": "NEXTBUTTON",
+              "command": "NextPage"
+
+            }
+          }
+        ]}
+      }
+ 
+  }
+}

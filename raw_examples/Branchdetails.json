@@ -1,0 +1,91 @@
+{
+  "Branchdetails": [{
+    "css": "/Formstyles.css",
+    "Options":[{
+      "DataModule":"redis",
+      "optionValues": ["$Mast_Borrower_Search$"]
+    }
+    ],
+    "table":[
+      {
+    "name": "Mast_Borrower_Search",
+    "Alias":"T1",
+    "type":"select"
+  },
+  {
+    "name": "Mast_water_info",
+    "Alias": "HHL1",
+    "type": "select"
+  },
+  {
+    "name": "surya_details",
+    "Alias":"T2",
+    "type":"insert"
+  }    
+    ],
+    
+"section":{
+  "style":{
+    "height": "88vh",
+    "display": "flex"
+  },
+    "Row_1": 
+      {
+        "style":{
+          "display": "flex","width": "38%","flexWrap": "wrap","justifyContent": "center","borderRadius": "12px","border": "2px solid green","background": "#fff","margin": "auto","padding": "18px","margiTop":"60px"
+        },
+        "col_1": {
+        "Fields": [
+          {
+            "iconButton": {
+              "icon": "Close", 
+                "type": "CloseButton",
+              "style": {}
+            },
+            "image_1": {
+              "image": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/search-user.png",
+              "style": {"width": "140px","height": "140px","justifySelf": "center"}
+            },
+      
+                "title": {
+                  "label": "Search Client",
+                  "style": { "justifyItems": "flex-start"}
+            },
+            "label_1": {
+              "children": "Choose Search Type"
+            },
+            "dropDown_1": {
+              "options":  ["$Mast_Borrower_Search#SequenceID$","$Mast_Borrower_Search#OptionValue$"],
+             "select":"$T2#VehicalName$",
+              "defaultOption": "Select option",          
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "Enter Detail"
+            },
+            "text_2": {
+              "placeholder": "Enter Details",
+              "value": "$T2#name$",
+              "type": "number",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+          
+            "EventButton": {
+              "label": "Search",
+               "command": "NextPage",
+               "className": "whiteButton",
+              "style": {  }
+            }
+          }
+        ]
+      }
+      }
+    }
+}]
+}

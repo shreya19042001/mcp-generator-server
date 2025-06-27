@@ -1,0 +1,204 @@
+{
+    "LeadGenerationEmployerDetails":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+  
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Applicant Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Customer Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Family Details",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Employer Details",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Business Details",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "Contact Details",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "Address Details",
+                      "currentPage": 7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Name of the Employer"
+                },
+                "text_1": {
+                  "Placeholder": "Enter ",
+                  "value": ""
+                },
+                "label_2": {
+                  "children": "Title/Role"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": ""
+                },
+                "label_3": {
+                  "children": "PinCode"
+                },
+              "text_3": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": "Employee Code "
+                },
+              "text_4": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_5": {
+                  "children": "Total Work Experience (Yrs)"
+                },
+              "text_5": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_6": {
+                  "children": "Time in Current Job (Yrs) "
+                },
+              "text_6": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_7": {
+                  "children": "Annual Salary (Rs) "
+                },
+              "text_7": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_8": {
+                  "children": "Other Income (Rs) "
+                },
+              "text_8": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Employement Type"
+                },
+                "dropDown_1": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option"
+                },
+                "label_2": {
+                  "children": "LandMark"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": ""
+                },
+                "label_3": {
+                  "children": "State"
+                },
+                "dropDown_2": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option"
+                },
+                "label_4": {
+                  "children": "Employement Status "
+                },
+                "dropDown_3": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option"
+                },
+                "label_5": {
+                  "children": "Previous Employer Name (if any) "
+                },
+              "text_5": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_6": {
+                  "children": "Retirement Age (Yrs)"
+                },
+              "text_6": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_7": {
+                  "children": "Other Income Source"
+                },
+              "text_7": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }  
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

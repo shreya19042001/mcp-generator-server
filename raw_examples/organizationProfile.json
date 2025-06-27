@@ -1,0 +1,277 @@
+{
+  "organizationProfile": [{
+    "css": "/Formstyles.css",
+    "Options": ["$OrganizationProfile$"],
+    "table": [
+      {
+        "name": "Organization_Profile",
+        "Alias": "OP",
+        "type": "select"
+      }
+    ],
+    "Section": {
+      "style": {
+        "height": "100vh",
+        "display": "flex",
+        "backgroundColor": "#f8f9fa"
+      },
+      "Row_1": {
+        "style": {
+          "width": "95%",
+          "maxWidth": "1200px",
+          "margin": "2rem auto",
+          "background": "#fff",
+          "borderRadius": "8px",
+          "padding": "24px",
+          "boxShadow": "0 1px 3px rgba(0,0,0,0.1)",
+          "height": "max-content",
+          "display": "grid",
+          "gridTemplateColumns": "30% 70%", 
+          "gap": "20px"
+
+        },
+        "col_1": {
+          "Fields": [
+            {
+              "title": {
+                "label": "Organization Profile",
+                "subtitle": "Manage your organization's information and settings",
+                "style": {
+                  "marginBottom": "24px"
+                }
+              },
+              
+                "image": {
+                  "icon": "CloudUpload",
+                  "style": {
+                    "width": "200px",
+                    "height": "180px",
+                    "border": "1px dashed #ccc",
+                    "borderRadius": "8px",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "textAlign": "center",
+                    "color": "#666",
+                    "fontSize": "14px",
+                    "padding": "10px",
+                    "marginBottom": "20px",
+                    "marginInline": "auto"
+                  }
+              }
+            }
+          ]
+        },
+        "col_2":{
+          "Row": {
+            "style": {
+              "display": "grid",
+              "gridTemplateColumns": "1fr 1fr",
+              "gap": "20px"
+            },
+            "col_1":{
+            "Fields": [{
+              "label_1": {
+                "children": "Organization Name"
+              },
+              "text_1": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+                "label_2": {
+                "children": "Caption"
+              },
+              "text_2": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },  "label_3": {
+                "children": "Registration No"
+              },
+              "text_3": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+                "label_4": {
+                "children": "Form No"
+              },
+              "text_4": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }, 
+               "label_5": {
+                "children": "Phone No "
+              },
+              "text_5": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_6": {
+                "children": "Email ID"
+              },
+              "text_6": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }
+
+            }
+            
+            ]
+          },
+          "col_2":{
+            "Fields":[{
+              "label_7": {
+                "children": "Website"
+              },
+              "text_7": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }, 
+               "label_8": {
+                "children": "GST"
+              },
+              "text_8": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }, 
+               "label_9": {
+                "children": "PAN No"
+              },
+              "text_9": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_10": {
+                "children": "VAT No"
+              },
+              "text_10": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }, 
+               "label_11": {
+                "children": "Service Tax No"
+              },
+              "text_11": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_12": {
+                "children": "Sales Tax No"
+              },
+              "text_12": {
+                "placeholder": "Enter",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }
+            }]
+          }
+          },
+          "Row_2":{
+            "col_1":{
+              "Fields":[{
+                "label_1": {
+                  "children": "Incorporation Certificate"
+                },
+                "dropDown_1": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+              },
+                "label_2": {
+                  "children": "Address"
+                },
+                "text": {
+                  "placeholder": "Enter",
+                  "value": "",
+                  "style": {
+                    "gridColumn": "1 / -1",
+                    "marginTop": "20px"
+                  }
+                }
+              }]
+           
+          }
+          },
+          "Row_3": {
+            "style": {
+              "display": "flex",
+              "justifyContent": "flex-end",
+              "gap": "12px",
+              "marginTop": "24px"
+            },
+            "col_1":{
+              "Fields":[{
+                "iconButton": {
+                  "label": "Reset",
+                  "type": "NormalButton"
+                }
+              }]
+            },
+            "col_2":{
+              "Fields":[{
+                "EventButton": {
+                  "label": "Save"
+                }
+              }]
+            }
+          
+          }
+        }
+        
+      }
+      
+
+    
+    }
+  }]
+}

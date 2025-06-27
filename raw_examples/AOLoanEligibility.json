@@ -1,0 +1,214 @@
+
+
+{
+  "AOLoanEligibility": [{
+    "css": "./Formstyles1.css",
+
+    "table":[
+      {
+          "name": "HouseHoldLiabilityDetails",
+          "Alias":"T1",
+          "type":"select"
+      }
+    ],
+    "Section":{
+      "style":{
+        "width": "75%"
+      },
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                { "label": "Basic Details", "currentPage": 2 },
+                { "label": "Earning Member", "currentPage": 3 },
+                { "label": "Household Details", "currentPage": 4 },
+                { "label": "HH Monthly Income", "currentPage": 5 },
+                { "label": "HH Expenses", "currentPage": 6 },
+                { "label": "HH Liability", "currentPage": 7 },
+                { "label": "Loan Eligibility", "currentPage": 8 },
+                { "label": "Loan Details", "currentPage": 9 },
+                { "label": "Guarantor's Details", "currentPage": 10 },
+                { "label": "Insurance Details", "currentPage": 11 },
+                { "label": "Bank Details", "currentPage": 12 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "style":{
+        "background": "#fbfbfb",
+        "borderRadius": "14px",
+        "padding": "20px"      },
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": { "children": "Member Loan Cycle" },
+            "label_2": { "children": "" },
+            "label_3": { "children": "Loan Eligibility" },
+            "label_4": { "children": "" },
+            "label_5": { "children": "Loan Eligibility Check" },
+            "label_6": { "children": "" }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": { "children": "ROI" },
+            "label_2": { "children": "" },
+            "label_3": { "children": "Other Loan EMI" },
+            "label_4": { "children": "" }
+
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "label_1": { "children": "EMI Eligibility" },
+            "label_2": { "children": "" },
+            "label_3": { "children": "Tenure" },
+            "label_4": { "children": "" }
+            
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "LoanType",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "dropDown_1": {
+              "options": "",
+              "select": "",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "Loan Product",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "dropDown_2": {
+              "options": "",
+              "select": "",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_3": {
+              "children": "Tenure",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "dropDown_3": {
+              "options": "",
+              "select": "",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Loan Purpose",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "dropDown_4": {
+              "options": "",
+              "select": "",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": " Loan Product Code",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "dropDown_2": {
+              "options": "",
+              "select": "",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_3": {
+              "children": "AO Approval Status",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "dropDown_3": {
+              "options": "",
+              "select": "",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_4": {
+      "col_1": {
+        "Fields": [
+          {
+              "iconButton": {
+                  "icon": "",
+                  "label": "Check Loan Eligibility",
+                  "type":"NormalButton"
+                }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "iconButton": {
+              "icon": "",
+              "label": "Loan Options",
+              "type":"NormalButton"
+            }
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Save & Next"
+            }
+          }
+        ]
+      }
+    }
+  }
+  }]
+}

@@ -1,0 +1,841 @@
+{
+    "MasterItSetup":[{
+      "table":[
+        {
+            "name": "Mast_ItSetup_API",
+            "Alias":"T1",
+            "type":"select"
+        },
+        {
+          "name": "Mast_ItSetup_API",
+          "Alias":"T2",
+          "type":"insert"
+       },
+       {
+        "name": "Mast_Water_info",
+        "Alias":"T5",
+        "type":"select"
+     },
+     
+       {
+        "name": "Mast_ItSetup_API",
+        "Alias": "T3",
+        "type": "select",
+        "depends": [
+          "$T3_Row[0]$"
+        ],
+        "wherecolumnname": "$Txn_id$"
+      }
+        ],
+  "Section_1":{
+        "css":"/Formstyles.css",
+      
+        "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "table": {
+                    "title": "IT Setup",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["","Password Min Length","Password Max Length","Password Never Expires","Password Expiration Period","Prompt for change of password before ","No.of Unsuccessful Attepmts for Userlock","Enforce Password History For","SMS for Password Change","SMS for New User","SMS for User De-Activation","Require Otp for Logi In","Require Otp for Password Change","Allow user access within Permissable time","Do not allow Multiple login's","Force Users to Change Password on First use","Actions"],
+                    "rowVar": ["$T1#Txn_id$", "$T1#PasswordMinLength$","$T1#PasswordMaxLength$","$T1#PasswordNeverExpires$","$T1#PasswordExpirationperiod$","$T1#Promptforchangeofpasswordbefore$", "$T1#NoofunsuccessfulAttempsforUserLock$","$T1#EnforcePasswordHistory$","$T1#SMSforPasswordChange$","$T1#SMSfornewUser$","$T1#SMSforuserDeActivation$","$T1#RequireOTPforLogin$","$T1#RequireOTPforPasswordChange$","$T1#AllowuseraccesswithinPermissabletime$","$T1#DonotallowMultiplelogins$","$T1#ForceUserstoChangePasswordonFirstuse$"],
+                    "rowTypes": ["","","", "","","","","","status"],
+                    "rowVisible": ["false","false","true","true","false", "false","false","false", "true"],
+                    "rowFilter": ["false","","true","true","", "","", "", "false"],
+                    "rowFilterType": ["text","","dropdown","text", "", "","",""],
+                    "rowFilterValues": [
+                      "", "",
+                      ["VP", "AO", "AM"],
+                     "",
+                     "","","",""
+                    ]
+                  }
+                }
+              ]
+            }
+                 }
+  },
+  
+    "Page_1": {
+      "Row_1": {
+        "col_1": {
+          "Fields": [
+            {
+              "title": {
+                "label": "IT Setup",
+                "style": {
+                  "background": "rgb(161, 197, 205)",
+                  "color": "white",
+                  "textAlign": "center",
+                  "padding": "10px",
+                  "fontSize": "18px",
+                  "fontWeight": "bold"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Row_2": {
+       
+        "col_1": {
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "alignItems": "center",
+            "gap": "15px",
+            "padding": "10px"
+          },
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Password Min Length"
+              },
+              "text_2": {
+                "placeholder": "Enter Code",
+                "value": "$T2#PasswordMinLength$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_2": {
+                "children": "Password Max Length"
+              },
+              "text_3": {
+                "placeholder": "Enter Code",
+                "value": "$T2#PasswordMaxLength$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+            "label_3": {
+              "children": "Password Never Expires"
+            },
+            "dropDown_2": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T2#MURP_Add$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+              "label_4": {
+                "children": "Password Expiration Period "
+              },
+              "text_4": {
+                "placeholder": "Enter Code",
+                "value": "$T2#PasswordExpirationperiod$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_5": {
+                "children": "Prompt for change of password before "
+              },
+              "text_5": {
+                "placeholder": "Enter Code",
+                "value": "$T2#Promptforchangeofpasswordbefore$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_6": {
+                "children": "No.of Unsuccessful Attepmts for Userlock"
+              },
+              "text_6": {
+                "placeholder": "Enter Code",
+                "value": "$T2#NoofunsuccessfulAttempsforUserLock$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_8": {
+                "children": "Enforce Password History For"
+              },
+              "text_8": {
+                "placeholder": "Enter Code",
+                "value": "$T2#EnforcePasswordHistory$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_7": {
+                "children": "SMS for Password Change "
+              },
+              "dropDown_7": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T2#SMSforPasswordChange$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "alignItems": "center",
+            "gap": "15px",
+            "padding": "10px"
+          },
+          "Fields": [
+            {
+           
+              "label_9": {
+                "children": "SMS for New User"
+              },
+              "dropDown_9": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T2#SMSfornewUser$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_1": {
+                "children": "SMS for User De-Activation"
+              },
+              "dropDown_1": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T2#SMSforuserDeActivation$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_2": {
+                "children": "Require Otp for Logi In "
+              },
+              "dropDown_2": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T2#RequireOTPforLogin$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+            "label_3": {
+              "children": "Require Otp for Password Change"
+            },
+            "dropDown_3": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T2#RequireOTPforPasswordChange$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+              "label_4": {
+                "children": "Allow user access within Permissable time  "
+              },
+              "dropDown_4": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T2#AllowuseraccesswithinPermissabletime$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_5": {
+                "children": "Do not allow Multiple login's "
+              },
+              "dropDown_5": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T2#DonotallowMultiplelogins$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_6": {
+                "children": "Force Users to Change Password on First use"
+              },
+              "dropDown_6": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T2#ForceUserstoChangePasswordonFirstuse$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Row_3": {
+        "col_1": {
+          "style": {
+            "display": "flex",
+            "justifyContent": "center",
+            "gap": "15px",
+            "marginTop": "20px"
+          },
+          "Fields": [
+            {
+              "EventButton": {
+                "label": "Submit",
+                "style": {
+                  "backgroundColor": "#4a90e2",
+                  "color": "white",
+                  "padding": "10px 20px",
+                  "border": "none",
+                  "borderRadius": "5px",
+                  "cursor": "pointer",
+                  "fontSize": "16px"
+                }
+              },
+              "EventButton_1": {
+                "label": "Cancel",
+                "style": {
+                  "backgroundColor": "#4a90e2",
+                  "color": "white",
+                  "padding": "10px 20px",
+                  "border": "none",
+                  "borderRadius": "5px",
+                  "cursor": "pointer",
+                  "fontSize": "16px"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Page_2": {
+      "Row_1": {
+        "col_1": {
+          "Fields": [
+            {
+              "title": {
+                "label": "IT Setup",
+                "style": {
+                  "background": "rgb(161, 197, 205)",
+                  "color": "white",
+                  "textAlign": "center",
+                  "padding": "10px",
+                  "fontSize": "18px",
+                  "fontWeight": "bold"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Row_2": {
+       
+        "col_1": {
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "alignItems": "center",
+            "gap": "15px",
+            "padding": "10px"
+          },
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Password Min Length"
+              },
+              "text_2": {
+                "placeholder": "Enter Code",
+                "value": "$T3#PasswordMinLength$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_2": {
+                "children": "Password Max Length"
+              },
+              "text_3": {
+                "placeholder": "Enter Code",
+                "value": "$T3#PasswordMaxLength$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+            "label_3": {
+              "children": "Password Never Expires"
+            },
+            "dropDown_2": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#MURP_Add$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+              "label_4": {
+                "children": "Password Expiration Period "
+              },
+              "text_4": {
+                "placeholder": "Enter Code",
+                "value": "$T3#PasswordExpirationperiod$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_5": {
+                "children": "Prompt for change of password before "
+              },
+              "text_5": {
+                "placeholder": "Enter Code",
+                "value": "$T3#Promptforchangeofpasswordbefore$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_6": {
+                "children": "No.of Unsuccessful Attepmts for Userlock"
+              },
+              "text_6": {
+                "placeholder": "Enter Code",
+                "value": "$T3#NoofunsuccessfulAttempsforUserLock$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_8": {
+                "children": "Enforce Password History For"
+              },
+              "text_8": {
+                "placeholder": "Enter Code",
+                "value": "$T3#EnforcePasswordHistory$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "alignItems": "center",
+            "gap": "15px",
+            "padding": "10px"
+          },
+          "Fields": [
+            {
+              "label_7": {
+                "children": "SMS for Password Change "
+              },
+              "dropDown_7": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T3#SMSforPasswordChange$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_9": {
+                "children": "SMS for New User"
+              },
+              "dropDown_9": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T3#SMSfornewUser$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_1": {
+                "children": "SMS for User De-Activation"
+              },
+              "dropDown_1": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T3#SMSforuserDeActivation$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_2": {
+                "children": "Require Otp for Logi In "
+              },
+              "dropDown_2": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T3#RequireOTPforLogin$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+            "label_3": {
+              "children": "Require Otp for Password Change"
+            },
+            "dropDown_3": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#RequireOTPforPasswordChange$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+              "label_4": {
+                "children": "Allow user access within Permissable time  "
+              },
+              "dropDown_4": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T3#AllowuseraccesswithinPermissabletime$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_5": {
+                "children": "Do not allow Multiple login's "
+              },
+              "dropDown_5": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T3#DonotallowMultiplelogins$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_6": {
+                "children": "Force Users to Change Password on First use"
+              },
+              "dropDown_6": {
+                "options": "$T5#Mast_Water_info$",
+                "select": "$T3#ForceUserstoChangePasswordonFirstuse$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Row_3": {
+        "col_1": {
+          "style": {
+            "display": "flex",
+            "justifyContent": "center",
+            "gap": "15px",
+            "marginTop": "20px"
+          },
+          "Fields": [
+            {
+              "EventButton": {
+                "label": "Submit",
+                "style": {
+                  "backgroundColor": "#4a90e2",
+                  "color": "white",
+                  "padding": "10px 20px",
+                  "border": "none",
+                  "borderRadius": "5px",
+                  "cursor": "pointer",
+                  "fontSize": "16px"
+                }
+              },
+              "EventButton_1": {
+                "label": "Cancel",
+                "style": {
+                  "backgroundColor": "#4a90e2",
+                  "color": "white",
+                  "padding": "10px 20px",
+                  "border": "none",
+                  "borderRadius": "5px",
+                  "cursor": "pointer",
+                  "fontSize": "16px"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+  
+  "Page_3": {
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "title": {
+              "label": "IT Setup",
+              "style": {
+                "background": "rgb(161, 197, 205)",
+                "color": "white",
+                "textAlign": "center",
+                "padding": "10px",
+                "fontSize": "18px",
+                "fontWeight": "bold"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+     
+      "col_1": {
+        "style": {
+          "display": "grid",
+          "gridTemplateColumns": "1fr 2fr",
+          "alignItems": "center",
+          "gap": "15px",
+          "padding": "10px"
+        },
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Password Min Length"
+            },
+            "text_2": {
+              "placeholder": "Enter Code",
+              "value": "$T3#PasswordMinLength$",
+              "type": "text",
+              "validation": {
+                "required": true,
+                "pattern": "^[a-zA-Z ]+$"
+              }
+            },
+            "label_2": {
+              "children": "Password Max Length"
+            },
+            "text_3": {
+              "placeholder": "Enter Code",
+              "value": "$T3#PasswordMaxLength$",
+              "type": "text",
+              "validation": {
+                "required": true,
+                "pattern": "^[a-zA-Z ]+$"
+              }
+            },
+          "label_3": {
+            "children": "Password Never Expires"
+          },
+          "dropDown_2": {
+            "options": "$T5#Mast_Water_info$",
+            "select": "$T3#MURP_Add$",
+            "defaultOption": "Select option",
+            "validation": {
+              "required": true
+            }
+          },
+            "label_4": {
+              "children": "Password Expiration Period "
+            },
+            "text_4": {
+              "placeholder": "Enter Code",
+              "value": "$T3#PasswordExpirationperiod$",
+              "type": "text",
+              "validation": {
+                "required": true,
+                "pattern": "^[a-zA-Z ]+$"
+              }
+            },
+            "label_5": {
+              "children": "Prompt for change of password before "
+            },
+            "text_5": {
+              "placeholder": "Enter Code",
+              "value": "$T3#Promptforchangeofpasswordbefore$",
+              "type": "text",
+              "validation": {
+                "required": true,
+                "pattern": "^[a-zA-Z ]+$"
+              }
+            },
+            "label_6": {
+              "children": "No.of Unsuccessful Attepmts for Userlock"
+            },
+            "text_6": {
+              "placeholder": "Enter Code",
+              "value": "$T3#NoofunsuccessfulAttempsforUserLock$",
+              "type": "text",
+              "validation": {
+                "required": true,
+                "pattern": "^[a-zA-Z ]+$"
+              }
+            },
+            "label_8": {
+              "children": "Enforce Password History For"
+            },
+            "text_8": {
+              "placeholder": "Enter Code",
+              "value": "$T3#EnforcePasswordHistory$",
+              "type": "text",
+              "validation": {
+                "required": true,
+                "pattern": "^[a-zA-Z ]+$"
+              }
+            },
+            "label_9": {
+              "children": "SMS for Password Change "
+            },
+            "dropDown_3": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#SMSforPasswordChange$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_7": {
+              "children": "SMS for New User"
+            },
+            "dropDown_4": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#SMSfornewUser$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "style": {
+          "display": "grid",
+          "gridTemplateColumns": "1fr 2fr",
+          "alignItems": "center",
+          "gap": "15px",
+          "padding": "10px"
+        },
+        "Fields": [
+          {
+            "label_1": {
+              "children": "SMS for User De-Activation"
+            },
+            "dropDown_1": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#SMSforuserDeActivation$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "Require Otp for Logi In "
+            },
+            "dropDown_2": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#RequireOTPforLogin$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+          "label_3": {
+            "children": "Require Otp for Password Change"
+          },
+          "dropDown_3": {
+            "options": "$T5#Mast_Water_info$",
+            "select": "$T3#RequireOTPforPasswordChange$",
+            "defaultOption": "Select option",
+            "validation": {
+              "required": true
+            }
+          },
+            "label_4": {
+              "children": "Allow user access within Permissable time  "
+            },
+            "dropDown_4": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#AllowuseraccesswithinPermissabletime$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_5": {
+              "children": "Do not allow Multiple login's "
+            },
+            "dropDown_5": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#DonotallowMultiplelogins$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            },
+            "label_6": {
+              "children": "Force Users to Change Password on First use"
+            },
+            "dropDown_6": {
+              "options": "$T5#Mast_Water_info$",
+              "select": "$T3#ForceUserstoChangePasswordonFirstuse$",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "col_1": {
+        "style": {
+          "display": "flex",
+          "justifyContent": "center",
+          "gap": "15px",
+          "marginTop": "20px"
+        },
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Submit",
+              "style": {
+                "backgroundColor": "#4a90e2",
+                "color": "white",
+                "padding": "10px 20px",
+                "border": "none",
+                "borderRadius": "5px",
+                "cursor": "pointer",
+                "fontSize": "16px"
+              }
+            },
+            "EventButton_1": {
+              "label": "Cancel",
+              "style": {
+                "backgroundColor": "#4a90e2",
+                "color": "white",
+                "padding": "10px 20px",
+                "border": "none",
+                "borderRadius": "5px",
+                "cursor": "pointer",
+                "fontSize": "16px"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+  
+  }]
+  }

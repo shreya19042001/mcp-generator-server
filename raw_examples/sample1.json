@@ -1,0 +1,41 @@
+{
+  "sample1": {
+    "css": "/Formstyles.css",
+    "sections": [
+      {
+        "Fileds": [
+          [
+            {
+              "image": {
+                "imageUrl": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/search-user.png",
+                "title": "sample1"
+              }
+            },
+            {
+              "dropDown": {
+                "name": "documentType",
+                "dropdownLabel": "Select Document Type",
+                "dropdownPlaceholder": "Choose a document",
+                "dropdownOptions": ["Passport", "Driver's License", "Utility Bill", "Bank Statement"]
+              }
+            },
+            {
+              "text": {
+                "name": "text",
+                "Label": "Enter text",
+                "Placeholder": "Enter Details"
+              }
+            },
+            
+            {
+              "nextbutton": {
+                "name": "next",
+                "Label": "Next"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "MasterUserrole":[{
+    "options":[],
+ 
+    "table":[
+      {
+          "name": "Common_Options",
+          "Alias":"T1",
+          "type":"select"
+      },
+      {
+        "name": "Common_Options ",
+        "Alias":"T2",
+        "type":"select",
+        "depends":["$T4#ParentID$"],
+        "wherecolumnname":["$ParentID$"]
+
+
+     },
+     {
+      "name": "Common_Options ",
+      "Alias":"T4",
+      "type":"insert"
+   },
+     {
+      "name": "Common_Options",
+      "Alias": "T3",
+      "type": "select",
+      "depends": [
+        "$T3_Row[0]$"
+      ],
+      "wherecolumnname": "$Txn_id$"
+    }
+      ],
+"Section_1":{
+      "css":"/Formstyles.css",
+      "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "options"
+                 
+                },
+                "search": {
+                  "name": "",
+                  "placeholder": "Enter table",
+                  "options": ["$T1#OptionValue$","$T1#ID$"],
+                  "Select":"$T4#ParentID$",
+                  "defaultOption": "search", 
+                  "validation": {
+                    "required": true
+                    }
+    },
+                "table": {
+                  "title": "Options screen",
+                  "addButtonLabel": "+ Add New",
+                  "Rowvalues": "$T3_Row$",
+                  "columnTitles": ["options",  "SequenceID"],
+                  "rowVar": ["$T2#OptionValue$", "$T2#SequenceID$"],
+                  "rowTypes": ["", "","", "status"],
+                  "rowVisible": ["true","true", "true"],
+                  "rowFilter": ["true","true", "true"],
+                  "rowFilterType": ["text", "text", "text"],
+                  "rowFilterValues": [
+                    "", 
+                    "",
+                   ""
+                  ]
+                }
+              }
+            ]
+          }
+               }
+},
+"Page_1": {
+  "Row_1": {
+    "col_1": {
+      "Fields": [
+        {
+          "title": {
+            "label": "options",
+            "style": {
+              "background": "rgb(161, 197, 205)",
+              "color": "white",
+              "textAlign": "center",
+              "padding": "10px",
+              "fontSize": "18px",
+              "fontWeight": "bold"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "Row_2": {
+    "col_1": {
+      "style": {
+        "display": "grid",
+        "gridTemplateColumns": "1fr 2fr",
+        "alignItems": "center",
+        "gap": "15px",
+        "padding": "10px"
+      },
+      "Fields": [
+        {
+          "label_1": {
+            "children": "options"
+          },
+          "text_1": {
+            "placeholder": "",
+            "value": "$T4#OptionValue$",
+            "setvalue":"",
+            "type": "text"
+        
+          },
+          "label_2": {
+            "children": "SequenceID"
+          },
+          "text_2": {
+            "placeholder": "",
+            "value": "$T4#SequenceID$",
+            "setvalue":"",
+            "type": "text"
+            
+          }
+     
+        
+        }
+      ]
+    }
+  },
+  "Row_3": {
+    "col_1": {
+      "style": {
+        "display": "flex",
+        "justifyContent": "center",
+        "gap": "15px",
+        "marginTop": "20px"
+      },
+      "Fields": [
+        {
+          "EventButton": {
+            "label": "Submit",
+            "command":"NextPage",
+            "style": {
+              "backgroundColor": "#4a90e2",
+              "color": "white",
+              "padding": "10px 20px",
+              "border": "none",
+              "borderRadius": "5px",
+              "cursor": "pointer",
+              "fontSize": "16px"
+            }
+          },
+          "EventButton_1": {
+            "label": "Cancel",
+            "style": {
+              "backgroundColor": "#4a90e2",
+              "color": "white",
+              "padding": "10px 20px",
+              "border": "none",
+              "borderRadius": "5px",
+              "cursor": "pointer",
+              "fontSize": "16px"
+            }
+          }
+        }
+      ]
+    }
+  }
+},
+"Page_2": {
+  "Row_1": {
+    "col_1": {
+      "Fields": [
+        {
+          "title": {
+            "label": "User Role",
+            "style": {
+              "background": "rgb(161, 197, 205)",
+              "color": "white",
+              "textAlign": "center",
+              "padding": "10px",
+              "fontSize": "18px",
+              "fontWeight": "bold"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "Row_2": {
+    "col_1": {
+      "style": {
+        "display": "grid",
+        "gridTemplateColumns": "1fr 2fr",
+        "alignItems": "center",
+        "gap": "15px",
+        "padding": "10px"
+      },
+      "Fields": [
+        {
+          "label_1": {
+            "children": "Code"
+          },
+          "text_1": {
+            "placeholder": "",
+            "value": "",
+            "setvalue":"$T3#UR_Code$",
+            "type": "text",
+            "validation": { "required": true,"pattern": "^[a-zA-Z ]+$"}
+          },
+          "label_2": {
+            "children": "Description"
+          },
+          "text_2": {
+            "placeholder": "",
+            "value": "",
+            "setvalue":"$T3#UR_Desctiption$",
+            "type": "text",
+            "validation": { "required": true,"pattern": "^[a-zA-Z ]+$"}
+          }
+        }
+      ]
+    }
+  },
+  "Row_3": {
+    "col_1": {
+      "style": {
+        "display": "flex",
+        "justifyContent": "center",
+        "gap": "15px",
+        "marginTop": "20px"
+      },
+      "Fields": [
+        {
+          "EventButton": {
+            "label": "Submit",
+            "command":"NextPage",
+            "style": {
+              "backgroundColor": "#4a90e2",
+              "color": "white",
+              "padding": "10px 20px",
+              "border": "none",
+              "borderRadius": "5px",
+              "cursor": "pointer",
+              "fontSize": "16px"
+            }
+          },
+          "EventButton_1": {
+            "label": "Cancel",
+            "style": {
+              "backgroundColor": "#4a90e2",
+              "color": "white",
+              "padding": "10px 20px",
+              "border": "none",
+              "borderRadius": "5px",
+              "cursor": "pointer",
+              "fontSize": "16px"
+            }
+          }
+        }
+      ]
+    }
+  }
+},
+"Page_3": {
+  "css": "/Formstyles.css",
+  "Row_1": {
+    "col_1": {
+      "Fields": [
+        {
+          "title": {
+            "label": "Confirm",
+            "style": {
+              "background": "rgb(161 197 205)",
+              "color": " white"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "Row_2": {
+    "col_1": {
+      "Fields": [
+        {
+          "label_1": {
+            "children": "Are you sure you want to remove this Data ?"
+          }
+        }
+      ]
+    }
+  },
+  "Row_3": {
+    "col_1": {
+      "style": {
+        "display": "flex",
+        "flexWrap": "nowrap",
+        "justifyContent": "center",
+        "gap": " 15px"
+      },
+      "Fields": [
+        {
+          "EventButton": {
+            "label": "Cancel",
+            "className": "whiteButton",
+            "style": {}
+          },
+          "EventButton_1": {
+            "label": "Remove",
+            "className": "whiteButton",
+            "style": {}
+          }
+        }
+      ]
+    }
+  }
+}
+
+}]
+}

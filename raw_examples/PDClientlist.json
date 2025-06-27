@@ -1,0 +1,149 @@
+{
+    "PDClientlist": [{
+      "css": "/",
+      "section":{
+        "style":{
+          "marginTop":"60px",
+          "width":"80%"
+        },
+      "Row_1": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Select Village"
+              },
+              "dropDown_1": {
+                "options": [
+                  "Village1",
+                  "Village2",
+                  "Village3"
+                ],
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Select Center",
+                "style": {}
+              },
+              "dropDown_1": {
+                "options": [
+                  "Center1",
+                  "Center2",
+                  "Center3"
+                ],
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Row_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "FCO Name",
+              "style": {}
+            },
+            "dropDown_1": {
+              "options": [
+                "1",
+                "2",
+                "3"
+              ],
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "Row_3": {
+        "col_1": {
+          "Fields": [
+            {
+              "iconButton": {
+                "icon": "",
+                "label": "Reset",
+                "type": "NormalButton"
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "EventButton": {
+                "label": "Search"
+              }
+            }
+          ]
+        }
+      },
+    
+      "Row_5": {
+        "style":{
+          "background": "#fbfbfb",
+          "borderRadius": "14px",
+          "padding": "20px"      
+        },
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Applicant Name",
+                "style": {}
+              },
+              "label_4": {
+                "children": "Proposal Date",
+                "style": {}
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Spouse",
+                "style": {}
+              },
+              "label_2": {
+                "children": "Product Name",
+                "style": {}
+              }
+            }
+          ]
+        },
+        "col_3": {
+       
+          "Fields": [
+            {
+              "label_3": {
+                "children": "Voter ID",
+                "style": {}
+              },
+              "iconButton": {
+                "icon": "Visibility",
+                "label": "View Details",
+                "type": "ViewBreak"
+              }
+            }
+          ]
+        }
+      }
+    }
+    }]
+  }

@@ -1,0 +1,37 @@
+
+{
+    "AOHelpThumnailView":{
+        "Row_1": {
+          "style":{
+        "width": "75%"
+      },
+            "Fields":[{
+                "video": {
+                  "videos":[{
+                    "id": 1,
+                    "title": "Introduction to React",
+                    "description": "Learn the basics of React JS.",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrYbk_Ptn97a79NsOBj9EfgN7TWO0iFun-A&s.png?text=No+Video",
+                    "videoUrl": "https://youtu.be/eILUmCJhl64?si=OA-UjQ5WwaFtHFuv.mp4",
+                    "duration": "10:00"
+                  }]
+        
+                },
+                "video_1": {
+                  "videos":[{
+                    "id": 1,
+                    "title": "Introduction to Agri",
+                    "description": "Learn the basics of React JS.",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrYbk_Ptn97a79NsOBj9EfgN7TWO0iFun-A&s.png?text=No+Video",
+                    "videoUrl": "https://youtu.be/eILUmCJhl64?si=OA-UjQ5WwaFtHFuv.mp4",
+                    "duration": "10:00"
+                  }]
+        
+                }
+              }]
+          
+        }
+
+}
+}
+

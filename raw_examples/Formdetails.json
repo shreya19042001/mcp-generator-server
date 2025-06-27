@@ -1,0 +1,48 @@
+{
+  "Formdetails": {
+    "css": "/Formstyles.css",
+    "sections": [
+      {
+        "type": "form",
+        "fields": [
+          {
+            "name": "firstName",
+            "label": "First Name",
+            "type": "text"
+          },
+          {
+            "name": "lastName",
+            "label": "Last Name",
+            "type": "text"
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "name": "birthDate",
+            "label": "Birth Date",
+            "type": "date"
+          },
+          {
+            "name": "gender",
+            "label": "Gender",
+            "type": "radio",
+            "options": [
+              {
+                "value": "male",
+                "label": "Male"
+              },
+              {
+                "value": "female",
+                "label": "Female"
+              }
+            ]
+          }
+        ],
+        "buttonText": "Submit"
+      }
+    ]
+  }
+}

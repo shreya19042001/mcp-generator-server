@@ -1,0 +1,225 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "patternProperties": {
+    "^[A-Za-z0-9_-]+$": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "css": { "type": "string" },
+          "table": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "Alias": { "type": "string" },
+                "type": { "type": "string", "enum": ["select", "edit"] }
+              },
+              "required": ["name", "Alias", "type"]
+            }
+          },
+          "section": {
+            "type": "object",
+            "properties": {
+              "style": { "type": "object" },
+              "Row_1": { "$ref": "#/definitions/row" },
+              "Row": { "$ref": "#/definitions/accordionRow" }
+            },
+            "required": ["style"]
+          }
+        },
+        "required": ["css"]
+      }
+    }
+  },
+  "definitions": {
+    "row": {
+      "type": "object",
+      "patternProperties": {
+        "^col_[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "Fields": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "patternProperties": {
+                  "^label_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "children": { "type": "string" }
+                    },
+                    "required": ["children"]
+                  },
+                  "^text_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "placeholder": { "type": "string" },
+                      "value": { "type": "string" },
+                      "set": {
+                        "type": "string",
+                        "pattern": "^\\$[A-Za-z0-9]+#[A-Za-z0-9_]+\\$$"
+                      },
+                      "validation": { "type": "object" }
+                    },
+                    "required": ["value", "set"]
+                  },
+                  "^dropDown_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "options": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                      },
+                      "select": { "type": "string" },
+                      "set": {
+                        "type": "string",
+                        "pattern": "^\\$[A-Za-z0-9]+#[A-Za-z0-9_]+\\$$"
+                      },
+                      "validation": { "type": "object" }
+                    },
+                    "required": ["options", "set"]
+                  },
+                  "^img_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "images": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "label": { "type": "string" },
+                            "url": { "type": "string" }
+                          },
+                          "required": ["label", "url"]
+                        }
+                      }
+                    },
+                    "required": ["images"]
+                  },
+                  "^EventButton$": {
+                    "type": "object",
+                    "properties": {
+                      "label": { "type": "string" }
+                    },
+                    "required": ["label"]
+                  },
+                  "^tabs$": {
+                    "type": "object",
+                    "properties": {
+                      "pages": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "label": { "type": "string" },
+                            "currentPage": { "type": "integer" }
+                          },
+                          "required": ["label", "currentPage"]
+                        }
+                      }
+                    },
+                    "required": ["pages"]
+                  },
+                  "^card_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "labels": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "text": { "type": "string" },
+                            "className": { "type": "string" }
+                          },
+                          "required": ["text"]
+                        }
+                      },
+                      "fields": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                      },
+                      "formattype": {
+                        "type": "string",
+                        "enum": ["A", "B", "C"]
+                      },
+                      "style": { "type": "object" }
+                    },
+                    "required": ["labels", "fields", "formattype"]
+                  },
+                  "^iconButton_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "icon": { "type": "string" },
+                      "action": { "type": "string" },
+                      "tooltip": { "type": "string" }
+                    },
+                    "required": ["icon", "action"]
+                  },
+                  "^barGraph_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "title": { "type": "string" },
+                      "categories": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                      },
+                      "values": {
+                        "type": "array",
+                        "items": { "type": "number" }
+                      }
+                    },
+                    "required": ["title", "categories", "values"]
+                  },
+                  "^dateRange_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "label": { "type": "string" },
+                      "startDate": {
+                        "type": "string",
+                        "format": "date"
+                      },
+                      "endDate": {
+                        "type": "string",
+                        "format": "date"
+                      }
+                    },
+                    "required": ["label", "startDate", "endDate"]
+                  },
+                  "^pdfField_[0-9]+$": {
+                    "type": "object",
+                    "properties": {
+                      "label": { "type": "string" },
+                      "url": { "type": "string" }
+                    },
+                    "required": ["label", "url"]
+                  }
+                },
+                "minProperties": 1
+              }
+            }
+          },
+          "required": ["Fields"]
+        }
+      }
+    },
+    "accordionRow": {
+      "type": "object",
+      "patternProperties": {
+        "^accordion_[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "title": { "type": "string" },
+            "initialOpen": { "type": "boolean" },
+            "icon": { "type": "string" },
+            "Row_2": { "$ref": "#/definitions/row" },
+            "Row_3": { "$ref": "#/definitions/row" }
+          },
+          "required": ["title", "initialOpen", "icon"]
+        }
+      }
+    }
+  }
+}

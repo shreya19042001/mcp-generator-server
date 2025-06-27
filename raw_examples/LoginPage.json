@@ -1,0 +1,113 @@
+{
+  "LoginPage": [
+    {
+      "css": "/",
+      "section": {
+        "style": {
+          "display": "flex",
+          "flexDirection": "column",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "height": "100vh",
+          "width": "100%",
+          "background": "#f5f5f5"
+        },
+        "Row_1": {
+          "style": {
+            "display": "flex",
+            "width": "40%",
+            "borderRadius": "12px",
+            "border": "2px solid green",
+            "background": "#fff",
+            "flexWrap": "wrap",
+            "padding": "18px"
+          },
+          "col_2": {
+            "Row_2": {
+              "style": {},
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_0": {
+                      "image_1": {
+                        "image": "https://i.pinimg.com/736x/d3/4c/40/d34c40b18bce8cc14286e8d7081189ed.jpg",
+                        "style": {
+                          "fontFamily": "Roboto",
+                          "width": "140px",
+                          "height": "140px",
+                          "marginTop": "20px",
+                          "justifySelf": "center"
+                        }
+                      }
+                    },
+                    "label_1": {
+                      "children": "LOGIN",
+                      "style": {
+                        "display": "flex",
+                        "fontSize": "24px",
+                        "fontWeight": "bold",
+                        "marginBottom": "24px"
+                      }
+                    },
+                    "label_2": {
+                      "children": "Username"
+                    },
+                    "text_1": {
+                      "placeholder": "enter details ",
+                      "value": "",
+                      "validation": ""
+                    },
+                    "label_3": {
+                      "children": "Password"
+                    },
+                    "text_3": {
+                      "placeholder": "enter details ",
+                      "value": "",
+                      "validation": ""
+                    }
+                  }
+                ]
+              }
+            },
+            "Row_3": {
+              "style": {},
+              "col_1": {
+                "style": {
+                  "display": "flex"
+                },
+                "Fields": [
+                  {
+                    "checkbox": {}
+                  },
+                  {
+                    "iconButton_1": {
+                      "label": "Forgot Password?",
+                      "type": "ViewBreak",
+                      "style": {
+                        "position": "relative",
+                        "left": "1vw",
+                        "bottom": "6px"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "Row_4": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "EventButton": {
+                      "label": "Save & Next"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
+

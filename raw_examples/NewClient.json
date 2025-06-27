@@ -1,0 +1,63 @@
+{
+  "NewClient": {
+    "css": "/NewClient.css",
+    "sections": [
+      {
+        "type": "image",
+        "imageUrl": "https://res.cloudinary.com/dijjxaphj/image/upload/v1683193202/lhxghshri8z8kfmrgvaf.png",
+        "altText": "User Image"
+      },
+      {
+        "type": "header",
+        "text": "Sample Form"
+      },
+      {
+        "type": "form",
+        "fields": [
+          {
+            "type": "row",
+            "columns": [
+              [
+                {
+                  "type": "text",
+                  "name": "firstName",
+                  "Label": "First Name",
+                  "placeholder": "Enter your first name"
+                },
+                {
+                  "type": "text",
+                  "name": "lastName",
+                  "Label": "Last Name",
+                  "placeholder": "Enter your last name"
+                }
+              ],
+              [
+                {
+                  "type": "dropdown",
+                  "name": "gender",
+                  "Label": "Gender",
+                  "options": [
+                    {
+                      "label": "Male",
+                      "value": "male"
+                    },
+                    {
+                      "label": "Female",
+                      "value": "female"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "Label": "Submit",
+        "action": "submit",
+        "name": "submitButton"
+      }
+    ]
+  }
+}

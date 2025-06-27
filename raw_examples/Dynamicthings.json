@@ -1,0 +1,204 @@
+{
+  "Dashboard": {
+     
+      "sections": [
+          {
+              "css": "/Dashboard.css",
+              "sections": [
+                  {
+                      "Form": [
+                          {
+                              "css":"./form.css",
+                              "table": [
+                                  {
+                                      "name": "Mast_Branch_Info"
+                                  }
+                              ],
+                              "columns": [
+                                  {
+                                      "name": "BranchName",
+                                      "label": "Branch",
+                                      "type": "autocomplete",
+                                      "value": "",
+                                      "fields": [
+                                          "MBRI_Id",
+                                          "MBRI_Name"
+                                      ],
+                                      "storeid": "MBRI_Id"
+                                  }
+                              ]
+                          }
+                      ],
+                      "Table": [
+                          {                                
+                            "css":"./form.css",
+                              "table": [
+                                  {
+                                      "name": "Mast_Branch_Info",
+                                      "alias": "B",
+                                      "whereID": "MBRI_Id"
+                                  },
+                                  {
+                                      "name": "Mast_Village_Info",
+                                      "alias": "V",
+                                      "joinType": "JOIN",
+                                      "joinCondition": "V.MBRI_Id = B.MBRI_ID"
+                                  },
+                                  {
+                                      "name": "Mast_Center_Info",
+                                      "alias": "C",
+                                      "joinType": "JOIN",
+                                      "joinCondition": "C.MVI_ID = V.MVI_Id"
+                                  },
+                                  {
+                                      "name": "Mast_Group_Info",
+                                      "alias": "G",
+                                      "joinType": "JOIN",
+                                      "joinCondition": "G.MCI_Id = C.MCI_Id"
+                                  }
+                              ],
+                              "columns": [
+                                  {
+                                      "name": "Branch ID",
+                                      "label": "Branch ID",
+                                      "fields": "MBRI_Id",
+                                      "alias": "B",
+                                      "storeid": "B.MBRI_Id"
+                                  },
+                                  {
+                                      "name": "Branch name",
+                                      "label": "Branch name",
+                                      "fields": "B.MBRI_Name",
+                                      "alias": "B"
+                                  },
+                                  {
+                                      "name": "Village Id",
+                                      "label": "Village ID",
+                                      "fields": "V.MVI_Id",
+                                      "alias": "V",
+                                      "storeid": "MVI_Id"
+                                  },
+                                  {
+                                      "name": "Village Name",
+                                      "label": "Village Name",
+                                      "fields": "V.MVI_Name",
+                                      "alias": "V"
+                                  },
+                                  {
+                                      "name": "Group ID",
+                                      "label": "Group ID",
+                                      "fields": "G.MGI_Id",
+                                      "alias": "G",
+                                      "storeid": "MGI_Id"
+                                  },
+                                  {
+                                      "name": "Group Name",
+                                      "label": "Group Name",
+                                      "fields": "G.MGI_Name",
+                                      "alias": "G"
+                                  }
+                              ]
+                          }
+                      ],
+                      "Cards": [
+                          {
+
+                            "css":"./form.css",
+                            "table": [
+                              {
+                                "name": "ApplicationStatistics",
+                                "whereID": ["seasons"]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "",
+                            "imageUrl": "/images/application.png",
+                            "label": ["No of Applications"],
+                            "value": [""],
+                            "type": "card",
+                            "formattype": "B",
+                            "notifications": 2
+                          },
+                          {
+                            "name": "",
+                            "imageUrl": "/images/lafstatus.png",
+                            "label": ["LAF Status"],
+                            "value": [""],
+                            "type": "card",
+                            "formattype": "B"
+                          }
+                        ],
+                      "Cards": [
+                          {
+
+                            "css":"./form.css",
+                            "table": [
+                              {
+                                "name": "ApplicationStatistics",
+                                "whereID": ["seasons"]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "",
+                            "imageUrl": "/images/application.png",
+                            "label": ["No of Applications"],
+                            "value": [""],
+                            "type": "card",
+                            "formattype": "B",
+                            "notifications": 2
+                          },
+                          {
+                            "name": "",
+                            "imageUrl": "/images/lafstatus.png",
+                            "label": ["LAF Status"],
+                            "value": [""],
+                            "type": "card",
+                            "formattype": "B"
+                          }
+                        ],
+                      "Graph": [
+                          {
+                              "css":"./form.css",
+                              "table": [
+                                  {
+                                    "name": "StatisticsDashboardView",
+                                    "where": "id"
+                                  }
+                                ],
+                                "columns": [
+                                  {
+                                    "name": "xAxisData",
+                                    "label": "xAxisData",
+                                    
+                                    "value": "",
+                                    "fields": ["Month_Name"]
+                                    
+                                  },
+                                  {
+                                    "name": "seriesData",
+                                    "label": "seriesData",
+                                    
+                                    "value": "",
+                                    "fields": ["Disb_No","Rejected_No"]
+                                    
+                                  },
+                                  {
+                                    "name": "Linearline",
+                                    "label": "Linearline",
+                                    
+                                    "value": "",
+                                    "fields": ["LoanApplied_No"]
+                                    
+                                  }
+                                  
+                                ]
+                          }
+                      ]
+                  }
+              ]
+          }
+      ]
+  }
+}

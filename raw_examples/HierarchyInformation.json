@@ -1,0 +1,109 @@
+{
+    "HierarchyInformation": [{
+      "css": "/",
+  
+      "section":{
+        "style":{
+          "background": "rgb(255, 255, 255)",
+          "padding": "20px",
+          "width": "95%",
+          "borderRadius": "10px",
+          "marginTop": "10px"
+        },
+      "Row_1":{
+        "col_1":{
+          "Fields":[{
+            "title":{
+              "label":"Hierarchy Information"
+            }
+          }]
+        }
+      },
+        "section_1":{
+          "style":{
+            "padding": "20px",
+            "width":"90%"
+            
+          },
+          "Row_2": {
+           
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Level Creation"
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  },
+                  "label_2": {
+                    "children": "Name"
+                  },
+                  "text_1": {
+                    "Placeholder": "Enter Name",
+                    "setvalue": "",
+                    "value": "",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$",
+                      "message": "Name must only contain letters"
+                    }
+                  }
+                 
+                }
+              ]
+            },
+            "col_2":{
+            "Fields":[{
+              "label_3": {
+                "children": "Code"
+              },
+              "text_2": {
+                "Placeholder": "Enter Name",
+                "type":"number",
+                "setvalue": "",
+                "value": "",
+                "validation": {
+                  "required": true,
+                  "pattern": "",
+                  "message": "Name must only contain letters"
+                }
+              },
+              "label_4": {
+                "children": "Level Under"
+              },
+              "dropDown_2": {
+                "options": "",
+                "select": "",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true,
+                  "message": "Please select a valid option"
+                }
+              }
+            }]
+            }
+          },
+          "Row_3": {
+           
+            "col_1": {
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Save "
+                  }
+                }
+              ]
+            }
+          }
+        }
+        
+          }
+    }]
+  }

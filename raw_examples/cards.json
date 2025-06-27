@@ -1,0 +1,165 @@
+{
+  "cards": {
+    "css": "./cards.css",
+    "sections": [
+      {
+        "type": "form",
+        "table": [
+          {
+            "name": "ApplicationStatistics",
+            "whereID": ["seasons"]
+          }
+        ],
+        "columns": [
+          {
+            "className": "",
+            "section": [
+              {
+                "className": "",
+                "jsonobjects": [
+                  {
+                    "name": "branch info",
+                    "label": ["Branch Name", "Transaction Date", "Login Date and Time"],
+                    "value": ["", "", ""],
+                    "type": "info",
+                    "formattype": "A"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "section": [
+              {
+                "className": "",
+                "jsonobjects": [
+                 
+                  {
+                    "name": "",
+                    "imageUrl": "/images/application.png",
+                    "label": ["New Applications"],
+                    "value": [""],
+                    "type": "card",
+                    "formattype":"B",
+                    "CurrentPage": "1",
+                    "Module": "NA",
+                    "CommandType": "Next"
+                  },
+                  
+                  {
+                    "name": "",
+                    "imageUrl": "/images/lafstatus.png",
+                    "label": ["LAF Status"],
+                    "value": [""],
+                    "type": "card",
+                    "formattype":"B",
+                    "CurrentPage": "1",
+                    "Module": "LAF",
+                    "CommandType": "Next"
+                    
+                  },
+                  {
+                    "name": "",
+                    "imageUrl": "/images/check-list.png",
+                    "label": ["LUC Check"],
+                    "value": [""],
+                    "type": "card",
+                    "formattype":"B",
+                    "CurrentPage": "1",
+                    "Module": "LUC",
+                    "CommandType": "Next"
+                  },
+                  {
+                    "name": "",
+                    "imageUrl": "/images/village.png",
+                    "label": ["Village Addition"],
+                    "value": [""],
+                    "type": "card",
+                    "formattype": "B",
+                    "CurrentPage": "1",
+                    "Module": "VIL",
+                    "CommandType": "Next"                  
+                  },
+                  {
+                    "name": "",
+                    "imageUrl": "/images/cb.png",
+                    "label": ["BRE Status Data"],
+                    "value": [""],
+                    "type": "card",
+                    "formattype": "B",
+                    "CurrentPage": "1",
+                    "Module": "BRE",
+                    "CommandType": "Next"                  
+                  },
+                  {
+                    "name": "",
+                    "imageUrl": "/images/fee.png",
+                    "label": ["Fees and Charges"],
+                    "value": [""],
+                    "type": "card",
+                    "formattype": "B",
+                    "CurrentPage": "1",
+                    "Module": "FC",
+                    "CommandType": "Next"                  
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "section": [
+              {
+                "className": "",
+                "jsonobjects": [
+                  {
+                    "name": "no of applications",
+                    "label": ["no of applications", "Amount"],
+                    "fields": ["NoofApplications", "Amount_1"],
+                    "type": "card",
+                    "formattype": "C"
+                    
+                  },
+                  {
+                    "name": "Applications Sanctioned",
+                    "label": ["Applications Sanctioned", "Amount"],
+                    "fields": ["ApplicationsSanctioned", "Amount_2"],
+                    "type": "card",
+                    "formattype": "C"
+                  },
+                  {
+                    "name": "In process Clients",
+                    "label": ["In process Clients", "Amount"],
+                    "fields": ["InprocessClients", "Amount_3"],
+                    "type": "card",
+                    "formattype": "C"
+                  },
+                  {
+                    "name": "Disbursed Applicants",
+                    "label": ["Disbursed Applicants", "Amount"],
+                    "fields": ["DisbursedApplicants", "Amount_4"],
+                    "type": "card",
+                    "formattype": "C"
+                  },
+                  {
+                    "name": "Rejected Applications",
+                    "label": ["Rejected Applications", "Amount"],
+                    "fields": ["RejectedApplications", "Amount_5"],
+                    "type": "card",
+                    "formattype": "C"
+                  },
+                  {
+                    "name": "Active Clients",
+                    "label": ["Active Clients", "Amount"],
+                    "fields": ["ActiveClients", "Amount_6"],
+                    "type": "card",
+                    "formattype": "C"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

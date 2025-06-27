@@ -1,0 +1,279 @@
+{
+  "Dashboard": [{
+  "css": "/Cards.css",
+  "style":{
+  "maxWidth": "100%"
+  },
+  "section":{
+    "style":{
+      "maxWidth": "98%"
+      },
+    "Row_1": 
+{
+  "col_1":{
+  "Fields": [
+      {
+          "card_1": {
+            "labels": [
+              { "text": "Branch Name", "className": "left-section" },
+              { "text": "Transaction Date", "className": "right-section" },
+              { "text": "Login Date and Time", "className": "right-section" }
+            ],
+            "fields": ["A.MBRI_Name", "A.Transferdate", "A.Date"],
+            "formattype": "A",
+            "style": {
+              "width": "70%"
+            }
+          }
+        }
+  ]}
+}, "Row_2": 
+{
+    "col_1":{
+      "style":{"display": "flex", "flexWrap": "wrap","justifyContent": "space-around" },
+  "Fields": [
+    {
+      "card_1": {
+        "title": "New Applications",
+        "imageUrl": "/images/application.png",
+        "formattype": "B",
+        "pagenation": {
+        "CurrentPage": "1",
+        "Module": "28",
+        "CommandType": "Next",
+        "Extension":"main"
+      }
+      },
+      "card_2": {
+        "title": "LAF Status",
+        "imageUrl": "/images/lafstatus.png",
+        "formattype": "B",
+        "pagenation":{
+        "CurrentPage": "1",
+        "Module": "LAF",
+        "CommandType": "Next",
+        "Extension":"bottom"
+
+        }
+      },
+      "card_3": {
+        "title": "LUC Check",
+        "imageUrl": "/images/check-list.png",
+        "formattype": "B",
+        "pagenation":{
+        "CurrentPage": "1",
+        "Module": "LUC",
+        "CommandType": "Next",
+        "Extension":"bottom"
+
+        }
+      },
+      "card_4": {
+        "title": "Village Addition",
+        "imageUrl": "/images/village.png",
+        "formattype": "B",
+        "pagenation":{
+        "CurrentPage": "1",
+        "Module": "VIL",
+        "CommandType": "Next" ,
+        "Extension":"bottom"
+
+        }
+      },
+      "card_5": {
+        "title": "BRE Status Data",
+        "imageUrl": "/images/cb.png",
+        "formattype": "B",
+        "pagenation":{
+        "CurrentPage": "1",
+        "Module": "BRE",
+        "CommandType": "Next",
+        "Extension":"bottom"
+
+        }
+      },
+      "card_6": {
+        "title": "Fees and Charges",
+        "imageUrl": "/images/fee.png",
+        "formattype": "B",
+        "pagenation":{
+        "CurrentPage": "1",
+        "Module": "FC",
+        "CommandType": "Next" ,
+        "Extension":"bottom"
+
+        } 
+      }
+    }
+  ]}
+},
+"Row_3": 
+    {
+      "style":{
+      "marginTop": "11px"
+      },
+      "col_1":{
+        "style":{
+          "display": "flex","flexDirection": "row","flexWrap": "nowrap","justifyContent": "space-between","alignItems": "stretch","width": "100%","paddingLeft": "13px", "marginBottom": "-23px",
+          "background": "#fff","padding": "17px",    "borderRadius": "10px",    "boxShadow": "0 2px 5px rgba(0, 0, 0, 0.1)"
+      },
+      "Fields": [
+        {
+          "label": {
+            "children": "Insights",
+            "Label": "Insights",
+            "style": {
+              "fontWeight": "800",
+              "fontSize": "15px",
+              "borderRadius": "5px",
+              "alignSelf": "flex-start" 
+            }
+          },
+          "iconButton": {
+           "icon": "Refresh",
+            "label": "",
+            "type":"RefreshButton",
+            "style": {
+              "background":"none",
+              "color": "#afa5a5",
+              "marginTop": "-6px",
+              "position": "relative",
+              "right": "16vw"
+            }
+          },
+          "iconButton_1": {
+            "label": "MTD",
+            "type":"ViewBreak",
+            "style": {
+              "position": "relative",
+              "left": "34vw",
+              "bottom": "6px"
+            }
+          },
+          "iconButton_2": {
+            "label": "QTD",
+            "type":"ViewBreak",
+            "style": {
+              "position": "relative",
+              "left":" 16vw",
+              "bottom": "6px"
+            }
+          },
+          "iconButton_3": {
+            "label": "YTD",
+            "type":"ViewBreak",
+            "style": {
+              "position": "relative",
+              "left": "-2vw",
+              "bottom": "6px"
+            }
+          },
+          "insightName": "Key Insights",
+          "showRefreshIcon": true
+        }
+      ]}
+    },
+    "Row_4": 
+    {
+      "styles": {
+        "background": "#fff"
+      },
+      "table": [
+        {
+          "name": "ApplicationStatistics",
+          "alias": "B"
+        }
+      ],
+      "col_1":{
+        "style":{
+          "display": "flex",
+          "flexWrap": "wrap",
+          "justifyContent": "space-around" ,
+          "background": "#fff"     },
+      "Fields": [
+        {
+          "card_1": {
+            "labels": ["No of Applications", "Amount"],
+            "fields": ["136", "16320000"],
+            "formattype": "C"
+          },
+          "card_2": {
+            "labels": ["Applications Sanctioned", "Amount"],
+            "fields": ["90", "10800000"],
+            "formattype": "C"
+          },
+          "card_3": {
+            "labels": ["In process Clients", "Amount"],
+            "fields": ["136", "16320000"],
+            "formattype": "C"
+          },
+          "card_4": {
+            "labels": ["Disbursed Applicants", "Amount"],
+            "fields": ["136", "16320000"],
+            "formattype": "C"
+          },
+          "card_5": {
+            "labels": ["Rejected Applications", "Amount"],
+            "fields": ["136", "16320000"],
+            "formattype": "C"
+          },
+          "card_6": {
+            "labels": ["Active Clients", "Amount"],
+            "fields": ["136", "16320000"],
+            "formattype": "C"
+          }
+        }
+      ]}
+    },
+      "Row_5": 
+    {
+      "style": {
+        "width": "100%",
+        "textAlign": "-webkit-right",
+        "position": "relative",
+        "top": "30px" ,
+        "right": "12px"
+
+      },
+      "col_1":{
+        "style": {
+          "justifyItems": "self-end"
+
+        },
+      "Fields": [
+      
+      ]}
+    }, 
+     "Row_6": 
+    {
+      "style": {
+        "width": "100%",
+        "background": "#fff",
+        "borderRadius": "10px",
+         "boxShadow": "0 2px 5px rgba(0, 0, 0, 0.1)",
+         "marginTop": "-35px"
+
+      },
+      "col_1":{
+      "Fields": [
+        {
+          "barGraph": {
+            "data": [
+              { "label": "JAN", "value1": 45, "value2": 35 },
+              { "label": "F2B", "value1": 35, "value2": 20 },
+              { "label": "MAR", "value1": 18, "value2": 12 },
+              { "label": "APR", "value1": 40, "value2": 25 },
+              { "label": "MAY", "value1": 22, "value2": 15 },
+              { "label": "JUN", "value1": 47, "value2": 35 },
+              { "label": "JUL", "value1": 35, "value2": 28 }
+           
+            ]
+          }
+        }
+      ]}
+    }
+  }
+ 
+    
+  }]
+}

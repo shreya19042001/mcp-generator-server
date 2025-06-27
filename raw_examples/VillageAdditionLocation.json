@@ -1,0 +1,87 @@
+{
+  "VillageAdditionLocation": [{
+      "css": "/Formstyles.css",
+      "section":{
+        "style":{
+          "marginTop":"60px",
+          "width":"80%"
+        },
+      "Row_1": 
+          {
+              "styles": {
+                  "width": "40%"
+                },
+                "col_1":{
+              "Fields": [
+                  {
+                      
+                          "iconButton_2": {
+                            "icon": "LocationOn",  
+                            "label": "Get Location",
+                            "style": {
+                              "background": "white",
+                              "width": "100%",
+                              "marginTop": "6px",
+                              "borderRadius": "5px",
+                              "color": "rgb(70, 70, 163)" ,
+                              "border": "ridge"
+                            }
+                          }   
+                  }
+              ]}
+          },
+       "Row_2":{
+                      "col_1":{
+                        "Fields":[{
+
+                          "label_1": {
+                              "children": "latitude"
+                            },
+                            "label_4": {
+                              "children": "Address"
+                            }
+                      }] },
+                      "col_2":{
+                       "Fields":[{
+
+                          "label_2": {
+                              "children": "Longitide  "
+                            }
+                          
+                      }]},
+                      "col_3":{
+                      "Fields":[{
+
+                          "label_3": {
+                              "children": "Distance from Branch"
+                            }
+                          
+                          }]}
+        
+       },
+       "Row_3": {
+        "col_3":{
+          "Fields": [{
+            "map_1": {
+              "latitude": 37.7749,
+              "longitude": -122.4194,
+              "zoom": 12,
+              "mapContainerStyle": { "height": "400px", "width": "100%" }
+            }
+            }]}
+        },
+       "Row_4":{
+        "col_3":{
+
+          "Fields":[{
+              "EventButton": {
+                "command": "NextPage",
+
+                  "label": "Proceed"
+              }
+          }]}
+       }
+      }
+          
+   }]
+}

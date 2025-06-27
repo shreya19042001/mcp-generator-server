@@ -1,0 +1,120 @@
+{
+  "LabSampleTracking": [
+    {
+      "css": "./LabSampleStyles.css",
+      "table": [
+        {
+          "name": "SampleSubmit",
+          "Alias": "LS1",
+          "type": "select"
+        }
+      ],
+      "Section": {
+        "style": { "width": "85%" },
+
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Sample Information",
+                  "className": "section-heading"
+                }
+              },
+              {
+                "card_1": {
+                  "labels": [
+                    { "text": "Sample ID",    "className": "left-section"  },
+                    { "text": "Received On",  "className": "right-section" },
+                    { "text": "Sample Type",  "className": "right-section" }
+                  ],
+                  "fields": [
+                    "$LS1#SampleID$",
+                    "$LS1#ReceivedDate$",
+                    "$LS1#SampleType$"
+                  ],
+                  "formattype": "A",
+                  "style": { "width": "100%" }
+                }
+              }
+            ]
+          }
+        },
+
+        "Row": {
+          "style": { "gap": "20px" },
+
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_2": {
+                    "children": "Current Status",
+                    "className": "field-label"
+                  }
+                },
+                {
+                  "dropDown_1": {
+                    "options": ["Received", "In Process", "Completed", "Dispatched"],
+                    "binding": "$LS1#Status$"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_3": {
+                    "children": "Assigned Technician",
+                    "className": "field-label"
+                  }
+                },
+                {
+                  "dropDown_2": {
+                    "options": ["Dr. Mehta", "Dr. Rao", "Dr. Kapoor"],
+                    "binding": "$LS1#Technician$"
+                  }
+                }
+              ]
+            }
+          },
+
+          "Row_3": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_4": {
+                    "children": "Sample Progress (count vs completed)",
+                    "className": "section-heading"
+                  }
+                },
+                {
+                  "barGraph_1": {
+                    "data": [
+                      { "label": "Day 1", "value1": 20, "value2": 10 },
+                      { "label": "Day 2", "value1": 30, "value2": 20 },
+                      { "label": "Day 3", "value1": 40, "value2": 25 },
+                      { "label": "Day 4", "value1": 35, "value2": 30 }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+
+          "Row_4": {
+            "col_1": {
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Save Sample Details"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

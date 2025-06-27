@@ -1,0 +1,105 @@
+{
+    "KFSplatformDetails":[ {
+      "css": "/Formstyles.css",
+      
+      "Section":{
+        "style":{
+          "background":"#fff",
+          "padding": "20px",
+          "borderRadius": "10px",
+          "marginTop": "8px",
+          "width":"88%"
+
+      },
+      "Row_4":{
+        "col_1":{
+          "Fields":[{
+            "title":{
+              "label":"KFS Platform",
+              "style":{
+            
+              }
+            }
+          }]
+        }
+      },
+        "Row_1": {
+          "style":{
+          "padding": "20px"
+          },
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Product Type"
+                },
+                "dropDown_1": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "radio": {
+             
+                  "options": [
+                    { "value": "Loan", "text": "Loan" }
+                  ],
+                  "validation": {
+                    "required": true,
+                    "message": "Please select an option"
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+          
+               
+                "label_2": {
+                  "children": "Name"
+                },
+                "text": {
+                  "search": true,
+                  "value": "",
+                  "type": "number",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "radio": {
+             
+                  "options": [
+                    { "value": "Group", "text": "Group" }
+                  ],
+                  "validation": {
+                    "required": true,
+                    "message": "Please select an option"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2":{
+          "col_1": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Save "
+                }
+              }
+            ]
+          }
+        }
+
+      
+      }
+    }]
+  }
+  
+  
+  

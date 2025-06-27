@@ -1,0 +1,90 @@
+{
+    "UserGroupReportingServices":[{
+        "section":{
+            "style":{
+                "background":"#fff",
+                "padding": "20px",
+                "borderRadius": "10px",
+                "marginTop": "8px"
+            },
+            "Row_1": {
+                "styles": {},
+                "col_1": {
+                  "Fields": [
+                    {
+                      "tabs": {
+                        "pages": [
+                          {
+                            "label": "User Groups",
+                            "currentPage": 1
+                          },
+                          {
+                            "label": "Administration",
+                            "currentPage": 2
+                          },
+                          {
+                            "label": "Loans",
+                            "currentPage": 3
+                          },
+                          {
+                            "label": "Insurance",
+                            "currentPage": 4
+                          },
+                          {
+                            "label": "HRM",
+                            "currentPage": 5
+                          },
+                          {
+                            "label": "Grievance",
+                            "currentPage": 6
+                          },
+                          {
+                            "label": "Accounts",
+                            "currentPage": 7
+                          },
+                          {
+                            "label": "ReportingServices",
+                            "currentPage": 8
+                          },
+                          {
+                            "label": "MobilePrivileges",
+                            "currentPage": 9
+                          },
+                          {
+                            "label": "BC",
+                            "currentPage": 10
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "table": {
+                      "title": "Reporting Sevices",
+                      "addButtonLabel": "+ Add New",
+                      "Rowvalues": "$T3_Row$",
+                      "columnTitles": ["", "Code", "Name Of The Screen", "Add","Edit","View","Delete"],
+                      "rowVar": [["$T1#Txn_id$","", "User Management","", "","",""],
+                      ["$T1#Txn_id$","", "User Role","", "","",""]],
+                      "rowTypes": ["", "checkbox","", "checkbox","checkbox","checkbox","checkbox"],
+                      "rowVisible": ["false","true", "true", "true","true","true","true"],
+                      "rowFilter": ["false","", "", "","","",""],
+                      "rowFilterType": ["text", "dropdown", "text","","",""],
+                      "rowFilterValues": [
+                        "", 
+                       "",
+                       "","",","
+                      ]
+                    }
+                  }
+                ]
+              }
+                   }
+              }
+    }]
+}

@@ -1,0 +1,102 @@
+{
+    "LUCAllApplicationData": [{
+        "css": "/Formstyles.css",
+        "section":{
+        "Row_1": {
+            "col_1": {
+                "Fields": [
+                    {
+                        "label_1": {
+                            "children": "Center",
+                            "style": {
+                                "width": "",
+                                "marginBottom": "10px",
+                                "background": "rgb(241 241 245)",
+                                "height": "6ch",
+                                "padding": "13px",
+                                "borderRadius": "5px"
+                            }
+                        },
+                        "label_2": {
+                            "children": "C1",
+                            "style": {
+                                "width": "",
+                                "marginBottom": "10px",
+                                "background": "rgb(224, 224, 235)",
+                                "height": "6ch",
+                                "padding": "13px",
+                                "borderRadius": "5px",
+                                "marginTop": "-56px",
+                                "marginLeft": "89px"
+                            }
+                        }
+                    }
+                ]
+            },
+            "col_2": {
+                "Fields": [
+                    {
+                        "iconButton_2": {
+                            "icon": "Search",
+                            "label": "Search",
+                            "style": {
+                                "background": "rgb(224, 224, 235)",
+                                "width": "100%",
+                                "borderRadius": "5px",
+                                "padding": "13px"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "Row_2": {
+            "Fields": [
+                {
+                    "title": {
+                        "name": "Total Searched",
+                        "style": {
+                            "textAlignLast": "start"
+                        }
+                    }
+                }
+            ]
+        },
+        "Row_3": {
+            "col_1": {
+                "Fields": [
+                    {
+                        "label_1": {
+                            "children": "Application Name"
+                        },
+                        "label_2": {
+                            "children": "Center Name"
+                        }
+                    }
+                ]
+            },
+            "col_2": {
+                "Fields": [
+                    {
+                        "label_1": {
+                            "children": "Spouse"
+                        },
+                        "label_2": {
+                            "children": "Group Name"
+                        }
+                    }
+                ]
+            },
+            "col_3": {
+                "Fields": [
+                    {
+                        "label_1": {
+                            "children": "Voter Id"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+    }]
+}

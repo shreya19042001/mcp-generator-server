@@ -1,0 +1,223 @@
+{
+  "GRTJLG":[ {
+     "Section":{
+      "style":{
+        "width": "80%"
+      },
+    "Row_5": 
+    {
+      "style":{
+        "background": "#fbfbfb",
+        "borderRadius": "14px",
+        "padding": "20px"    
+        },
+                "col_1":{
+                 "Fields": [{
+
+                   "label_1": {"children": "Total Members in the group", "style": {}}
+
+                   }]
+                },
+                "col_2":{
+                 "Fields": [{
+
+                    "label_2": {"children": "Total Applied Amount ", "style": {}}
+                }]
+                },
+                "col_3":{
+                 "Fields": [{
+
+                    "label_3": {"children": "Total BM Recommended Amount ", "style": {}}
+                }]
+                }
+    },
+      "Row_1":{
+              "col_1":{
+
+               "Fields":[{
+                  "label_1": {
+                      "children": "GRT Date"
+                    },
+                    "date_1": {"placeholder": "Enter",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+
+                    "label_2": { "children": "Approved Loan Amount"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                    "label_3": { "children": "Fco Name"},
+                    "text_2": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },   "label_4": { "children": "Verified By"},
+                    "text_3": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    }
+
+                }]
+              },
+              "col_2":{
+               "Fields":[{
+
+                "label_1": {
+                  "children": "CGT Date"
+                },
+                "date_1": {"placeholder": "Enter",
+                "validation": {
+                  "required": true
+                }
+              },
+                "label_2": { "children": "PD Score"},
+                "text_1": {"placeholder": "Enter",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                
+                "label_3": { "children": "GRT Status"},
+                "dropDown_3": {"placeholder": "Enter",
+                "options": ["1", "2", "3"],
+                "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                }
+                }]
+              }
+        
+      },
+ 
+
+ "Row_4": {
+  "Fields": [ {
+    "label_8": { "children": "Remarks"},
+          "text": {"placeholder": "Enter Address", "style": {}}
+    }
+  ]
+},
+"Row_6": {
+  "Fields": [ {
+    "label_8": { "children": "Group Photo"},
+    "camera":{
+      "formatType":"Passbook"
+    }
+    }
+  ]
+},
+
+"accordion": {
+  "title": "Add PPI questions",
+  "initialOpen": true,
+  "icon": "plus",
+  "Row_2": {
+    "col_1": {
+      "Fields": [
+        {
+         
+          "label_1": { "children": "Select a Member" },
+          "dropDown_1": {
+            "options": ["Business", "Agriculture", "Other"],
+            "defaultOption": "Select option",
+            "validation": { "required": true, "message": "Please select a valid option" }
+          },
+          "label_2": { "children": "How many members are there in the household" },
+          "dropDown_2": {
+            "options": ["1", "2", "3"],
+            "defaultOption": "Select option",
+            "style": { "width": "100%" },
+            "validation": { "required": true}
+          },
+          "label_3": { "children": "What is the general education level of the female head spouse" },
+          "dropDown_3": {
+            "options": ["Business", "Agriculture", "Other"],
+            "defaultOption": "Select option",
+            "validation": { "required": true }
+          },
+          "label_4": { "children": "Does the household possess a refrigerator" },
+          "dropDown_4": {
+            "options": ["1", "2", "3"],
+            "defaultOption": "Select option",
+            "style": { "width": "100%" },
+            "validation": { "required": true }
+          },
+          "label_5": { "children": "Does the household possess a stove /gas burner " },
+          "dropDown_5": {
+            "options": ["Business", "Agriculture", "Other"],
+            "defaultOption": "Select option",
+            "validation": { "required": true}
+          },
+          "label_6": { "children": "Does the household possess a cooker/pressure pan? " },
+          "dropDown_6": {
+            "options": ["1", "2", "3"],
+            "defaultOption": "Select option",
+            "style": { "width": "100%" },
+            "validation": { "required": true }
+          },
+          "label_7": { "children": "Does the household possess a television " },
+          "dropDown_7": {
+            "options": ["1", "2", "3"],
+            "defaultOption": "Select option",
+            "style": { "width": "100%" },
+            "validation": { "required": true }
+          },   "label_8": { "children": "Does the household possess a electic fan " },
+          "dropDown_8": {
+            "options": ["1", "2", "3"],
+            "defaultOption": "Select option",
+            "style": { "width": "100%" },
+            "validation": { "required": true }
+          },
+          "label_9": { "children": "Does the household possess a almirah/dressing table " },
+          "dropDown_9": {
+            "options": ["1", "2", "3"],
+            "defaultOption": "Select option",
+            "style": { "width": "100%" },
+            "validation": { "required": true }
+          },
+          "label_10": { "children": "Does the household possess a chair,stoll,table or bench" },
+          "dropDown_10": {
+            "options": ["1", "2", "3"],
+            "defaultOption": "Select option",
+            "style": { "width": "100%" },
+            "validation": { "required": true }
+          },
+          "label_11": { "children": "Does the household possess a motor cycle,scooter, motorcar or jeep " },
+          "dropDown_11": {
+            "options": ["1", "2", "3"],
+            "defaultOption": "Select option",
+            "style": { "width": "100%" },
+            "validation": { "required": true }
+          }
+        }
+        
+      ]
+    }
+  }
+},
+"Row_8": 
+{
+  "col_1":  {
+  "Fields": [
+    {
+          "EventButton": {
+            "label": "Submit ",
+            "style": {"width":"100%"}
+          }
+        }]}
+     
+  
+}
+ 
+     }
+     
+        
+  }]
+}

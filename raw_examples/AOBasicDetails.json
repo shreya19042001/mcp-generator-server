@@ -1,0 +1,177 @@
+
+{
+  "AOBasicDetails": [{
+    "css": "",
+    "table": [
+      {
+        "name": "Mast_Member_Details_Info",
+        "Alias": "BBD",
+        "type": "select"
+      },
+      {
+        "name": "Mast_LoanRequst_Info",
+        "Alias": "BBD1",
+        "type": "select"
+      },
+      {
+        "name": "Basic_Details_Brrower_Info",
+        "Alias": "BBD2",
+        "type": "select"
+      }
+
+    ],
+    "section":{
+      "style":{
+        "width": "75%"
+      },
+      "Row_11": {
+        "col_1": {
+          "Fields": [
+            {
+              "tabs": {
+                "pages": [
+                  { "label": "Basic Details", "currentPage": 2 },
+                  { "label": "Earning Member", "currentPage": 3 },
+                  { "label": "Household Details", "currentPage": 4 },
+                  { "label": "HH Monthly Income", "currentPage": 5 },
+                  { "label": "HH Expenses", "currentPage": 6 },
+                  { "label": "HH Liability", "currentPage": 7 },
+                  { "label": "Loan Eligibility", "currentPage": 8 },
+                  { "label": "Loan Details", "currentPage": 9 },
+                  { "label": "Guarantor's Details", "currentPage": 10 },
+                  { "label": "Insurance Details", "currentPage": 11 },
+                  { "label": "Bank Details", "currentPage": 12 }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "Row_1": {
+      "col_1": {
+        "style": {
+          
+          "background": "#fbfbfb",
+          "padding": "20px"
+        },
+        "Fields": [
+          {
+            "image_1": {
+              "image": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/search-user.png",
+              "style": {
+                "fontFamily": "Roboto",
+                "width": "75px",
+                "height": "62px"
+              }
+            }
+            
+          }
+        ]
+      },
+      "col_2": {
+        "style": {
+          "background": "#fbfbfb"
+       
+        },
+        "Fields": [{
+          "label_1": {"children": " Name","style":{    "position": "relative",
+          "right": "80%"}},
+            "label_2": {"children": " $BBD#ApplicantName$","style":{    "position": "relative",
+          "right": "80%"}}
+
+        }]
+      }
+    },
+    "Row_2": 
+      {
+        "style":{
+          "background": "#fbfbfb",
+        
+          "padding": "20px",
+      "marginBottom": "15px"
+              },
+        "col_1":{
+        "Fields": [
+          {
+              "label_3": {"children": " Date Of Birth", "style": {}},
+              "label_4": {"children": " $BBD#AadharDOB$"},
+              "label_5": {"children": " Marital Status", "style": {}},
+              "label_6": {"children": " "},
+              "label_7": {"children": " Aadhaar Id", "style": {}},
+              "label_8": {"children": " $BBD#Mask_AadharID$"},
+              "label_9": {"children": " Spouse", "style": {}},
+              "label_10": {"children": " $BBD#Mem_SpouseNameAadhar$"},
+              "label_11": {"children": " Loan Purpose", "style": {}},
+              "label_12": {"children": " $BBD1#LoanPurposeId$"}
+          }
+        ]},
+        "col_2":{
+          "Fields": [
+            {
+                "label_1": {"children": " Age", "style": {}},
+              "label_2": {"children": ""},
+                "label_3": {"children": " Pan ID", "style": {}},
+              "label_4": {"children": "$BBD2#PanId$"},
+                "label_5": {"children": " Voter Id", "style": {}},
+              "label_6": {"children": " $BBD#VoterId$"}
+            }
+          ]},
+          "col_3":{
+              "Fields": [
+                {
+                    "label_1": {"children": " Gender", "style": {}},
+              "label_2": {"children": " $BBD#AadharGender$"},
+                    "label_3": {"children": " Applied Amount", "style": {}},
+              "label_4": {"children": " $BBD1#AppliedAmount$"},
+                    "label_5": {"children": " Mobile Number", "style": {}},
+              "label_6": {"children": " $BBD#MobileNumber$"},
+                    "label_7": {"children": " Father", "style": {}},
+              "label_8": {"children": " $BBD#Mem_FatherName$"}
+                }
+              ]}
+      },
+    "Row_3": 
+      {
+          "Fields":[{
+              "title": {"label": "Address details","style": {"width":"100%", "marginBottom": "10px", "background": "darkgray","padding": "10px","borderRadius": "5px", "display": "flex"}}
+            }]
+      },
+      "Row_4":{
+        "style":{
+          "background": "#fbfbfb",
+          "borderRadius": "14px",
+          "padding": "20px"      },
+          "col_1":{
+              "Fields": [
+                {
+                    "label_1": {"children": " Present Address", "style": {}},
+              "label_2": {"children": " $BBD#VoterAddress$"},
+                    "label_3": {"children": " Permanent Address", "style": {}},
+              "label_4": {"children": " $BBD#AadharAddress$"}
+                }
+              ]}
+      },
+      "Row_5":{
+        "col_1":{
+            "Fields": [
+              {
+                  "label_2": {"children": " KYC Images", "style": {}}
+              }
+            ]},
+            "col_2":{
+              "Fields": [
+                {
+                    "label_2": {"children": " Show Images", "style": {}}
+                }
+              ]}
+    },
+      "Row_6":{
+          "Fields":[{
+              "EventButton": {
+                  "label": "Save & Next"
+                }
+          }]
+      }
+    }
+  }]
+}

@@ -1,0 +1,141 @@
+{
+  "layoutStructure": {
+    "fileOrder": [
+      "topLevelKey (pageName)",
+      "[…] (array of pages)",
+      "css",
+      "table",
+      "Section",
+      "style",
+      "Row_* (dynamic)",
+      "col_* (dynamic)",
+      "accordion / tabs",
+      "Fields",
+      "<component objects>"
+    ],
+    "flow": [
+      "css",
+      "table",
+      "Section",
+      "style",
+      "Row_*",
+      "col_*",
+      "accordion_*",
+      "tabs",
+      "accordion",
+      "tabs_*",
+      "Fields",
+      "<component objects>"
+    ],
+    "rowPattern": "^(Row_|accordion_)[0-9]+$",
+    "columnPattern": "^col_[0-9]+$",
+    "accordionPattern": "^accordion(_[0-9]+)?$",
+    "tabsPattern": "^tabs(_[0-9]+)?$",
+    "fieldComponentPattern": "^(label|dropdown|text|date|daterange|checkbox|commentbox|camera|picture|radio|iconButton|image|img|updatednumber|search|textarea|EventButton|barGraph|table|card)(_\\d+)?$"
+  },
+
+  "defaults": {
+    "sectionStyleKeys": [
+      "alignItems","background","backgroundColor","border","borderRadius",
+      "boxShadow","color","display","flexDirection","flexWrap","gap",
+      "height","justifyContent","margin","padding","width"
+    ]
+  },
+
+  "components": {
+    "primitive": [
+      "camera","checkbox","commentbox","date","daterange","dropdown",
+      "header","iconButton","image","img","insightname","insightvalue",
+      "label","navbar","otp","picture","radio","schema","search",
+      "showrefreshicon","text","title","updatednumber","textarea","EventButton"
+    ],
+
+    "composite": [
+      "accordion","bargraph","card","map","popup","table","tabs","video","row"
+    ],
+
+    "requirements": {
+      "label_*":       ["children","style"],
+      "dropdown_*":    ["options","select","set","validation"],
+      "text_*":        ["placeholder","type","value","set","validation"],
+      "EventButton":   ["label","icon","className","style","command","type"],
+      "iconButton_*":  ["icon","label","style","type"],
+
+      "card_*": ["formattype"],
+
+      "card_A": ["labels","fields","formattype","style"],
+      "card_B": ["title","imageUrl","pagenation","formattype","style"],
+      "card_C": ["labels","fields","formattype","style"]
+    },
+
+    "cardFormats": {
+      "A": {
+        "formattype": "A",
+        "labels": "array<object:{text,className}>",
+        "fields": "array<string>",
+        "style": "optional"
+      },
+      "B": {
+        "formattype": "B",
+        "title": "string",
+        "imageUrl": "string",
+        "pagenation": {
+          "CurrentPage": "int",
+          "Module": "string",
+          "CommandType": "string",
+          "Extension": "string"
+        },
+        "style": "optional"
+      },
+      "C": {
+        "formattype": "C",
+        "labels": "array<string>",
+        "fields": "array<string|number>",
+        "style": "optional"
+      }
+    }
+  },
+
+  "hierarchyRules": {
+    "Section":   ["Row_*"],
+    "Row_*":     ["col_*","accordion_*","tabs","accordion","table"],
+    "col_*":     ["Fields"],
+    "accordion_*": ["Row_*","col_*"],
+    "tabs":      ["tabs_*","Row_*"]
+  },
+
+  "customRules": {
+    "labelAboveDropdown": "Within a single col_*, if a dropdown_* exists, a label_* entry must appear immediately before it in the Fields array.",
+    "eventButtonName": "Only EventButton (exact key) is valid—no dynamic suffixes.",
+    "cardTypeRule": "Every card_* must include 'formattype' of 'A', 'B', or 'C' and satisfy its corresponding required keys."
+  },
+
+  "aliasing": {
+    "wrapper": "$",
+    "separator": "#",
+    "format": [
+      "$<alias>#<column>$",
+      "$<alias>$",
+      "$get <alias>$",
+      "$<alias>#<column>,$<alias>_<column>$"
+    ]
+  },
+
+  "bindingPatterns": [
+    "^\\$[A-Za-z0-9]+[#_][A-Za-z0-9 /:_-]+\\$$",
+    "^\\$[A-Za-z0-9]+\\$$",
+    "^\\$[A-Za-z0-9]+[#_][A-Za-z0-9 /:_-]+,[A-Za-z0-9]+[#_][A-Za-z0-9 /:_-]+\\$$",
+    "^\\$[A-Za-z0-9]+,[A-Za-z0-9]+\\$$",
+    "^\\$[A-Za-z0-9]+[#_][A-Za-z0-9 /:_-]+,[A-Za-z0-9]+\\$$",
+    "^\\$[A-Za-z0-9]+,[A-Za-z0-9]+[#_][A-Za-z0-9 /:_-]+\\$$",
+    "^\\$get [^$]+\\$$",
+    "^\\$\\$$",
+    "^\\$\\$[A-Za-z0-9]+[#_][A-Za-z0-9 /:_-]+$",
+    "^\\$\\$[A-Za-z0-9]+[#_][A-Za-z0-9 /:_-]+\\$$"
+  ],
+
+  "pageIdentification": {
+    "type": "topLevelKey",
+    "description": "Root-level key names the page/form (dynamic)"
+  }
+}

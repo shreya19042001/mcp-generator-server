@@ -1,0 +1,810 @@
+{
+    "MasterUsercreation":[{
+      "table":[
+        {
+            "name": "Mast_User_Creation_API",
+            "Alias":"T1",
+            "type":"select"
+        },
+        {
+          "name": "Mast_User_Creation_API",
+          "Alias":"T2",
+          "type":"insert"
+       },
+       {
+        "name": "Mast_Water_info",
+        "Alias":"T5",
+        "type":"select"
+     },
+     
+       {
+        "name": "Mast_User_Creation_API",
+        "Alias": "T3",
+        "type": "select",
+        "depends": [
+          "$T3_Row[0]$"
+        ],
+        "wherecolumnname": "$Txnid$"
+      }
+        ],
+  "Section_1":{
+        "css":"/Formstyles.css",
+        "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "table": {
+                    "title": "User Creation",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["","Sourceing Partner", "Partner", "User Code","Password","Confrim Password","User Group","Access Start Time ","Access End Time ","Address line 1","Address line 2","Pincode","State","District","Village/City","MobileNumber","Email","Emergancy Contact Name","Phone Number","Relation","Status","In-Active Date", "Actions"],
+                    "rowVar": ["$T1#Txnid$","$T1#MUC_SourceingPartner$","$T1#MUC_Partner$","$T1#MUC_UserCode$", "$T1#MUC_Password$","$T1#MUC_ConfrimPassword$","$T1#MUC_UserGroup$","$T1#MUC_AccessStartTime$","$T1#MUC_AccessEndTime$","$T1#MUC_AddressLine1$","$T1#MUC_AddressLine2$","$T1#MUC_Pincode$","$T1#MUC_State$","$T1#MUC_District$","$T1#MUC_VillageorCity$","$T1#MUC_MobileNumber$","$T1#MUC_Email$","$T1#MUC_EmergancyContactName$","$T1#MUC_PhoneNumber$","$T1#MUC_Relation$","$T1#MUC_Status$","$T1#MUC_InActivationDate$", "$T1#Auth_Status$"],
+                    "rowTypes": ["","","", "","","","","","","","", "","","","","","","","","","","", "status"],
+                    "rowVisible": ["false","true","true","true","false", "false","false","false","false","false","false","false","false","false","false","false","false","false", "false","false","false","false", "true"],
+                    "rowFilter": ["false","","true","true","", "","", "", "false"],
+                    "rowFilterType": ["text","","dropdown","text", "", "","",""],
+                    "rowFilterValues": [
+                      "", "",
+                      ["VP", "AO", "AM"],
+                     "",
+                     "","","",""
+                    ]
+                  }
+                }
+              ]
+            }
+                 }
+  },
+  
+    "Page_1": {
+      "Row_1": {
+        "col_1": {
+          "Fields": [
+            {
+              "title": {
+                "label": "User Creation",
+                "style": {
+                  "background": "rgb(161, 197, 205)",
+                  "color": "white",
+                  "textAlign": "center",
+                  "padding": "10px",
+                  "fontSize": "18px",
+                  "fontWeight": "bold"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Row_2": {
+        "col_1": {
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "alignItems": "center",
+            "gap": "15px",
+            "padding": "10px"
+          },
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Sourceing Partner"
+              },
+              "dropDown_1": {
+                "options": "",
+                "select": "$T2#MUC_SourceingPartner$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_2": {
+                "children": "Partner"
+              },
+              "text_2": {
+                "placeholder": "Enter Partner",
+                "value": "$T2#MUC_Partner$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+            "label_3": {
+              "children": "User Code"
+            },
+              "text_3": {
+                "placeholder": "Enter User Code",
+                "value": "$T2#MUC_UserCode$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_4": {
+                "children": "Password"
+              },
+             "text_4": {
+                "placeholder": "Enter Password",
+                "value": "$T2#MUC_Password$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_5": {
+                "children": "Confrim Password"
+              },
+              "text_5": {
+                "placeholder": "Enter Password",
+                "value": "$T2#MUC_ConfrimPassword$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_6": {
+                "children": "User Group"
+              },
+              "text_6": {
+                "placeholder": "Enter User Group",
+                "value": "$T2#MUC_UserGroup$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_7": {
+                "children": "Access Start Time"
+              },
+              "text_7": {
+                "placeholder": "Enter Start Time",
+                "value": "$T2#MUC_AccessStartTime$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_8":{
+                "children":"Access End time"
+              },
+              "text_8": {
+                "placeholder": "Enter End time",
+                "value": "$T2#MUC_AccessEndTime$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_9":{
+                "children":"Address Line 1"
+              },
+              "text_9": {
+                "placeholder": "Enter Address",
+                "value": "$T2#MUC_AddressLine1$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_10":{
+                "children":"Address Line 2"
+              },
+              "text_10": {
+                "placeholder": "Enter Address",
+                "value": "$T2#MUC_AddressLine2$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_11":{
+                "children":"Pincode"
+              },
+              "text_11": {
+                "placeholder": "Enter Pincode",
+                "value": "$T2#MUC_Pincode$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "alignItems": "center",
+            "gap": "15px",
+            "padding": "10px"
+          },
+          "Fields": [
+            {
+              "label_1": {
+                "children": "State"
+              },
+              "text_1": {
+                "placeholder": "Enter State",
+                "value": "$T2#MUC_State$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_2": {
+                "children": "District"
+              },
+              "text_2": {
+                "placeholder": "Enter District",
+                "value": "$T2#MUC_District$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+            "label_3": {
+              "children": "Village/City"
+            },
+              "text_3": {
+                "placeholder": "Enter Village",
+                "value": "$T2#MUC_VillageorCity$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_4": {
+                "children": "Mobile Number"
+              },
+             "text_4": {
+                "placeholder": "Enter MobileNumber",
+                "value": "$T2#MUC_MobileNumber$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_5": {
+                "children": "Email"
+              },
+              "text_5": {
+                "placeholder": "Enter Email",
+                "value": "$T2#MUC_Email$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_6": {
+                "children": "Emergancy Contact Name"
+              },
+              "text_6": {
+                "placeholder": "Enter Emergancy Contact",
+                "value": "$T2#MUC_EmergancyContactName$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_7": {
+                "children": "Phone Number"
+              },
+              "text_7": {
+                "placeholder": "Enter PhoneNumber",
+                "value": "$T2#MUC_PhoneNumber$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_8":{
+                "children":"Relation"
+              },
+              "text_8": {
+                "placeholder": "Enter Relation",
+                "value": "$T2#MUC_Relation$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_9":{
+                "children":"Status"
+              },
+              "text_9": {
+                "placeholder": "Enter Status",
+                "value": "$T2#MUC_Status$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_10":{
+                "children":"In-Activation Date"
+              },
+              "date": {
+                "placeholder": "Select",
+                "value":"$T2#MUC_InActivationDate$",
+                "setvalue":"",
+                "validation": {
+                  "required": true
+                }}
+              
+            }
+          ]
+        }
+      },
+      "Row_3": {
+        "col_1": {
+          "style": {
+            "display": "flex",
+            "justifyContent": "center",
+            "gap": "15px",
+            "marginTop": "20px"
+          },
+          "Fields": [
+            {
+              "EventButton": {
+                "label": "Submit",
+                "style": {
+                  "backgroundColor": "#4a90e2",
+                  "color": "white",
+                  "padding": "10px 20px",
+                  "border": "none",
+                  "borderRadius": "5px",
+                  "cursor": "pointer",
+                  "fontSize": "16px"
+                }
+              },
+              "EventButton_1": {
+                "label": "Cancel",
+                "style": {
+                  "backgroundColor": "#4a90e2",
+                  "color": "white",
+                  "padding": "10px 20px",
+                  "border": "none",
+                  "borderRadius": "5px",
+                  "cursor": "pointer",
+                  "fontSize": "16px"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Page_2": {
+      "Row_1": {
+        "col_1": {
+          "Fields": [
+            {
+              "title": {
+                "label": "User Creation",
+                "style": {
+                  "background": "rgb(161, 197, 205)",
+                  "color": "white",
+                  "textAlign": "center",
+                  "padding": "10px",
+                  "fontSize": "18px",
+                  "fontWeight": "bold"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Row_2": {
+        "col_1": {
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "alignItems": "center",
+            "gap": "15px",
+            "padding": "10px"
+          },
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Sourceing Partner"
+              },
+              "dropDown_1": {
+                "options": "",
+                "select": "",
+                "set":"$T3#MUC_SourceingPartner$",
+                "defaultOption": "Select option",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_2": {
+                "children": "Partner"
+              },
+              "text_2": {
+                "placeholder": "Enter Partner",
+                "value": "",
+            "setvalue": "$T3#MUC_Partner$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+            "label_3": {
+              "children": "User Code"
+            },
+              "text_3": {
+                "placeholder": "Enter User Code",
+                "value": "",
+            "setvalue": "$T3#MUC_UserCode$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_4": {
+                "children": "Password"
+              },
+             "text_4": {
+                "placeholder": "Enter Password",
+                "value": "",
+            "setvalue": "$T3#MUC_Password$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_5": {
+                "children": "Confrim Password"
+              },
+              "text_5": {
+                "placeholder": "Enter Password",
+                "value": "",
+            "setvalue": "$T3#MUC_ConfrimPassword$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_6": {
+                "children": "User Group"
+              },
+              "text_6": {
+                "placeholder": "Enter User Group",
+                "value": "",
+            "setvalue": "$T3#MUC_UserGroup$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_7": {
+                "children": "Access Start Time"
+              },
+              "text_7": {
+                "placeholder": "Enter Start Time",
+                "value": "",
+            "setvalue": "$T3#MUC_AccessStartTime$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_8":{
+                "children":"Access End time"
+              },
+              "text_8": {
+                "placeholder": "Enter End time",
+                "value": "",
+            "setvalue": "$T3#MUC_AccessEndTime$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_9":{
+                "children":"Address Line 1"
+              },
+              "text_9": {
+                "placeholder": "Enter Address",
+                "value": "",
+            "setvalue": "$T3#MUC_AddressLine1$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_10":{
+                "children":"Address Line 2"
+              },
+              "text_10": {
+                "placeholder": "Enter Address",
+                "value": "",
+            "setvalue": "$T3#MUC_AddressLine2$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_11":{
+                "children":"Pincode"
+              },
+              "text_11": {
+                "placeholder": "Enter Pincode",
+                "value": "",
+            "setvalue": "$T3#MUC_Pincode$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "style": {
+            "display": "grid",
+            "gridTemplateColumns": "1fr 2fr",
+            "alignItems": "center",
+            "gap": "15px",
+            "padding": "10px"
+          },
+          "Fields": [
+            {
+              "label_1": {
+                "children": "State"
+              },
+              "text_1": {
+                "placeholder": "Enter State",
+                "value": "",
+                "setvalue": "$T3#MUC_State$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_2": {
+                "children": "District"
+              },
+              "text_2": {
+                "placeholder": "Enter District",
+                "value": "",
+            "setvalue": "$T3#MUC_District$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+            "label_3": {
+              "children": "Village/City"
+            },
+              "text_3": {
+                "placeholder": "Enter Village",
+                "value": "",
+            "setvalue": "$T3#MUC_VillageorCity$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_4": {
+                "children": "Mobile Number"
+              },
+             "text_4": {
+                "placeholder": "Enter MobileNumber",
+                "value": "",
+            "setvalue": "$T3#MUC_MobileNumber$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_5": {
+                "children": "Email"
+              },
+              "text_5": {
+                "placeholder": "Enter Email",
+                "value": "",
+            "setvalue": "$T3#MUC_Email$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_6": {
+                "children": "Emergancy Contact Name"
+              },
+              "text_6": {
+                "placeholder": "Enter Emergancy Contact",
+                "value": "",
+            "setvalue": "$T3#MUC_EmergancyContactName$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_7": {
+                "children": "Phone Number"
+              },
+              "text_7": {
+                "placeholder": "Enter PhoneNumber",
+                "value": "",
+            "setvalue": "$T3#MUC_PhoneNumber$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_8":{
+                "children":"Relation"
+              },
+              "text_8": {
+                "placeholder": "Enter Relation",
+                "value": "",
+            "setvalue": "$T3#MUC_Relation$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_9":{
+                "children":"Status"
+              },
+              "text_9": {
+                "placeholder": "Enter Status",
+                "value": "",
+            "setvalue": "$T3#MUC_Status$",
+                "type": "text",
+                "validation": {
+                  "required": true,
+                  "pattern": "^[a-zA-Z ]+$"
+                }
+              },
+              "label_10":{
+                "children":"In-Activation Date"
+              },
+              "date": {
+                "placeholder": "Select",
+                "value":"",
+            "setvalue": "$T3#MUC_InActivationDate$",
+                "validation": {
+                  "required": true
+                }}
+              
+            }
+          ]
+        }
+      },
+      "Row_3": {
+        "col_1": {
+          "style": {
+            "display": "flex",
+            "justifyContent": "center",
+            "gap": "15px",
+            "marginTop": "20px"
+          },
+          "Fields": [
+            {
+              "EventButton": {
+                "label": "Submit",
+                "style": {
+                  "backgroundColor": "#4a90e2",
+                  "color": "white",
+                  "padding": "10px 20px",
+                  "border": "none",
+                  "borderRadius": "5px",
+                  "cursor": "pointer",
+                  "fontSize": "16px"
+                }
+              },
+              "EventButton_1": {
+                "label": "Cancel",
+                "style": {
+                  "backgroundColor": "#4a90e2",
+                  "color": "white",
+                  "padding": "10px 20px",
+                  "border": "none",
+                  "borderRadius": "5px",
+                  "cursor": "pointer",
+                  "fontSize": "16px"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+  
+  "Page_3": {
+    "css": "/Formstyles.css",
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "title": {
+              "label": "Confirm",
+              "style": {
+                "background": "rgb(161 197 205)",
+                "color": " white"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Are you sure you want to remove this Data ?"
+            }
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "col_1": {
+        "style": {
+          "display": "flex",
+          "flexWrap": "nowrap",
+          "justifyContent": "center",
+          "gap": " 15px"
+        },
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Cancel",
+              "className": "whiteButton",
+              "style": {}
+            },
+            "EventButton_1": {
+              "label": "Remove",
+              "className": "whiteButton",
+              "style": {}
+            }
+          }
+        ]
+      }
+    }
+  }
+  
+  }]
+  }
+  

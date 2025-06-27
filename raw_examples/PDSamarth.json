@@ -1,0 +1,186 @@
+{
+    "PDSamarth":[ {
+    "section":{
+      "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+      "Row_1":  {
+        "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Applied  Amount"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                    "label_2": { "children": "Fco Name"},
+                    "text_2": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": { "children": "PD Status"},
+                    "dropDown_1": {
+                      "options": ["VoterID"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                 
+                    "label_1": { "children": "PD Date"},
+                    "date_1": {
+                    "validation": {
+                      "required": true
+                    }}, 
+                     "label_2": { "children": "PD Score"},
+                    "text_2": {"placeholder": "","type":"number",
+                    "validation": {
+                      "required": true
+                    }}
+                  }
+                ]
+              }} ,
+    "Row_3": {
+            "Fields": [ {
+              "label_8": { "children": "Remarks"},
+                    "text": {"placeholder": "Enter Address", "style": {}}
+              }
+            ]
+          },
+    "Row_4": {
+          "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Verified By"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                  
+                    "label_3": { "children": "Age of the CO-Applicant"},
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                  
+                    "label_5": { "children": "Residential Ownership     "},
+                    "dropDown_3": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                    ,
+                    "label_6": { "children": " Regularity in Saving            "},
+                    "dropDown_4": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_7": { "children": " Present income of the customer"},
+                    "dropDown_5": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_8": { "children": "  Literacy Levels        "},
+                    "dropDown_6": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+          "col_2":  {
+                  "Fields":[{
+                    "label_3": { "children": "Age of Applicant"},
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+  
+                    "label_5": { "children": "Enterpreneurship experience of the customer   "},
+                    "dropDown_3": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                 
+                    "label_7": { "children": "Size of the Existing Business"},
+                    "dropDown_5": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_8": { "children": "Proposed Investment "},
+                    "dropDown_6": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_9": { "children": " Source of Income"},
+                    "dropDown_7": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_10": { "children": " Transactions with banks and other financial institutions  "},
+                    "dropDown_8": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }} ,
+  
+    "Row_5": {
+                "Fields": [ {
+                  "label_8": { "children": "Live Stock Owned by the borrower"},
+                        "text": {"placeholder": "Select", "style": {}}
+                  }
+                ]
+              },
+    "Row_6": {
+                "Fields": [ {
+                  "EventButton": { "label": "Submit"}
+                  }
+                ]
+              }
+            }
+          }]
+    }
+  

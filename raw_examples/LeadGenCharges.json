@@ -1,0 +1,67 @@
+{
+    "LeadGenCharges":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "All Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Loan Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Documents Upload",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Charges",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Balance Transfer Details",
+                      "currentPage": 5
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+            {
+                "table": {
+                    "title": "Applicant Details",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["","Charge Type", "Charge Amount", "GST Amount","Collectable Fee","Time Of Collection","MR Date","Fee Collect Status","Document","Download Receipt"],
+                    "rowVar": [["","7576", "BOI", "Test","345345234","Group","34343","1992","Yes","Yes"]],
+                    "rowTypes": ["", "", "", "","","", "", "", "",""],
+                    "rowVisible": ["false", "true", "true", "true","true","true", "true", "true","true","true"],
+                    "rowFilter": ["", "", "", "","","", "", "", "",""],
+                    "rowFilterType": ["", "", "", "","","", "", "", "",""],
+                    "rowFilterValues": ["", "", "", "","","", "", "", "",""]
+                }
+            }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

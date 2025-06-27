@@ -1,0 +1,139 @@
+{
+  "FeeandChargesApplicationData": [{
+    "css": "",
+    "table": [
+      {
+        "name": "Mast_LoanProductType_Info",
+        "Alias": "FEE",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Loan_Details_info",
+        "Alias": "FEE1",
+        "type": "select"
+      },
+      {
+        "name": "Mast_Member_Details_Info",
+        "Alias": "FEE2",
+        "type": "select"
+      }
+    ],
+    "Section":{
+      "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Select Product"
+            },
+            "dropDown_1": {
+              "options": "$FEE#LoanProductName$",
+              "select": "",
+              "defaultOption": "Select option",
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Applicant Name",
+              "style": {
+                "width": "100%"
+              }
+            },
+            "label_4": {
+              "children": "$FEE2#ApplicantName$"
+            },
+            "iconButton_2": {
+              "icon": "Visibility",
+              "label": "View Details",
+              "type": "ViewBreak"
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Date"
+            },
+            "label_2": {
+              "children": "$FEE1#Loan_FormationDate$"
+            }
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Voter ID"
+            },
+            "label_4": {
+              "children": "$FEE2#EpicNo$"
+            }
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Applicant Name"
+            },
+            "iconButton_2": {
+              "icon": "Visibility",
+              "label": "View Details",
+              "type": "ViewBreak"
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Date"
+            }
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "label_3": {
+              "children": "Voter ID",
+              "value": "30.478"
+            }
+          }
+        ]
+      }
+    },
+    "Row_4": {
+      "col_1": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Next"
+            }
+          }
+        ]
+      }
+    }
+  }
+  }]
+}

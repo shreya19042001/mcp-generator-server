@@ -1,0 +1,149 @@
+{
+    "LeadGenerationBusinessDetails":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+  
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Applicant Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Customer Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Family Details",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Employer Details",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Business Details",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "Contact Details",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "Address Details",
+                      "currentPage": 7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Type of Business"
+                },
+                "dropDown_1": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Name of the Business Enterprise"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Present Business vintage (Years)"
+                },
+              "text_3": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": "Annual Turnover (Rs) "
+                },
+              "text_4": {
+                  "Placeholder": "Enter ",
+                  "value": ""
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Business Place Ownership Status"
+                },
+                "dropDown_1": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "GST Type"
+                },
+                "dropDown_2": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "GST Number"
+                },
+                "text_3": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": "Total Business Experience (Years)"
+                },
+                "text_4": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

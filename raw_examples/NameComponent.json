@@ -1,0 +1,27 @@
+{
+  "NameComponent": {
+    "css": "/NameComponent.css",
+    "sections": [
+      {
+        "Fileds": [
+          {
+            "dropDown": {
+              "dropdownLabel": "Select",
+              "name": "selectTitle",
+              "dropdownPlaceholder": "Select",
+              "dropdownOptions": [
+                "Mr",
+                "Mrs"
+              ]
+            },
+            "text": {
+              "Label": "Name",
+              "name": "name",
+              "Placeholder": "Enter Name"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

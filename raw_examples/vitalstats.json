@@ -1,0 +1,103 @@
+{
+  "VitalStats": [
+    {
+      "css": "./VitalStatsStyles.css",
+      "table": [
+        { "name": "VitalsForm", "Alias": "VS1", "type": "select" }
+      ],
+      "Section": {
+        "style": { "width": "90%" },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Vital Statistics Summary",
+                  "style": {
+                    "fontWeight": "bold",
+                    "fontSize": "18px",
+                    "paddingBottom": "10px"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "card_1": {
+                  "labels": ["Heart Rate (bpm)", "Blood Pressure (mmHg)", "Respiratory Rate (bpm)"],
+                  "fields": ["$VS1#HeartRate$", "$VS1#BloodPressure$", "$VS1#RespiratoryRate$"],
+                  "formattype": "C",
+                  "style": { "width": "100%", "margin": "0" }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "card_2": {
+                  "labels": ["O₂ Saturation (%)", "Temperature (°C)", "Weight (kg)"],
+                  "fields": ["$VS1#OxygenSaturation$", "$VS1#Temperature$", "$VS1#Weight$"],
+                  "formattype": "C",
+                  "style": { "width": "100%", "margin": "0" }
+                }
+              }
+            ]
+          },
+          "col_3": {
+            "Fields": [
+              {
+                "card_3": {
+                  "labels": ["BMI", "Height (cm)", "Waist Circumference (cm)"],
+                  "fields": ["$VS1#BMI$", "$VS1#Height$", "$VS1#Waist$"],
+                  "formattype": "C",
+                  "style": { "width": "100%", "margin": "0" }
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "col_1": {
+            "Fields": [
+              {
+                "barGraph": {
+                  "data": [
+                    { "label": "JAN", "value1": 98, "value2": 96 },
+                    { "label": "FEB", "value1": 97, "value2": 95 },
+                    { "label": "MAR", "value1": 99, "value2": 97 },
+                    { "label": "APR", "value1": 96, "value2": 94 },
+                    { "label": "MAY", "value1": 95, "value2": 93 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row_4": {
+          "col_1": {
+            "Fields": [
+              {
+                "iconButton_1": {
+                  "icon": "download",
+                  "label": "Download PDF",
+                  "type": "pdf",
+                  "style": {
+                    "backgroundColor": "#1976d2",
+                    "color": "#fff",
+                    "padding": "8px 12px",
+                    "borderRadius": "6px"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "sideNavbar": [
+    {
+      "page_directory": {
+        "DataModule": "redis",
+        "redisquery": "$get NavbarStructure:bhuvaneswar439@gmail.com$"
+      },
+      "section_1": {
+        "Fields": [
+          {
+            "navbar": {
+              "setnavbar": "$get NavbarStructure:bhuvaneswar439@gmail.com$"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+
+

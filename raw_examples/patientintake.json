@@ -1,0 +1,162 @@
+{
+  "PatientIntakeForm": [
+    {
+      "css": "./PatientFormStyles.css",
+      "table": [
+        {
+          "name": "PatientDetailsSubmit",
+          "Alias": "P1",
+          "type": "select"
+        }
+      ],
+      "Section": {
+        "style": {
+          "width": "80%"
+        },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    { "label": "Patient Info", "currentPage": 1 },
+                    { "label": "Medical History", "currentPage": 2 },
+                    { "label": "Allergies", "currentPage": 3 },
+                    { "label": "Visits", "currentPage": 4 },
+                    { "label": "Doctor Notes", "currentPage": 5 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row": {
+          "style": {
+            "gap": "10px"
+          },
+          "accordion_1": {
+            "title": "Patient Information",
+            "initialOpen": true,
+            "icon": "user",
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Patient ID" },
+                    "label_2": { "children": "$P1#PatientID$" },
+                    "label_3": { "children": "Full Name" },
+                    "label_4": { "children": "$P1#FullName$" }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Age" },
+                    "label_2": { "children": "$P1#Age$" },
+                    "label_3": { "children": "Gender" },
+                    "label_4": { "children": "$P1#Gender$" }
+                  }
+                ]
+              },
+              "col_3": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Contact Number" },
+                    "label_2": { "children": "$P1#ContactNumber$" },
+                    "label_3": { "children": "Email" },
+                    "label_4": { "children": "$P1#Email$" }
+                  }
+                ]
+              }
+            
+          },
+          "accordion_2": {
+            "title": "Medical Conditions",
+            "initialOpen": true,
+            "icon": "activity",
+            "Row_3": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Known Conditions" },
+                    "dropDown_1": {
+                      "options": ["Diabetes", "Hypertension", "Asthma", "None"],
+                      "select": "",
+                      "set": "$P1#Conditions$",
+                      "validation": { "required": true }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Allergies" },
+                    "dropDown_1": {
+                      "options": ["Penicillin", "Peanuts", "Latex", "None"],
+                      "select": "",
+                      "set": "$P1#Allergies$",
+                      "validation": { "required": false }
+                    }
+                  }
+                ]
+              }
+            
+          },
+          "accordion_3": {
+            "title": "Last Visit Summary",
+            "initialOpen": false,
+            "icon": "calendar",
+            "Row_4": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Last Visit Date" },
+                    "date": {
+                      "placeholder": "DD/MM/YYYY",
+                      "value": "",
+                      "set": "$P1#LastVisitDate$"
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Primary Doctor" },
+                    "text": {
+                      "placeholder": "Enter Name",
+                      "type": "text",
+                      "value": "",
+                      "set": "$P1#PrimaryDoctor$"
+                    }
+                  }
+                ]
+              }
+            
+          },
+        
+          "Row_5": {
+            "col_1": {
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Submit"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  
+        }
+      }
+    }
+  ]
+}
+
+
+

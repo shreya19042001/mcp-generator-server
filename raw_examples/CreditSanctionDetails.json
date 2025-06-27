@@ -1,0 +1,203 @@
+{
+    "CreditSanctionDetails":[ {
+      "css": "/Formstyles.css",
+    
+            
+      "Section":{
+        "style":{
+          
+            "marginTop": "10px"
+          },
+          "Row_4":{
+            "col_1":{
+              "Fields":[{
+                "title":{
+                  "label":"Credit Sanction Details",
+                  "style":{
+                    "justifySelf": "self-start",
+                    "marginLeft": "26px"                  }
+                }
+              }]
+            }
+          },
+          "Row_1": {
+            "style":{
+              "background": "rgb(255, 255, 255)",
+              "padding": "20px",
+              "width": "95%",
+              "borderRadius": "10px",
+              "justifySelf": "center",
+              "marginTop":"10px"
+              },
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": { "children": "From Date"},
+                  "date": {
+                    "placeholder": "Select",
+                    "value":"",
+                    "validation": {
+                      "required": true
+                    }},
+                    "label_2": {
+                      "children": "Zone"
+                    },
+                    "dropDown_1": {
+                      "options": "",
+                      "select": "",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": {
+                      "children": "Village"
+                    },
+                    "dropDown_2": {
+                      "options": "",
+                      "select": "",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_4": {
+                      "children": "Gropup"
+                    },
+                    "dropDown_3": {
+                      "options": "",
+                      "select": "",
+                      "defaultOption": "Select option",
+                      "validation": {
+                        "required": true
+                      }
+                    },  "label_5": { "children": "Sanction Date"},
+                    "date_1": {
+                      "placeholder": "Select",
+                      "value":"",
+                      "validation": {
+                        "required": true
+                      }}
+                }
+              ]
+            },
+            "col_2":{
+              "Fields": [
+              {
+                "label_1": { "children": "To Date"},
+                "date": {
+                  "placeholder": "Select",
+                  "value":"",
+                  "validation": {
+                    "required": true
+                  }},
+                  "label_2": {
+                    "children": "Branch"
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Center"
+                  },
+                  "dropDown_2": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Product Type"
+                  },
+                  "dropDown_3": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "iconButton": {
+                    "label": "View Sanction Details",
+                    "type": "NormalButton"
+                  }
+              }
+                ]
+            }
+          },
+          "Row_2":{
+            "style":{
+              "background": "rgb(255, 255, 255)",
+              "width": "95%",
+              "justifySelf": "center"
+
+            },
+            "col_1":{
+              "Fields":[{
+                "iconButton": {
+                  "label": "Eligible Check",
+                  "type": "NormalButton"
+                }
+              }]
+            },
+            "col_2":{
+              "Fields":[{
+                "iconButton": {
+                  "label": "Loan Option",
+                  "type": "NormalButton"
+                }
+              }]
+            }
+          },
+          "Row_3": {
+            "style":{
+              "width":"55%",
+              "marginLeft": "20px"
+            },
+            "col_1": {
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Save "
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "iconButton": {
+                    "label": "View ",
+                    "type": "Viewcbreport"
+                  }
+                }
+              ]
+            },
+            "col_3": {
+              "Fields": [
+                {
+                  "iconButton": {
+                    "label": "Clear",
+                    "type": "Viewcbreport"
+                  }
+                }
+              ]
+            }
+          },
+          "section_1":{
+            
+          }
+        
+      }
+    }]
+  }
+  
+  
+  

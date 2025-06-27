@@ -1,0 +1,96 @@
+{
+  "LabSampleEvaluation": [
+    {
+      "css": "./LIMSStyle.css",
+      "table": [
+        {
+          "name": "SampleEvaluationTable",
+          "Alias": "LSE1",
+          "type": "select"
+        }
+      ],
+      "Section": {
+        "style": {
+          "width": "90%"
+        },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    { "label": "Evaluation Info", "currentPage": 1 },
+                    { "label": "Analytics", "currentPage": 2 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row": {
+          "accordion_1": {
+            "title": "Sample Evaluation Details",
+            "initialOpen": true,
+            "icon": "microscope",
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Sample Code" },
+                    "text_1": {
+                      "placeholder": "Enter sample code",
+                      "value": "",
+                      "set": "$LSE1#SampleCode$",
+                      "validation": { "required": true }
+                    },
+                    "label_2": { "children": "Test Conducted" },
+                    "dropDown_1": {
+                      "options": ["Blood Test", "Urine Test", "X-Ray", "MRI"],
+                      "select": "",
+                      "set": "$LSE1#TestType$",
+                      "validation": { "required": true }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Status" },
+                    "dropDown_2": {
+                      "options": ["In Progress", "Completed", "Failed"],
+                      "select": "",
+                      "set": "$LSE1#Status$",
+                      "validation": { "required": true }
+                    },
+                    "label_2": { "children": "Evaluation Date" },
+                    "text_2": {
+                      "placeholder": "dd-mm-yyyy",
+                      "value": "",
+                      "set": "$LSE1#EvalDate$",
+                      "validation": { "required": true }
+                    }
+                  }
+                ]
+              }
+            },
+           
+            "Row_3": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "EventButton": {
+                      
+                        "label": "Submit Evaluation"
+                      
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

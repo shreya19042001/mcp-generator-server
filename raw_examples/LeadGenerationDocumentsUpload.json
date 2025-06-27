@@ -1,0 +1,336 @@
+{
+    "LeadGenerationDocumentsUpload":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+  
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Applicant Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Loan Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Upload Documents",
+                      "currentPage": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+         "Fields":[{
+          "table": {
+            "title": "Documents Upload",
+            "addButtonLabel": "+ Add New",
+            "Rowvalues": "$T3_Row$",
+            "columnTitles": ["","Document Tpye", "Remarks", "File","Upload"],
+            "rowVar": [["","adf", "adsf", "adfa",""]],
+            "rowTypes": ["", "", "", "",""],
+            "rowVisible": ["false", "true", "true", "true","true"],
+            "rowFilter": ["", "", "", "",""],
+            "rowFilterType": ["", "", "", "",""],
+            "rowFilterValues": ["", "", "", "",""]
+          }
+         }]
+          }
+               
+        }
+      },
+      "Page_1": {
+        "css": "/Formstyles.css",
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "Documents Upload",
+                  "style": {
+                    "background": "rgb(161 197 205)",
+                    "color": " white"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Document Type"
+                },
+                "label_2": {
+                  "children": "Remarks"
+                },
+                "label_3": {
+                  "children": "File"
+                },
+                "label_4": {
+                  "children": "Upload"
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "dropDown_1": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "text_2": {
+                  "placeholder": "",
+                  "value": "",
+                  "type": "text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "text_3": {
+                  "placeholder": "",
+                  "value": "$T2#Mllai_Desctiption$",
+                  "type": "Text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "image": {
+                  "icon": "CloudUpload",
+                  "style": {
+                    "width": "200px",
+                    "height": "180px",
+                    "border": "1px dashed #ccc",
+                    "borderRadius": "8px",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "textAlign": "center",
+                    "color": "#666",
+                    "fontSize": "14px",
+                    "padding": "10px",
+                    "marginBottom": "20px",
+                    "marginInline": "auto"
+                  }
+              }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "col_1": {
+            "style": {
+              "display": "flex",
+              "flexWrap": "nowrap",
+              "justifyContent": "center",
+              "gap": " 15px"
+            },
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Submit",
+                  "className": "whiteButton",
+                  "style": {}
+                },
+                "EventButton_1": {
+                  "label": "Cancel",
+                  "className": "whiteButton",
+                  "style": {}
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Page_2": {
+        "css": "/Formstyles.css",
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "Documents Upload",
+                  "style": {
+                    "background": "rgb(161 197 205)",
+                    "color": " white"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Document Type"
+                },
+                "label_2": {
+                  "children": "Remarks"
+                },
+                "label_3": {
+                  "children": "File"
+                },
+                "label_4": {
+                  "children": "Upload"
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "dropDown_1": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "text_2": {
+                  "placeholder": "",
+                  "value": "",
+                  "type": "text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "text_3": {
+                  "placeholder": "",
+                  "value": "$T2#Mllai_Desctiption$",
+                  "type": "Text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "image": {
+                  "icon": "CloudUpload",
+                  "style": {
+                    "width": "200px",
+                    "height": "180px",
+                    "border": "1px dashed #ccc",
+                    "borderRadius": "8px",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "textAlign": "center",
+                    "color": "#666",
+                    "fontSize": "14px",
+                    "padding": "10px",
+                    "marginBottom": "20px",
+                    "marginInline": "auto"
+                  }
+              }
+              }
+            ]
+          }
+        },
+        "Row_4": {
+          "col_2": {
+            "style": {
+              "display": "flex",
+              "flexWrap": "nowrap",
+              "justifyContent": "center",
+              "gap": " 15px"
+            },
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Update",
+                  "className": "whiteButton",
+                  "style": {}
+                },
+                "EventButton_1": {
+                  "label": "Cancel",
+                  "className": "whiteButton",
+                  "style": {}
+                }
+              }
+            ]
+          }
+        }
+      },
+      "Page_3": {
+        "css": "/Formstyles.css",
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "title": {
+                  "label": "Confirm",
+                  "style": {
+                    "background": "rgb(161 197 205)",
+                    "color": " white"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Are you sure you want to remove this Data ?"
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "col_1": {
+            "style": {
+              "display": "flex",
+              "flexWrap": "nowrap",
+              "justifyContent": "center",
+              "gap": " 15px"
+            },
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Cancel",
+                  "className": "whiteButton",
+                  "style": {}
+                },
+                "EventButton_1": {
+                  "label": "Remove",
+                  "className": "whiteButton",
+                  "style": {}
+                }
+              }
+            ]
+          }
+        }
+      }
+    }]
+  }
+  
+  
+  

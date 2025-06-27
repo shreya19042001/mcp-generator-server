@@ -1,0 +1,150 @@
+{
+    "LeadGenerationAddressDetails":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+  
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Applicant Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Customer Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Family Details",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Employer Details",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Business Details",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "Contact Details",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "Address Details",
+                      "currentPage": 7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_2": {
+                  "children": "Address Type"
+                },
+                "dropDown_2": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "State"
+                },
+              "text_3": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+              "label_5": {
+                "children": " City"
+              },
+              "text_4": {
+                "Placeholder": "Enter ",
+                "value": "",
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_4": {
+                "children": " Addredd Line 1"
+              },
+              "text_5": {
+                "Placeholder": "Enter ",
+                "value": "",
+                "validation": {
+                  "required": true
+                }
+              }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Pincode"
+                },
+                "text_1": {
+                  "Placeholder": "Enter ",
+                  "value": ""
+                },
+  
+                "label_2": {
+                  "children": " District"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Current Residence Details"
+                },
+                "dropDown_2": {
+                  "options": "",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": " Addredd Line 2"
+                },
+                "text_5": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                }
+  
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

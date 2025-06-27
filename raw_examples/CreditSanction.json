@@ -1,0 +1,33 @@
+{
+    "CreditSanction":[ {
+      "css": "/Formstyles.css",
+      
+      "Section":{
+        "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "table": {
+                    "title": "Credit Sanction Details",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["","", "Member ID", "Loan ID", "Applicant Name","Spouse Name","Group Name","Group ID","Product Code","Product","Application Amount","Eligible Amount","Sanction Amount","ROI","Tenure","Member Loan Cycle","BRE Status","Status","Remarks","Other Remarks","Total HH Income","Total HH Expend","Household EMI Eligibility","Number Of Earning Member","Other Loan EMI","EMI Overlap"],
+                    "rowVar": [["$T1#Txnid$", "gfdg", "fds", "fsfd","gfdfs","","","","","","","","","","","","","","","","","","","","",""],
+                    ["$T1#Txnid$", "", "", "","","","","","","","","","","","","","","","","","","","","","",""]],
+                    "rowTypes": ["", "checkbox", "", "","","","","","","","","","","","","","","","","","","","","","",""],
+                    "rowVisible": ["false", "true", "true", "true","true","true","true","true","true","true","true","true","true","true","true","true","true","true","true","true","true","true","true","true","true","true"],
+                    "rowFilter": ["", "", "", "","","","","","","","","","","","","","","","","","","","","","",""],
+                    "rowFilterType": ["", "", "", "","","","","","","","","","","","","","","","","","","","","","",""],
+                    "rowFilterValues":["", "", "", "","","","","","","","","","","","","","","","","","","","","","",""]
+                  
+                  }
+                }
+              ]
+            }
+          }
+      }
+
+    }]
+  }
+  
+  
+  

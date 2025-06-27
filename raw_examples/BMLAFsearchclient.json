@@ -1,0 +1,78 @@
+
+{
+  "BMLAFsearchclient":[ {
+    "css": "",
+    "table":[
+      {
+          "name": "Mast_Borrower_Search",
+          "Alias":"T1",
+          "type":"select"
+      }
+    ],
+    "Section":{
+      "style":{
+        "height": "88vh",
+        "display": "flex"
+      },
+    "Row_1": 
+     
+      {
+  "style":{
+          "display": "flex","width": "38%","flexWrap": "wrap","justifyContent": "center","borderRadius": "12px","border": "2px solid green","background": "#fff","margin": "auto","padding": "18px"
+        },
+        "col_1": {
+        "Fields": [
+          {
+            "image_1": {
+              "image": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/search-user.png",
+              "style": {
+                "fontFamily": "Roboto",
+                "width": "140px",
+                "height": "140px",
+                "marginTop": "20px",
+                "justifySelf": "center"
+              }
+            },
+      
+                "title": {
+                  "name": "Search Client",
+                  "style": {
+                    "display": "flex"
+                  }
+            },
+            "label_1": {
+              "children": "Search Client By"
+            },
+            "dropDown_1": {
+              "options": "$T1#Name$",
+              "Select":"",
+              "defaultOption": "Select option",          
+             
+              "validation": {
+                "required": true
+              }
+            },
+          
+            "label_2": {
+              "children": "Enter Detail"
+            },
+            "text_2": {
+              "placeholder": "Enter Details",
+              "value": "",
+               "type": "number",
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            },
+            "EventButton": {
+              "label": "Search"
+            }
+          }
+        ]
+      }
+      }
+    }
+  }]
+}

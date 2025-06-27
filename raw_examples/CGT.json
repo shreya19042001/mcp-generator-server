@@ -1,0 +1,61 @@
+{
+  "CGT": [{
+    "css": "/Formstyles.css",
+    "Options":[{
+      "DataModule":"redis",
+      "optionValues": ["$eflCollateralCollaction$"]
+    }
+    ],
+    "table":[
+      {
+        "name": "eflCollateralCollaction",
+        "Alias": "T4",
+        "depends": [ "$T2#CollatralType$" ],
+        "wherecolumnname": [ "$CollatralType$" ],
+        "type": "select"
+      },
+      {
+        "name": "CollateralCollaction",
+        "Alias": "T2",
+        "type": "insert"
+      }
+    ],
+      "section":{
+        "style":{
+          "height": "88vh",
+          "display": "flex"
+        },
+            "Row_2": 
+            {
+              "style":{
+                "display": "flex","width": "70%","flexWrap": "wrap","justifyContent": "center","borderRadius": "12px","border": "2px solid green","background": "#fff","margin": "auto","padding": "18px","margiTop":"60px"
+              },
+              "col_1": {
+              "Fields": [
+                {
+                  "dropDown_1": {
+                    "options": [ "$eflCollateralCollaction#SequenceID$", "$eflCollateralCollaction#OptionValue$" ],
+                    "select": "$T2#CollatralType$",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "schema": {
+                    "setvalue": [ "$T4#PageJson$", "$T4#YupSchema$" ],
+                    "setSchema": "$T2#CollectedData$"
+                  },
+
+                  "EventButton": {
+                    "label": "Search",
+                    "command": "NextPage",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+            }
+          }
+      }]
+}

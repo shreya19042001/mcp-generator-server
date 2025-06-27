@@ -1,0 +1,123 @@
+{
+    "LeadGenerationContactDetails":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+  
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Applicant Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Customer Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Family Details",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Employer Details",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Business Details",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "Contact Details",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "Address Details",
+                      "currentPage": 7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_2": {
+                  "children": "Whatsapp No"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "OTP": {
+                  "children": "OTP",
+                  "style": {
+                    "marginTop": "15px"
+                  }
+                },
+                "label_3": {
+                  "children": "City"
+                },
+              "text_3": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                },
+              "label_5": {
+                "children": " Email ID"
+              },
+              "text_4": {
+                "Placeholder": "Enter ",
+                "value": "",
+                "validation": {
+                  "required": true
+                }
+              }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "OTP Number"
+                },
+                "text_1": {
+                  "Placeholder": "Enter ",
+                  "value": ""
+                },
+  
+                "label_2": {
+                  "children": " Pin Code"
+                },
+                "text_2": {
+                  "Placeholder": "Enter ",
+                  "value": "",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  

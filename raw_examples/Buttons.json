@@ -1,0 +1,35 @@
+{
+  "Buttons": {
+    "css": "./buttons.css",
+    "sections": [
+      {
+        "type": "form",
+      
+        "columns": [
+          
+          {
+            "section": [
+              {
+                "className": "section1",
+                "jsonobjects": [
+                 {
+                  "text":"MTD",
+                  "message":"MTD"
+                 },
+                 {
+                  "text":"QTD",
+                  "message":"QTD"
+                 },
+                 {
+                  "text":"YTD",
+                  "message":"YTD"
+                 }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

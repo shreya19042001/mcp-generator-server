@@ -1,0 +1,314 @@
+{
+    "LeadSubSubSource": [
+      {
+        "Section_1": {
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "table": {
+                    "title": "Lead Sub-Sub Source",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["", "Code", " Source","Sub Source","Sub Sub Source", "Description","Actions"],
+                    "rowVar": [["", "LSS00014", "Test4", "Testing","THired One", "Non",""]],
+                    "rowTypes": ["", "", "", "","","","status"],
+                    "rowVisible": ["false", "true", "true", "true","true","",""],
+                    "rowFilter": ["false", "", "true", "true","","true",""],
+                    "rowFilterType": ["", "", "text","text","","text",""],
+                    "rowFilterValues": ["","", "","","",""]
+                  }
+                }
+              ]
+            }
+                 }
+        },
+        "Page_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Lead Sub-Sub Source",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Code"
+                  },
+                  "label_2": {
+                    "children": "Source"
+                  },
+                  "label_3": {
+                    "children": "Sub Source"
+                  },
+                  "label_4": {
+                    "children": "Sub-Sub Source"
+                  },
+                  "label_5": {
+                    "children": "Description"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "text_1": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  },
+                  "dropDown_2": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  },
+                  "text_3": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "Text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_4": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "Text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Submit",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_2": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Lead Sub-Sub Source",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Code"
+                  },
+                  "label_2": {
+                    "children": "Source"
+                  },
+                  "label_3": {
+                    "children": "Sub Source"
+                  },
+                  "label_4": {
+                    "children": "Sub-Sub Source"
+                  },
+                  "label_5": {
+                    "children": "Description"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "text_1": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  },
+                  "dropDown_2": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select option",
+                    "validation": {
+                      "required": true,
+                      "message": "Please select a valid option"
+                    }
+                  },
+                  "text_3": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "Text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_4": {
+                    "placeholder": "",
+                    "value": "",
+                    "type": "Text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_4": {
+            "col_2": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Update",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_3": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Confirm",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Are you sure you want to remove this Data ?"
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Remove",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        }
+  
+      }
+    ]
+  }

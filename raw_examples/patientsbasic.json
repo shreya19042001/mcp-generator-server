@@ -1,0 +1,129 @@
+{
+  "PatientBasic": [
+    {
+      "css": "./PatientFormStyles.css",
+      "table": [
+        {
+          "name": "PatientDetailsSubmit",
+          "Alias": "PB1",
+          "type": "select"
+        }
+      ],
+      "Section": {
+        "style": {
+          "width": "80%"
+        },
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    { "label": "Basic Info", "currentPage": 1 },
+                    { "label": "Vitals", "currentPage": 2 }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row": {
+          "style": {
+            "gap": "10px"
+          },
+          "accordion_1": {
+            "title": "Patient Basic Information",
+            "initialOpen": true,
+            "icon": "user",
+            "Row_2": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Patient ID" },
+                    "label_2": { "children": "$PB1#PatientID$" },
+                    "label_3": { "children": "Full Name" },
+                    "text_1": {
+                      "placeholder": "Enter full name",
+                      "value": "",
+                      "set": "$PB1#FullName$",
+                      "validation": { "required": true }
+                    }
+                  }
+                ]
+              },
+              "col_2": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Age" },
+                    "text_2": {
+                      "placeholder": "Enter age",
+                      "value": "",
+                      "type": "number",
+                      "set": "$PB1#Age$",
+                      "validation": { "required": true }
+                    },
+                    "label_2": { "children": "Gender" },
+                    "dropDown_1": {
+                      "options": ["Male", "Female", "Other"],
+                      "select": "",
+                      "set": "$PB1#Gender$",
+                      "validation": { "required": true }
+                    }
+                  }
+                ]
+              },
+              "col_3": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Contact Number" },
+                    "text_3": {
+                      "placeholder": "Enter mobile number",
+                      "type": "text",
+                      "value": "",
+                      "set": "$PB1#ContactNumber$",
+                      "validation": { "required": true }
+                    },
+                    "label_2": { "children": "Email" },
+                    "text_4": {
+                      "placeholder": "Enter email address",
+                      "type": "email",
+                      "value": "",
+                      "set": "$PB1#Email$",
+                      "validation": { "required": false }
+                    }
+                  }
+                ]
+              }
+            },
+            "Row_3": {
+              "col_1": {
+                "Fields": [
+                  {
+                    "label_1": { "children": "Upload Patient Photo" },
+                    "camera_1": {
+                      "setImage": "$PB1#Photo$",
+                      "getimage": "",
+                      "formatType": "image/jpeg",
+                      "value": ""
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "Row_4": {
+            "col_1": {
+              "Fields": [
+                {
+                  "eventButton_1": {
+                    "label": "Submit"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

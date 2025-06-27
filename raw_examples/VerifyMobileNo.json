@@ -1,0 +1,142 @@
+{
+  "VerifyMobileNo": [{
+    "css": "/",
+"Options":["$Mast_Salutation_info$","$Mast_SignalEarning_info$"],
+
+    "table":[
+  
+  {
+    "name": "Mast_SignalEarning_info",
+    "Alias":"M2",
+    "type":"select"
+  },    {
+    "name": "Mast_Salutation_info",
+    "Alias":"M1",
+    "type":"select"
+  }
+    ],
+    "style": {
+      "width": "50%",
+      "display": "flex",
+      "flexDirection": "column",
+      "justifyContent": "center",
+    "maxWidth": "650px"
+    },
+    "section":{
+      "style":{
+        "width": "46%"
+        },
+      "Row_1": {
+      "style": {
+      },
+      "col_1": {
+        "Fields": [{
+          "title_1": {
+            "label": "Verify Mobile Number",
+            "style": {"textAlignLast": "center"}
+          },
+          "image": {
+            "image": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/add-new.svg",
+            "style": {
+              "width": "140px",
+              "height": "155px",
+              "marginTop": "20px",
+              "justifySelf": "center"
+            }
+          },
+          "title_2": {
+            "label": "Add New Client",
+            "style": {
+              "justifyItems": "flex-start"
+            }
+          }
+        }]
+      }
+    },
+    "Row_2": {
+      
+      "style": {
+        "display": "ruby"   
+      },
+      "col_1": {
+        "Fields": [{
+          "label_1": {
+            "children": "Select",
+            "style": {
+            }
+          },
+          "dropDown_1": {
+            "options":  ["$Mast_Salutation_info#SequenceID$","$Mast_Salutation_info#OptionValue$"],
+
+            "Select":"$T4#gvfv$",
+            "defaultOption": "Select", 
+            "style": {
+              "width": "8vw"
+            },         
+            "validation": {
+              "required": true
+            }
+          }
+        }]
+      },
+      "col_2": {
+        "Fields": [{
+          "label_1": {
+            "children": "Name"
+          },
+          "text_1": {
+            "placeholder": "Enter Name",
+            "style": {
+              "width": "35vw"
+            },
+            "validation": { "required": true,"pattern": "^[a-zA-Z ]+$"}
+
+          }
+        }]
+      }
+    },
+    "Row_3": {
+      "style": {
+      },
+      "col_2": {
+        "Fields": [{
+          "label_1": {
+            "children": "Relationship Details",
+            "style": {
+            }
+          },
+          "dropDown_1": {
+            "options":  ["$Mast_SignalEarning_info#SequenceID$","$Mast_SignalEarning_info#OptionValue$"],
+
+            "defaultOption": "Select Relationship",          
+           
+            "validation": {
+              "required": true
+            }
+          },
+          "label_2": {
+            "children": "Mobile Number",
+            "style": {
+            }
+          },
+          "text_2": {"placeholder":"Enter Mobile Number","type":"number",
+          "validation": {
+            "required": true,
+            "pattern": "^[0-9]{10}$",
+            "minLength": 10,
+            "maxLength": 10,
+            "errorMessage": "Please enter a valid mobile number with 10 digits."
+          }},
+          "label_3": {
+            "children": "(Aadhar registered Mobile Number Preferable)"
+          },
+          "EventButton": {
+            "label": "Save & Next",
+            "command": "NextPage"
+
+          }
+        }]
+      }
+    }}
+  }]
+}

@@ -1,0 +1,42 @@
+{
+  "sideNavbar":[
+  {
+      "section_1":{
+          "Fields": [
+              {
+                  "navbar": [
+                      {
+                        "title": "Levels",
+                        "image": "/path/to/levels-icon.png",
+                        "subitems": [
+                          {
+                            "name": "Level",
+                            "image": "/path/to/level-icon.png"
+                          },
+                          {
+                            "name": "Level Authentication",
+                            "image": "/path/to/level-auth-icon.png"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "User Role",
+                        "image": "/path/to/user-role-icon.png",
+                        "subitems": [
+                          {
+                            "name": "User Role",
+                            "image": "/path/to/user-role-icon.png"
+                          },
+                          {
+                            "name": "User Role Authentication",
+                            "image": "/path/to/user-role-auth-icon.png"
+                          }
+                        ]
+                      }
+                    ]
+              }
+            ]
+      }
+  }
+]
+}

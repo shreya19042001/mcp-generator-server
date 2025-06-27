@@ -1,0 +1,84 @@
+{
+  "Memberdetails": {
+    "css": "/Formstyles.css",
+    "title": "Member Details",
+    "sections": [
+      {
+        "type": "form",
+        "table": [
+          {
+            "name": "Mast_Branch_Info",
+            "alias": "B",
+            "whereID": ["MBRI_Id"]
+          },
+          {
+            "name": "Mast_Village_Info",
+            "alias": "V",
+            "joinType": "JOIN",
+            "joinCondition": "V.MBRI_Id = B.MBRI_ID",
+            "whereID": ["MVI_Id"]
+          },
+          {
+            "name": "Mast_Center_Info",
+            "alias": "C",
+            "joinType": "JOIN",
+            "joinCondition": "C.MVI_ID = V.MVI_Id"
+          },
+          {
+            "name": "Mast_Group_Info",
+            "alias": "G",
+            "joinType": "JOIN",
+            "joinCondition": "G.MCI_Id = C.MCI_Id",
+            "whereID": ["MGI_Id"]
+          }
+        ],
+        "columns": [
+          {
+            "name": "Branch ID",
+            "label": "Branch ID",
+            "fields": "MBRI_Id",
+            "alias": "B",
+            "type": "text",
+            "storeid":""
+            
+          },
+          {
+            "name": "Branch name",
+            "label": "Branch name",
+            "fields": "MBRI_Name",
+            "type": "text",
+            "alias": "B"
+          },
+          {
+            "name": "Village Id",
+            "label": "Village ID",
+            "fields": "MVI_Id",
+            "type": "text",
+            "alias": "V"
+          },
+          {
+              "name": "Village Name",
+              "label": "Village Name",
+              "fields": "MVI_Name",
+              "type": "text",
+              "alias": "V"
+            },
+            {
+              "name": "Group ID",
+              "label": "Group ID",
+              "fields": "MGI_Id",
+              "type": "text",
+              "alias": "G"
+            },
+            {
+              "name": "Group Name",
+              "label": "Group Name",
+              "fields": "MGI_Name",
+              "type": "text",
+              "alias": "G"
+            }
+        ]
+      }
+    ]
+  }
+}

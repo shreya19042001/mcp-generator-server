@@ -1,0 +1,217 @@
+{
+    "BMLAFclientdetails": [{
+        "css": "/Formstyles.css",
+        "table":[
+            {
+                "name": "Mast_Member_Details_Info",
+                "Alias":"T1",
+                "type":"select"
+            }
+          ],
+        "Section":{
+            "style":{
+                "marginTop":"60px",
+                "width":"80%"
+              },
+        "Row_1": {
+            "col_1": {
+                "Fields": [
+                    {
+                        "label_1": {
+                            "children": "Voter Id",
+                            "style": {
+                                "width": "",
+                                "background": "rgb(241 241 245)",
+                                "height": "6ch",
+                                "padding": "13px",
+                                "borderRadius": "5px"
+                            }
+                        },
+                        "label_2": {
+                            "children": "ABCD",
+                            "style": {
+                                "width": "",
+                                "background": "rgb(224, 224, 235)",
+                                "height": "6ch",
+                                "padding": "13px",
+                                "borderRadius": "5px",
+                                "marginTop": "-53px",
+                                "marginLeft": "89px"
+                            }
+                        }
+                    }
+                ]
+            },
+            "col_2": {
+                "Fields": [
+                    {
+                        "iconButton_2": {
+                            "icon": "Search",
+                            "label": "Search",
+                            "type": "SearchButton",
+                            "style": {}
+                        }
+                    }
+                ]
+            }
+        },
+        "Row": {
+            "style": {
+                "background": "#fbfbfb",
+                "borderRadius": "14px",
+                "padding": "20px"
+            },
+            "Row_2": {
+                "col_1": {
+                    "Fields": [
+                        {
+                            "label_1": {
+                                "children": "Application No"
+                            },
+                            "label_2": {
+                                "children": "$T1#LosUnique_Id$"
+                            },
+                            "label_3": {
+                                "children": "Primary KYC No"
+                            },
+                            "label_4": {
+                                "children": "$T1#VoterId$"
+                            },
+                            "label_5": {
+                                "children": "CB Status"
+                            },
+                            "label_6": {
+                                "children": "$T1#STATUS$"
+                            },
+                            "label_7": {
+                                "children": "Present Address"
+                            },
+                            "label_8": {
+                                "children": "$T1#PresentAddress$"
+                            }
+                        }
+                    ]
+                },
+                "col_2": {
+                    "Fields": [
+                        {
+                            "label_1": {
+                                "children": "Applicat Name"
+                            },
+                            "label_2": {
+                                "children": "$T1#ApplicantName$"
+                            },
+                            "label_3": {
+                                "children": "Application Date"
+                            },
+                            "label_4": {
+                                "children": "$T1#Loan_FormationDate$"
+                            },
+                            "label_5": {
+                                "children": "Applied Amount"
+                            },
+                            "label_6": {
+                                "children": "$T1#AppliedAmount$"
+                            }
+                        }
+                    ]
+                },
+                "col_3": {
+                    "Fields": [
+                        {
+                            "label_1": {
+                                "children": "Father"
+                            },
+                            "label_2": {
+                                "children": "$$T1#FathersName"
+                            },
+                            "label_3": {
+                                "children": "Last CB Check Date"
+                            },
+                            "label_4": {
+                                "children": "$T1#LastModifiedDate$"
+                            },
+                            "label_5": {
+                                "children": "Stage Status"
+                            },
+                            "label_6": {
+                                "children": "$T1#StageRemaks$"
+                            }
+                        }
+                    ]
+                }
+            },
+            "Row_3": {
+                "style": {
+                    "display": "flex",
+                    "flexWrap": "nowrap",
+                    "justifyContent": "center",
+                    "position": "relative",
+                    "bottom": "2px"
+                },
+                "col_1": {
+                    "Fields": [
+                        {
+                            "iconButton_2": {
+                                "icon": "Visibility",
+                                "label": "View CB Report",
+                                "type": "Viewcbreport",
+                                "style": {}
+                            }
+                        }
+                    ]
+                },
+                "col_2": {
+                    "Fields": [
+                        {
+                            "iconButton_2": {
+                                "icon": "Refresh",
+                                "type": "RefreshButton",
+                                "label": "",
+                                "style": {}
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "Row_4": {
+            "col_1": {
+                "Fields": [
+                    {
+                        "iconButton_3": {
+                            "label": "Reject",
+                            "type": "NormalButton",
+                            "style": {
+                                "padding": "10px"
+                            }
+                        }
+                    }
+                ]
+            },
+            "col_2": {
+                "Fields": [
+                    {
+                        "iconButton": {
+                            "label": "Send to CB",
+                            "type": "IconButton",
+                            "style": {}
+                        }
+                    }
+                ]
+            }
+        },
+        "Row_5": {
+            "col_2": {
+                "Fields": [
+                    {
+                        "EventButton": {
+                            "label": "Continue"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+    }]
+}

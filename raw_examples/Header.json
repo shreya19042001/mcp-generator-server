@@ -1,0 +1,40 @@
+{
+  "Header": [
+    {
+      "Section_1": {
+         "Fields": [
+            {
+              "header": {
+                "logo": "_https://5.imimg.com/data5/SELLER/Default/2024/6/426669292/UG/FQ/QT/3702290/jayam-e-commerce-software-500x500.jpg",
+                "username": "John Doe",
+                "navbarItems": [
+                  {
+                    "position": "right",
+                    "icon": "Help",
+                    "action": "openHelpModal"
+                  },
+                  {
+                    "position": "right",
+                    "icon": "Settings",
+                    "action": "openSettings"
+                  },
+                  {
+                    "position": "right",
+                    "icon": "Logout",
+                    "action": "logoutUser"
+                  },
+                  {
+                    "position": "left",
+                    "icon": "Menu",
+                    "action": "toggleSidebar"
+
+                  }
+                ]
+              }
+            }
+          ]
+       
+      }
+   }
+  ]
+}

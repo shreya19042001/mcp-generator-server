@@ -1,0 +1,421 @@
+{
+  "AOHHExpenses": [{
+    "css": "./Formstyles1.css",
+    "table": [
+      {
+        "name": "RegularExpensesMothlyDetails",
+        "Alias": "T1",
+        "type": "select"
+      },
+      {
+        "name": "IrRegularExpensesAnnuallyDetalis",
+        "Alias": "T2",
+        "type": "select"
+      }
+    ],
+    "section":{
+      "style":{
+        "width": "75%"
+      },
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                { "label": "Basic Details", "currentPage": 2 },
+                { "label": "Earning Member", "currentPage": 3 },
+                { "label": "Household Details", "currentPage": 4 },
+                { "label": "HH Monthly Income", "currentPage": 5 },
+                { "label": "HH Expenses", "currentPage": 6 },
+                { "label": "HH Liability", "currentPage": 7 },
+                { "label": "Loan Eligibility", "currentPage": 8 },
+                { "label": "Loan Details", "currentPage": 9 },
+                { "label": "Guarantor's Details", "currentPage": 10 },
+                { "label": "Insurance Details", "currentPage": 11 },
+                { "label": "Bank Details", "currentPage": 12 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "accordion": {
+      "title": "Regular Expenses (Monthly)",
+      "initialOpen": true,
+      "icon": "plus",
+      "style":{
+      "marginBottom": "20px"
+      },
+      "Row_2": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": { "children": "Accommodation/Rent" },
+              "label_2": { "children": "$T1#AccommodationRent$" },
+              "label_3": { "children": "Regular Education Expenses" },
+              "label_4": { "children": "$T1#RegularEducationExpenses$" },
+              "label_5": { "children": "Transport" },
+              "label_6": { "children": "$T1#Transport$" },
+              "label_7": { "children": "Other" },
+              "label_8": { "children": "$T1#Other$" }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": { "children": "Food + Cooking Fuel" },
+              "label_2": { "children": "$T1#FoodCookingfuel$" },
+              "label_3": { "children": "Electricity/Phone/Data/Cabel" },
+              "label_4": { "children": "$T1#ElectricityphoneDataCable$" },
+              "label_5": { "children": "Entertainment/Social Obligation" },
+              "label_6": { "children": "$T1#EntertainmentSocialobligations$" },
+              "label_7": { "children": "Total Regular Expenses (Monthly)" },
+              "label_8": { "children": "$T1#TotalRegularExpenseMothly$" }
+
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": { "children": "Clothes" },
+              "label_2": { "children": "$T1#Cothes$" },
+              "label_3": { "children": "Regular Medical Costs" },
+              "label_4": { "children": "$T1#RegularMedicalCosts$" },
+              "label_5": { "children": "Savings" },
+              "label_6": { "children": "$T1#Saving$" }
+              
+            }
+          ]
+        }
+      },
+      "Row_3": {
+        "style":{
+          "float": "right"
+        },
+        "col_1": {
+          "Fields": [
+            {
+              "iconButton": {
+                "icon": "Edit",
+                "label": "Update Details",
+                "type":"ViewBreak",
+                "style": {
+                  "textDecoration": "none",
+                  "marginLeft": "22px"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    "accordion_2": {
+      "title": "Irregular Expenses (Annually)",
+      "initialOpen": true,
+      "icon": "plus",
+      "style":{
+        "marginBottom": "20px"
+        },
+      "Row_4": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": { "children": "Medical/Health" },
+              "label_2": { "children": "$T2#MedicalHeath$" },
+              "label_3": { "children": "Functions" },
+              "label_4": { "children": "$T2#Functions$" },
+              "label_5": { "children": "Total Irregular Expense (Monthly)" },
+              "label_6": { "children": "$T2#TotalIrregularExpenseMothly$" }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": { "children": "House Renovation" },
+              "label_2": { "children": "$T2#HouseRenovation$" },
+              "label_3": { "children": "Education" },
+              "label_4": { "children": "$T2#Education$" },
+              "label_5": { "children": "Total Irregular Expense (Annually)" },
+              "label_6": { "children": "$T2#TotalIrregularExpenseAnnually$" }
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": { "children": "Purchase Of Household Goods" },
+              "label_2": { "children": "$T2#PurchaseOfHouseHoldGoods$" },
+              "label_3": { "children": "Other" },
+              "label_4": { "children": "$T2#Others$" }
+              
+            }
+          ]
+        }
+      },
+      "Row_5":{
+        "style":{
+          "float": "right"
+        },
+          "col_1": {
+        "Fields": [
+          {
+            "iconButton": {
+              "icon": "Edit",
+              "label": "Update Details",
+              "type":"ViewBreak",
+              "style": {
+                "textDecoration": "none",
+                "marginLeft": "22px"
+              }
+            }
+          }
+        ]
+      }
+      }
+    },
+    "accordion_3": {
+      "title": "Regular Expenses (Monthly)",
+      "initialOpen": true,
+      "icon": "plus",
+      "style":{
+        "marginBottom": "20px"
+        },
+      "Row_2": {
+        "Fields": [
+          {
+            "title": {
+              "label": "Regular Expenses (Monthly)",
+              "style": {
+                "width": "100%",
+                "background": "darkgray",
+                "padding": "10px",
+                "borderRadius": "5px",
+                "display": "flex"
+              }
+            }
+          }
+        ]
+      },
+      "Row_3": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Accommodation/Rent"
+              },
+              "commentbox": {
+                "name": "Accommodation/Rent",
+                "value": "$HHEX#AccommodationRent$",
+                "Placeholder": "Enter Accommodation/Rent"
+              },
+              "label_2": {
+                "children": "Clothes"
+              },
+              "commentbox_1": {
+                "name": "Clothes",
+                "value": "$HHEX#Cothes$",
+                "Placeholder": "Enter Clothes"
+              },
+              "label_3": {
+                "children": "Electricity/phone/data/cable"
+              },
+              "commentbox_2": {
+                "name": "Electricity/phone/data/cable",
+                "value": "$HHEX#ElectricityphoneDataCable$",
+                "Placeholder": "Enter Electricity/phone/data/cable"
+              },
+              "label_4": {
+                "children": "Transport"
+              },
+              "commentbox_3": {
+                "name": "Transport",
+                "value": "$HHEX#Transport$",
+                "Placeholder": "Enter Transport"
+              },
+              "label_5": {
+                "children": "Saving"
+              },
+              "commentbox_4": {
+                "name": "Saving",
+                "value": "$HHEX#Saving$",
+                "Placeholder": "Enter Saving"
+              },
+              "label_6": {
+                "children": "Total Regular Expenses (Monthly)"
+              },
+              "commentbox_5": {
+                "name": "Total Regular Expenses",
+                "value": "$HHEX#TotalRegularExpenseMothly$",
+                "Placeholder": "Enter Total Regular Expenses"
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Food + Cooking fuel"
+              },
+              "commentbox": {
+                "name": "Food + Cooking fuel",
+                "value": "$HHEX#FoodCookingfuel$",
+                "Placeholder": "Enter Food + Cooking fuel"
+              },
+              "label_2": {
+                "children": "Regular Education expenses"
+              },
+              "commentbox_1": {
+                "name": "Regular Education expenses",
+                "value": "$HHEX#RegularEducationExpenses$",
+                "Placeholder": "Enter Regular Educationexpenses"
+              },
+              "label_3": {
+                "children": "Regular medical costs"
+              },
+              "commentbox_2": {
+                "name": "Regular medical costs",
+                "value": "$HHEX#RegularMedicalCosts$",
+                "Placeholder": "Enter Regular medical costs"
+              },
+              "label_4": {
+                "children": "Entertainment/Social Obligation"
+              },
+              "commentbox_3": {
+                "name": "Entertainment/Social Obligation",
+                "value": "$HHEX#EntertainmentSocialobligations$",
+                "Placeholder": "Enter Entertainment/Social Obligation"
+              },
+              "label_5": {
+                "children": "Others"
+              },
+              "commentbox_4": {
+                "name": "Others",
+                "value": "$HHEX#Other$",
+                "Placeholder": "Enter Others"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "accordion_4": {
+      "title": "Irregular Expenses (Annually)",
+      "initialOpen": true,
+      "icon": "plus",
+      "Row_4": {
+        "Fields": [
+          {
+            "title": {
+              "label": "Irregular Expenses (Annually)",
+              "style": {
+                "width": "100%",
+                "background": "darkgray",
+                "padding": "10px",
+                "borderRadius": "5px",
+                "display": "flex",
+                "position": "relative",
+                "top": "5px"
+              }
+            }
+          }
+        ]
+      },
+      "Row_5": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Medical/Health"
+              },
+              "commentbox": {
+                "name": "Medical/Health",
+                "value": "$HHEXIR#MedicalHeath$",
+                "Placeholder": "Enter Medical/Health"
+              },
+              "label_2": {
+                "children": "Purchase of Household goods"
+              },
+              "commentbox_1": {
+                "name": "Purchase of Household goods",
+                "value": "$HHEXIR#PurchaseOfHouseHoldGoods$",
+                "Placeholder": "Enter Purchase of Household goods"
+              },
+              "label_3": {
+                "children": "Education"
+              },
+              "commentbox_2": {
+                "name": "Education",
+                "value": "$HHEXIR#Education$",
+                "Placeholder": "Enter Education"
+              },
+              "label_4": {
+                "children": "Total Regular Expenses (Monthly)"
+              },
+              "text_1": {
+                "name": "Total Regular Expenses",
+                "value": "$HHEXIR#TotalIrregularExpenseMothly$",
+                "Placeholder": "Enter Total Regular Expenses"
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "House Renovation"
+              },
+              "commentbox_1": {
+                "name": "House Renovation",
+                "value": "$HHEXIR#HouseRenovation$",
+                "Placeholder": "Enter House Renovation"
+              },
+              "label_2": {
+                "children": "Functions"
+              },
+              "commentbox_2": {
+                "name": "Functions",
+                "value": "$HHEXIR#Functions$",
+                "Placeholder": "Enter Functions"
+              },
+              "label_3": {
+                "children": "Others"
+              },
+              "commentbox_3": {
+                "name": "Others",
+                "value": "$HHEXIR#Others$",
+                "Placeholder": "Enter Others"
+              },
+              "label_4": {
+                "children": "Total Regular Expenses (Annually)"
+              },
+              "text_2": {
+                "name": "Total Regular Expenses",
+                "value": "$HHEXIR#TotalIrregularExpenseAnnually$",
+                "Placeholder": "Enter Total Regular Expenses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Row_6": {
+      "col_1": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": " Next"
+            }
+          }
+        ]
+      }
+    }
+  }
+  }]
+}

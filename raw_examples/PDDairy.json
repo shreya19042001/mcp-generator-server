@@ -1,0 +1,186 @@
+{
+    "PDDairy":[ { 
+      "section":{ 
+        "style":{
+          "marginTop":"60px",
+          "width":"80%"
+        },   
+      "Row_1":  {
+        "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Applied  Amount"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                    "label_2": { "children": "Fco Name"},
+                    "text_2": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": { "children": "PD Status"},
+                    "dropDown_1": {
+                      "options": ["VoterID"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                 
+                    "label_1": { "children": "PD Date"},
+                    "date_1": {
+                    "validation": {
+                      "required": true
+                    }}, 
+                     "label_2": { "children": "PD Score"},
+                    "text_2": {"placeholder": "","type":"number",
+                    "validation": {
+                      "required": true
+                    }}
+                  }
+                ]
+              }} ,
+        "Row_2": {
+            "Fields": [ {
+              "label_8": { "children": "Remarks"},
+                    "text": {"placeholder": "Enter Address", "style": {}}
+              }
+            ]
+          },
+        "Row_3": {
+          "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Verified By"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                  
+                    "label_3": { "children": "Age of the Applicant"},
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                  
+                    "label_5": { "children": "Credit History of Applications   "},
+                    "dropDown_3": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                    ,
+                    "label_6": { "children": "Saving of the individual higher the savings better the score   "},
+                    "dropDown_4": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_7": { "children": "Personal profile of the individual (Dependents) "},
+                    "dropDown_5": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_8": { "children": "  Area of the cattle shed    "},
+                    "dropDown_6": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                    "label_3": { "children": "Accomodation Type"},
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+  
+                    "label_5": { "children": "Age of the Co-Applicant   "},
+                    "dropDown_3": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                 
+                    "label_7": { "children": "Area of the House"},
+                    "dropDown_5": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_8": { "children": "Monthly income Less all expenses and fixed the payouts as multiple of EMI (i.e Savings) "},
+                    "dropDown_6": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_9": { "children": " Source of Income"},
+                    "dropDown_7": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_10": { "children": "  Types of cattle shed "},
+                    "dropDown_8": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }} ,
+  
+              "Row_4": {
+                "Fields": [ {
+                  "label_8": { "children": "Live Stock Owned by the borrower"},
+                        "text": {"placeholder": "Select", "style": {}}
+                  }
+                ]
+              },
+              "Row_5": {
+                "Fields": [ {
+                  "EventButton": { "label": "Submit"}
+                  }
+                ]
+              }
+            }
+          }]
+    }
+  

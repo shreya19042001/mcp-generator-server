@@ -1,0 +1,197 @@
+{
+  "NewApplication": [{
+    "css": "",
+    "Modulevariable":["$LosUnique_Id$"],
+  "table":[
+      {
+        "name": "Mast_Village_Info",
+        "Alias":"T1",
+        "queries": ["DISTINCT"],
+        "type":"select"
+      },
+      {
+        "name": "Mast_Village_Info",
+        "Alias":"T2",
+        "depends":["$T4#pincode$"],
+        "wherecolumnname":["$MVI_Pincode$"],
+        "type":"select"
+      },
+      {
+        "name": "Mast_Village_Info",
+        "type": "select",
+        "Alias":"mvi",
+    
+        "wherecolumnname":["$MVI_Name$"],
+        "depends": [ "$T4#village$"],
+        "joins": [
+          {
+            "table": "Mast_State_Info",
+            "alias": "msi",
+            "type": "LEFT JOIN",
+            "on": "msi.msi_id = mvi.MVI_State"
+          },
+          {
+            "table": "Mast_Branch_Info",
+            "alias": "mbi",
+            "type": "LEFT JOIN",
+            "on": "mvi.mbri_id = mbi.mbri_id"
+          },
+          {
+            "table": "Mast_District_Info",
+            "alias": "mdi",
+            "type": "LEFT JOIN",
+            "on": "mdi.MDI_Id = mvi.MVI_District"
+          },
+          {
+            "table": "Mast_BlockMun_Info",
+            "alias": "mmbi",
+            "type": "LEFT JOIN",
+            "on": "mmbi.MBI_Id = mvi.MVI_Mandal"
+          },
+          {
+            "table": "Mast_GP_Info",
+            "alias": "mgi",
+            "type": "LEFT JOIN",
+            "on": "mgi.MGPI_Id = mvi.MVI_Ward"
+          }
+        ]
+      }
+
+        ],
+    "section":{
+      "style":{
+        "marginTop":"60px"
+      },
+      "Row_1": 
+      {
+       
+       "col_12": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Pin Code"
+             
+            },
+            "search": {
+              "name": "Pincode",
+              "placeholder": "Enter Pincode",
+              "options": "$T1#MVI_Pincode$",
+              "Select":"$T4#pincode$",
+              "defaultOption": "search", 
+              "validation": {
+                "required": true
+                }
+}
+          }
+        ]
+      }, 
+        "col_13": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Village"
+            },
+            "search": {
+              "name": "Village",
+              "placeholder": "Enter Village Name",
+              "Select":"$T4#village$",
+                "options": "$T2#MVI_Name$",
+              "defaultOption": "search", 
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+      },
+      "Row_2": 
+      {
+        "style":{
+          "padding": "18px"
+        },
+       "col_1": {
+        "Fields": [
+          {
+            "label_1": {"children": "Gram Panchayat"},
+                  "label_2": {"children": "$mgi#MGPI_Name$"},
+                  "label_3": {"children": "Census ID"},
+                  "label_4": {"children": "$mvi#Village_Census_Code$"}
+          }
+        ]
+      }, 
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {"children": "Block/Tehsil"},
+            "label_2": {"children": "$mmbi#MBI_Name$"},
+            "label_3": {"children": "Lat"},
+            "label_4": {"children": "$Lat$"}
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "label_1": {"children": "District"},
+            "label_2": {"children": "$mdi#MDI_Name$"},
+            "label_3": {"children": "Long"},
+            "label_4": {"children": "$Long$"}
+          }
+        ]
+      }
+      },
+      "Row_3": 
+      {
+          "col_1": {
+        "Fields": [
+          {
+            "iconButton": {
+              "icon": "MapOutlined", 
+              "tabpage": 1,
+              "label": "View On Map",
+              "type": "IconButton",
+              "style": {
+                "background":"#fff",
+                "color":"black"
+              }
+            
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Proceed",
+              "command": "NextPage"
+            }
+          }
+        ]
+      }
+           
+      }
+    },
+    "section_1":{
+      "Row_3": {
+        "col_3":{
+          "Fields": [{
+            "map_1": {
+              "latitude": 37.7749,
+              "longitude": -122.4194,
+              "zoom": 12,
+              "mapContainerStyle": { "height": "400px", "width": "100%" }
+            }
+            }]}
+        }
+    }
+    
+    
+  
+    
+   
+    
+  }]
+}
+    

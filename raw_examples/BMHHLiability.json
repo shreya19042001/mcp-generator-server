@@ -1,0 +1,431 @@
+
+{
+  "BMHHLiability":[ {
+    "css": "./Formstyles1.css",
+    "table": [
+      {
+        "name": "HouseHoldLiabilityDetails",
+        "Alias": "T1",
+        "type": "select"
+      }
+    ],
+    "section":{
+      "style":{
+        "width":"80%"
+      },
+    "Row_1": {
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                { "label": "Basic Details", "currentPage": 2 },
+                { "label": "Earning Member", "currentPage": 3 },
+                { "label": "Household Details", "currentPage": 4 },
+                { "label": "HH Monthly Income", "currentPage": 5 },
+                { "label": "HH Expenses", "currentPage": 6 },
+                { "label": "HH Liability", "currentPage": 7 },
+                { "label": "Loan Eligibility", "currentPage": 8 },
+                { "label": "Loan Details", "currentPage": 9 },
+                { "label": "Guarantor's Details", "currentPage": 10 },
+                { "label": "Insurance Details", "currentPage": 11 },
+                { "label": "Bank Details", "currentPage": 12 }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "style":{
+          "background": "#fbfbfb",
+          "borderRadius": "14px",
+          "padding": "20px"      },
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": { "children": "Applicant Name" },
+            "label_2": { "children": "$T1#MemberName$" },
+            "label_3": { "children": "Loan Account No" },
+            "label_4": { "children": "$T1#Liab_LoanAccountNO$" },
+            "label_5": { "children": "Balance Transfer (BT)" },
+            "label_6": { "children": "$T1#BlanceTransfer$" }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": { "children": "Institution Name" },
+            "label_2": { "children": "$T1#InstitutionName$" },
+            "label_3": { "children": "Outstanding Balance" },
+            "label_4": { "children": "$T1#OutstandingBalance$" },
+            "label_5": { "children": "Foreclosure" },
+            "label_6": { "children": "$T1#Preclosure$" }
+
+          }
+        ]
+      },
+      "col_3": {
+        "Fields": [
+          {
+            "label_1": { "children": "Institution Type" },
+            "label_2": { "children": "$T1#InstitutionType$" },
+            "label_3": { "children": "EMI" },
+            "label_4": { "children": "$T1#Liab_EMI$" },
+            "label_5": { "children": "Account Status" },
+            "label_6": { "children": "$T1#AccountStatus$" }
+            
+          }
+        ]
+      }
+    },
+    "Row_3": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Foreclosure"
+            },
+            "dropDown_1": {
+              "options": "",
+              "Select": "",
+              "defaultOption": "Select option",          
+              "style": {
+                "width": "100%"
+              }, 
+              "validation": {
+                "required": true
+              }
+            },
+            "label_2": {
+              "children": "Account Status"
+            },
+            "dropDown_2": {
+              "options": "",
+              "Select": "",
+              "defaultOption": "Select option",          
+              "style": {
+                "width": "100%"
+              }, 
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Balance Transfer (BT)"
+            },
+            "dropDown_3": {
+              "options": "",
+              "Select": "",
+              "defaultOption": "Select option",          
+              "style": {
+                "width": "100%"
+              }, 
+              "validation": {
+                "required": true
+              }
+            }
+          }
+        ]
+      }
+    },
+
+    "accordion_1": {
+      "title": "member Two",
+      "initialOpen": true,
+      "icon": "plus",
+      "style":{
+        "marginTop": "18px"
+      },
+      "Row_2": {
+        "style":{
+            "background": "#fbfbfb",
+            "borderRadius": "14px",
+            "padding": "20px"      },
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": { "children": "Applicant Name" },
+              "label_2": { "children": "Loan Account No" },
+              "label_3": { "children": "Balance Transfer (BT)" }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": { "children": "Institution Name" },
+              "label_2": { "children": "Outstanding Balance" },
+              "label_3": { "children": "Foreclosure" }
+  
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": { "children": "Institution Type" },
+              "label_2": { "children": "EMI" },
+              "label_3": { "children": "Account Status" }
+              
+            }
+          ]
+        }
+      },
+      "Row_3": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Foreclosure"
+              },
+              "dropDown_1": {
+                "options": "",
+                "Select": "",
+                "defaultOption": "Select option",          
+                "style": {
+                  "width": "100%"
+                }, 
+                "validation": {
+                  "required": true
+                }
+              },
+              "label_2": {
+                "children": "Account Status"
+              },
+              "dropDown_2": {
+                "options": "",
+                "Select": "",
+                "defaultOption": "Select option",          
+                "style": {
+                  "width": "100%"
+                }, 
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": {
+                "children": "Balance Transfer (BT)"
+              },
+              "dropDown_3": {
+                "options": "",
+                "Select": "",
+                "defaultOption": "Select option",          
+                "style": {
+                  "width": "100%"
+                }, 
+                "validation": {
+                  "required": true
+                }
+              }
+            }
+          ]
+        }
+      }
+  
+    
+
+    },
+    "Row_4": {
+      "style": { "padding": "10px","borderRadius": "5px","position": "relative","top": "5px", "width":""},
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": { "children": "Total HH Liability" }
+                
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": { "children": "Own Liability" }
+                
+              }
+            ]
+          },
+          "col_3": {
+            "Fields": [
+              {
+                "label_1": { "children": "Other HH Liability" }
+                
+              }
+            ]
+          }
+        },
+        "P": {
+          "Row_1": {
+           
+            "col_1": {
+              "style": {
+                "display": "grid",
+                "gridTemplateColumns": "1fr 2fr",
+                "alignItems": "center",
+                "gap": "15px",
+                "padding": "10px"
+              },
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Member Name"
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "Select": "",
+                    "defaultOption": "Select option",          
+                    "style": {
+                      "width": "100%"
+                    }, 
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                "label_3": {
+                  "children": "Institution Name"
+                },
+                "text_2": {
+                  "placeholder": "Enter Name  :",
+                  "value": "",
+                  "type": "text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "label_4": {
+                  "children": "Outstanding Balance"
+                },
+                "text_4": {
+                  "placeholder": "Enter Address",
+                  "value": "$T2#Mllai_Address$",
+                  "type": "text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "label_5": {
+                  "children": "Foreclosure"
+                },
+                "dropDown_3": {
+                  "options": "",
+                  "Select": "",
+                  "defaultOption": "Select option",          
+                  "style": {
+                    "width": "100%"
+                  }, 
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_6": {
+                  "children": "Balance Transfer (BT)"
+                },
+                "dropDown_6": {
+                  "options": "",
+                  "Select": "",
+                  "defaultOption": "Select option",          
+                  "style": {
+                    "width": "100%"
+                  }, 
+                  "validation": {
+                    "required": true
+                  }
+                }
+                }
+              ]
+            },
+            "col_2": {
+              "style": {
+                "display": "grid",
+                "gridTemplateColumns": "1fr 2fr",
+                "alignItems": "center",
+                "gap": "15px",
+                "padding": "10px"
+              },
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Institution Type"
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "Select": "",
+                    "defaultOption": "Select option",          
+                    "style": {
+                      "width": "100%"
+                    }, 
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                "label_3": {
+                  "children": "Loan Account No"
+                },
+                "text_2": {
+                  "placeholder": "Enter Name  :",
+                  "value": "$T2#Mllai_Name$",
+                  "type": "text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "label_4": {
+                  "children": "EMI"
+                },
+                "text_4": {
+                  "placeholder": "Enter Address",
+                  "value": "$T2#Mllai_Address$",
+                  "type": "text",
+                  "validation": {
+                    "required": true,
+                    "pattern": "^[a-zA-Z ]+$"
+                  }
+                },
+                "label_5": {
+                  "children": "Account Status"
+                },
+                "dropDown_2": {
+                  "options": "",
+                  "Select": "",
+                  "defaultOption": "Select option",          
+                  "style": {
+                    "width": "100%"
+                  }, 
+                  "validation": {
+                    "required": true
+                  }
+                }
+                }
+              ]
+            }
+          }
+        },
+    "Row_5": {
+      "col_1": {
+        "Fields": [
+          {
+            "EventButton": {
+              "label": "Save & Next"
+            }
+          }
+        ]
+      }
+    }
+  }
+  }]
+}

@@ -1,0 +1,259 @@
+{
+  "InsuranceDetails": [
+    {
+      "css": "/Formstyles1.css",
+      "_table": [
+        {
+          "name": "Mast_FamilyMember_Details_Info",
+          "Alias": "INS",
+          "type": "select"
+        },
+        {
+          "name": "Mast_Water_Info",
+          "Alias": "INS1",
+          "type": "select"
+        },
+        {
+          "name": "InsuranceDetailsSubmit",
+          "Alias": "INSI",
+          "type": "insert"
+        }
+      ],
+      "section": {
+        "style":{
+          "width": "75%"
+        },
+        "Row_1": {
+          "styles": {},
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Client Picture",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "ID Verification",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "OKYC Profile Review",
+                      "currentPage": 7
+                    },
+                    {
+                      "label": "Basic Details",
+                      "currentPage": 8
+                    },
+                    {
+                      "label": "Earning Member",
+                      "currentPage": 9
+                    },
+                    {
+                      "label": "HouseHold Details",
+                      "currentPage": 10
+                    },
+                    {
+                      "label": "HH Monthly Income",
+                      "currentPage": 11
+                    },
+                    {
+                      "label": "HH Expenses",
+                      "currentPage": 12
+                    },
+                    {
+                      "label": "HH Liability",
+                      "currentPage": 13
+                    },
+                    {
+                      "label": "Loan Eligibility",
+                      "currentPage": 14
+                    },
+                    {
+                      "label": "Loan Details",
+                      "currentPage": 15
+                    },
+                    {
+                      "label": "Guarantor's Details",
+                      "currentPage": 16
+                    },
+                    {
+                      "label": "Insurance Details",
+                      "currentPage": 17
+                    },
+                    {
+                      "label": "Bank Details",
+                      "currentPage": 18
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Select Nominee"
+                },
+                "dropDown_1": {
+                  "options": "$INS#FM_Name$",
+                  "select": "INSI#Nominee",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Date of Birth"
+                },
+                "date": {
+                  "placeholder": "DD/MM/YYYY",
+                  "value": "$INSI#DateofBirth$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Nominee Guardian Name"
+                },
+                "text_2": {
+                  "placeholder": "Enter",
+                  "type": "text",
+                  "value": "$INSI#NomineeGuardianName$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_3": {
+                  "children": "Nominee Name"
+                },
+                "text_2": {
+                  "placeholder": "Enter",
+                  "type": "text",
+                  "value": "$INSI#NomineeName$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_1": {
+                  "children": "Relationship with Client"
+                },
+                "dropDown_1": {
+                  "options": "$INS#FM_RelationID$",
+                  "select": "INSI#Relationship",
+                  "defaultOption": "Select ",
+                  "style": {
+                    "width": "100%"
+                  },
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Nominee Age"
+                },
+                "text": {
+                  "placeholder": "Enter",
+                  "type": "number",
+                  "value": "$INSI#NomineeAge$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "Fields": [
+            {
+              "title": {
+                "label": "Insurance Details",
+                "style": {
+                  "width": "100%",
+                  "background": "darkgray",
+                  "padding": "10px",
+                  "borderRadius": "5px",
+                  "display": "flex",
+                  "position": "relative",
+                  "top": "5px"
+                }
+              }
+            }
+          ]
+        },
+        "Row_4": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Sum Assured"
+                },
+                "text_1": {
+                  "placeholder": "Enter",
+                  "type": "number",
+                  "value": "$INSI#SumAssured$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Total Insurance Amount"
+                },
+                "text_2": {
+                  "placeholder": "Enter",
+                  "type": "number",
+                  "value": "$INSI#TotalInsuranceAmount$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Nominee Insurance"
+                },
+                "dropDown_1": {
+                  "options": "$INS1#Name$",
+                  "select": "INSI#NomineeInsurance",
+                  "defaultOption": "Select ",
+                  "style": {
+                    "width": "100%"
+                  },
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_5": {
+          "Fields": [
+            {
+              "EventButton": {
+                "label": "Save & Next",
+              "command": "NextPage"
+
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

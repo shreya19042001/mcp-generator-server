@@ -1,0 +1,180 @@
+{
+  "AOEarningMember":[ {
+    "css": "/",
+    "table": [
+      {
+        "name": "Mast_FamilyMember_Details_Info",
+        "Alias": "BME",
+        "type": "select"
+      }
+
+    ],
+    "section":{
+      "style":{
+        "width": "75%"
+      },
+      "Row_11": {
+        "col_1": {
+          "Fields": [
+            {
+              "tabs": {
+                "pages": [
+                  { "label": "Basic Details", "currentPage": 2 },
+                  { "label": "Earning Member", "currentPage": 3 },
+                  { "label": "Household Details", "currentPage": 4 },
+                  { "label": "HH Monthly Income", "currentPage": 5 },
+                  { "label": "HH Expenses", "currentPage": 6 },
+                  { "label": "HH Liability", "currentPage": 7 },
+                  { "label": "Loan Eligibility", "currentPage": 8 },
+                  { "label": "Loan Details", "currentPage": 9 },
+                  { "label": "Guarantor's Details", "currentPage": 10 },
+                  { "label": "Insurance Details", "currentPage": 11 },
+                  { "label": "Bank Details", "currentPage": 12 }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "Row_1": {
+        "style": {
+          "background": "#fbfbfb",
+          "padding": "20px"
+        },
+        "col_1": {
+        
+          "Fields": [
+            {
+              "image_1": {
+                "image": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/search-user.png",
+                "style": {
+                  "fontFamily": "Roboto",
+                  "width": "75px",
+                  "height": "62px"
+                }
+              }
+            }
+          ]
+        },
+        "col_2":{
+          "style":{
+          
+          },
+          "Fields":[{
+            "label_1": {"children": " Name", "style":{    "position": "relative",
+          "right": "80%"}},
+            "label_2": {"children": "$BME#FM_Name$","style":{    "position": "relative",
+          "right": "80%"}}
+          }]
+        }
+      },
+    "Row_2": 
+      {
+        "style":{
+          "background": "#fbfbfb",
+       
+          "padding": "20px"      },
+        "col_1":{
+        "Fields": [
+          {
+            "label_1": {"children": " Relationship", "style": {}},
+            "label_2": {"children": "$BME#FM_RelationID$"},
+              "label_3": {"children": " Date Of Birth", "style": {}},
+              "label_4": {"children": " $BME#FM_VoterDOB$"},
+              "label_5": {"children": " Marital Status", "style": {}},
+              "label_6": {"children": " "},
+              "label_7": {"children": " Aadhaar Id", "style": {}},
+              "label_8": {"children": " $BME#FM_AadharID$"}
+
+          }
+        ]},
+        "col_2":{
+          "Fields": [
+            {
+                "label_1": {"children": " Age", "style": {}},
+              "label_2": {"children": "$BME#FM_VoterAge$"},
+              "label_3": {"children": " Spouse", "style": {}},
+              "label_4": {"children": "$BME#SpouseName$"},
+                "label_5": {"children": " Voter Id", "style": {}},
+              "label_6": {"children": "$BME#FM_VoterId$"}
+              }
+          ]},
+          "col_3":{
+              "Fields": [
+                {
+                    "label_1": {"children": " Gender", "style": {}},
+              "label_2": {"children": "$BME#FM_AadharGender$"},
+                    "label_5": {"children": " Mobile Number", "style": {}},
+              "label_6": {"children": "$BME#FM_MobileNumber$"},
+                    "label_7": {"children": " Father", "style": {}},
+              "label_8": {"children": "$BME#FM_FathersName$"}
+                }
+              ]}
+      },
+    "Row_3": 
+      {
+          "Fields":[{
+              "title": {"label": "Address details","style": {"width":"100%", "marginBottom": "10px", "background": "darkgray","padding": "10px","borderRadius": "5px", "display": "flex"}}
+            }]
+      },
+      "Row_4":{
+        "style":{
+          "background": "#fbfbfb",
+          "borderRadius": "14px",
+          "padding": "20px",
+      "marginBottom": "15px"
+              },
+          "col_1":{
+              "Fields": [
+                {
+                  "label_1": {"children": " state", "style": {}},
+              "label_2": {"children": "$BME#FM_AadharSTATE$"},
+                  "label_3": {"children": " Village", "style": {}},
+              "label_4": {"children": ""},
+                    "label_5": {"children": " Present Address", "style": {}},
+              "label_6": {"children": "$$"},
+                    "label_7": {"children": " Permanent Address", "style": {}},
+              "label_8": {"children": ""}
+                }
+              ]},
+              "col_2":{
+                  "Fields": [
+                    {
+                        "label_1": {"children": " District", "style": {}},
+              "label_2": {"children": "$BME#FM_AadharDistrict$"},
+                        "label_3": {"children": " Center", "style": {}},
+              "label_4": {"children": "$BME#FM_AadharSTATE$"}
+                    }
+                  ]},
+                  "col_3":{
+                    "Fields": [
+                      {
+                          "label_1": {"children": "Pincode", "style": {}},
+                "label_2": {"children": "$BME#FM_AadharPinCode$"}
+                      }
+                    ]}
+      },
+      "Row_5":{
+        "col_1":{
+            "Fields": [
+              {
+                  "label_2": {"children": " KYC Images", "style": {}}
+              }
+            ]},
+            "col_2":{
+              "Fields": [
+                {
+                    "label_2": {"children": " Show Images", "style": {}}
+                }
+              ]}
+    },
+      "Row_6":{
+          "Fields":[{
+              "EventButton": {
+                  "label": "Save & Next"
+                }
+          }]
+      }
+    }
+  }]
+}

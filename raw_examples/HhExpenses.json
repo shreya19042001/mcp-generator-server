@@ -1,0 +1,404 @@
+{
+  "HhExpenses": [{
+    "css": "/Formstyles1.css",
+"Modulevariable":["$LosUnique_Id$"],
+
+
+
+    "_table": [
+      {
+        "type": "custominsert",
+        "query": [
+          "MERGE INTO RegularExpensesMothlyDetails AS target USING (SELECT $LosUnique_Id$ AS LosUnique_Id,$HHEX#AccommodationRent$ AS AccommodationRent,$HHEX#AccommodationRentRemark$ AS AccommodationRentRemark,$HHEX#Cothes$ AS Cothes,$HHEX#CothesRemark$ AS CothesRemark,$HHEX#ElectricityphoneDataCable$ AS ElectricityphoneDataCable,$HHEX#ElectricityphoneDataCableRemark$ AS ElectricityphoneDataCableRemark,$HHEX#Transport$ AS Transport,$HHEX#TransportRemark$ AS TransportRemark,$HHEX#Saving$ AS Saving,$HHEX#SavingRemark$ AS SavingRemark,$HHEX#TotalRegularExpenseMothly$ AS TotalRegularExpenseMothly,$HHEX#FoodCookingfuel$ AS FoodCookingfuel,$HHEX#FoodCookingfuelRemark$ AS FoodCookingfuelRemark,$HHEX#RegularEducationExpenses$ AS RegularEducationExpenses,$HHEX#RegularEducationExpensesRemark$ AS RegularEducationExpensesRemark,$HHEX#RegularMedicalCosts$ AS RegularMedicalCosts,$HHEX#RegularMedicalCostsRemark$ AS RegularMedicalCostsRemark,$HHEX#EntertainmentSocialobligations$ AS EntertainmentSocialobligations,$HHEX#EntertainmentSocialobligationsRemark$ AS EntertainmentSocialobligationsRemark,$HHEX#Other$ AS Other,$HHEX#OtherRemark$ as OtherRemark)AS source ON target.LosUnique_Id = source.LosUnique_Id WHEN MATCHED THEN UPDATE SET target.AccommodationRent = source.AccommodationRent,target.AccommodationRentRemark = source.AccommodationRentRemark,target.Cothes = source.Cothes,target.CothesRemark = source.CothesRemark,target.ElectricityphoneDataCable = source.ElectricityphoneDataCable,target.ElectricityphoneDataCableRemark = source.ElectricityphoneDataCableRemark,target.Transport = source.Transport,target.TransportRemark = source.TransportRemark,target.Saving = source.Saving,target.SavingRemark = source.SavingRemark,target.TotalRegularExpenseMothly = source.TotalRegularExpenseMothly,target.FoodCookingfuel = source.FoodCookingfuel,target.FoodCookingfuelRemark=source.FoodCookingfuelRemark,target.RegularEducationExpenses = source.RegularEducationExpenses,target.RegularEducationExpensesRemark = source.RegularEducationExpensesRemark,target.RegularMedicalCosts = source.RegularMedicalCosts,target.RegularMedicalCostsRemark = source.RegularMedicalCostsRemark,target.EntertainmentSocialobligations = source.EntertainmentSocialobligations,target.EntertainmentSocialobligationsRemark = source.EntertainmentSocialobligationsRemark,target.Other = source.Other,target.OtherRemark = source.OtherRemark WHEN NOT MATCHED THEN INSERT (LosUnique_Id, AccommodationRent,AccommodationRentRemark,Cothes,CothesRemark,ElectricityphoneDataCable,ElectricityphoneDataCableRemark,Transport,TransportRemark,Saving,SavingRemark,TotalRegularExpenseMothly,FoodCookingfuel,FoodCookingfuelRemark,RegularEducationExpenses,RegularEducationExpensesRemark,RegularMedicalCosts,RegularMedicalCostsRemark,EntertainmentSocialobligations,EntertainmentSocialobligationsRemark,Other,OtherRemark) VALUES (source.LosUnique_Id,source.AccommodationRent, source.AccommodationRentRemark,source.Cothes,source.CothesRemark,source.ElectricityphoneDataCable,source.ElectricityphoneDataCableRemark,source.Transport,source.TransportRemark,source.Saving,source.SavingRemark,source.TotalRegularExpenseMothly,source.FoodCookingfuel,source.FoodCookingfuelRemark,source.RegularEducationExpenses,source.RegularEducationExpensesRemark, source.RegularMedicalCosts,source.RegularMedicalCostsRemark,source.EntertainmentSocialobligations,source.EntertainmentSocialobligationsRemark,source.Other,source.OtherRemark );"
+        ]
+      },
+      {
+        "name": "RegularExpensesMothlyDetails",
+        "Alias": "HHEX1",
+        "type": "select",
+         "wherecolumnname":"LosUnique_Id"
+      },
+      
+      {
+        "name": "IrRegularExpensesAnnuallyDetalis",
+        "Alias": "HHEXIR",
+        "type": "insert"
+      },
+      {
+        "name": "IrRegularExpensesAnnuallyDetalis",
+        "Alias": "HHEXIR1",
+        "type": "select",
+        "wherecolumnname":"LosUnique_Id"
+
+      }
+    ],
+    "section":{ 
+     "Row_1": {
+      "styles": {},
+      "col_1": {
+        "Fields": [
+          {
+            "tabs": {
+              "pages": [
+                {
+                  "label": "Client Picture",
+                  "currentPage": 5
+                },
+                {
+                  "label": "ID Verification",
+                  "currentPage": 6
+                },
+                {
+                  "label": "OKYC Profile Review",
+                  "currentPage": 7
+                },
+                {
+                  "label": "HouseHold Details",
+                  "currentPage": 8
+                },
+                {
+                  "label": "HH Monthly Income",
+                  "currentPage": 9
+                },
+                {
+                  "label": "HH Expenses",
+                  "currentPage": 10
+                },
+                {
+                  "label": "HH Liability",
+                  "currentPage": 11
+                },
+                {
+                  "label": "Loan Eligibility",
+                  "currentPage": 12
+                },
+                {
+                  "label": "Loan Details",
+                  "currentPage": 13
+                },
+                {
+                  "label": "Guarantor's Details",
+                  "currentPage": 14
+                },
+                {
+                  "label": "Insurance Details",
+                  "currentPage": 15
+                },
+                {
+                  "label": "Bank Details",
+                  "currentPage": 16
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Row_2": {
+      "Fields": [
+        {
+          "title": {
+            "label": "Regular Expenses (Monthly)",
+            "style": {
+              "width": "100%",
+              "background": "darkgray",
+              "padding": "10px",
+              "borderRadius": "5px",
+              "display": "flex"
+            }
+          }
+        }
+      ]
+    },
+    "Row_3": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Accommodation/Rent"
+            },
+            "commentbox": {
+              "name": "Accommodation/Rent",
+              "value": "$HHEX#AccommodationRent$",
+              "comment":"$HHEX#AccommodationRentRemark$",
+              "setvalue": "$HHEX1#AccommodationRent$",
+              "setcomment":"$HHEX1#AccommodationRentRemark$",
+              "Placeholder": "Enter Accommodation/Rent"
+            },
+            "label_2": {
+              "children": "Clothes"
+            },
+            "commentbox_1": {
+              "name": "Clothes",
+              "value": "$HHEX#Cothes$",
+              "comment":"$HHEX#CothesRemark$",
+              "setvalue": "$HHEX1#Cothes$",
+              "setcomment":"$HHEX1#CothesRemark$",
+
+              "Placeholder": "Enter Clothes"
+            },
+            "label_3": {
+              "children": "Electricity/phone/data/cable"
+            },
+            "commentbox_2": {
+              "name": "Electricity/phone/data/cable",
+              "value": "$HHEX#ElectricityphoneDataCable$",
+              "comment":"$HHEX#ElectricityphoneDataCableRemark$",
+              "setvalue": "$HHEX1#ElectricityphoneDataCable$",
+              "setcomment":"$HHEX1#ElectricityphoneDataCableRemark$",
+
+              "Placeholder": "Enter Electricity/phone/data/cable"
+            },
+            "label_4": {
+              "children": "Transport"
+            },
+            "commentbox_3": {
+              "name": "Transport",
+              "value": "$HHEX#Transport$",
+              "comment":"$HHEX#TransportRemark$",
+              "setvalue": "$HHEX1#Transport$",
+              "setcomment":"$HHEX1#TransportRemark$",
+
+              "Placeholder": "Enter Transport"
+            },
+            "label_5": {
+              "children": "Saving"
+            },
+            "commentbox_4": {
+              "name": "Saving",
+              "value": "$HHEX#Saving$",
+              "comment":"$HHEX#SavingRemark$",
+              "setvalue": "$HHEX1#Saving$",
+              "setcomment":"$HHEX1#SavingRemark$",
+
+              "Placeholder": "Enter Saving"
+            },
+            "label_6": {
+              "children": "Total Regular Expenses (Monthly)"
+            },
+            "text_1": {
+              "placeholder": "Enter Total Regular Expenses",
+              "label": "",
+              "type": "number",
+             "value": "$HHEX#TotalRegularExpenseMothly$",
+              "setvalue": "$HHEX1#TotalRegularExpenseMothly$",
+              "style": {
+                "width": "100%"
+              },
+              "validation": {
+                "required": true,
+                "min": 1,
+                "max": 1000
+              }
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Food + Cooking fuel"
+            },
+            "commentbox": {
+              "name": "Food + Cooking fuel",
+              "value": "$HHEX#FoodCookingfuel$",
+              "comment":"$HHEX#FoodCookingfuelRemark$",
+              "setvalue": "$HHEX1#FoodCookingfuel$",
+              "setcomment":"$HHEX1#FoodCookingfuelRemark$",
+
+              "Placeholder": "Enter Food + Cooking fuel"
+            },
+            "label_2": {
+              "children": "Regular Education expenses"
+            },
+            "commentbox_1": {
+              "name": "Regular Education expenses",
+              "value": "$HHEX#RegularEducationExpenses$",
+              "comment":"$HHEX#RegularEducationExpensesRemark$",
+              "setvalue": "$HHEX1#RegularEducationExpenses$",
+              "setcomment":"$HHEX1#RegularEducationExpensesRemark$",
+
+              "Placeholder": "Enter Regular Educationexpenses"
+            },
+            "label_3": {
+              "children": "Regular medical costs"
+            },
+            "commentbox_2": {
+              "name": "Regular medical costs",
+              "value": "$HHEX#RegularMedicalCosts$",
+              "comment":"$HHEX#RegularMedicalCostsRemark$",
+              "setvalue": "$HHEX1#RegularMedicalCosts$",
+              "setcomment":"$HHEX1#RegularMedicalCostsRemark$",
+
+              "Placeholder": "Enter Regular medical costs"
+            },
+            "label_4": {
+              "children": "Entertainment/Social Obligation"
+            },
+            "commentbox_3": {
+              "name": "Entertainment/Social Obligation",
+              "value": "$HHEX#EntertainmentSocialobligations$",
+              "comment":"$HHEX#EntertainmentSocialobligationsRemark$",
+              "setvalue": "$HHEX1#EntertainmentSocialobligations$",
+              "setcomment":"$HHEX1#EntertainmentSocialobligationsRemark$",
+
+              "Placeholder": "Enter Entertainment/Social Obligation"
+            },
+            "label_5": {
+              "children": "Others"
+            },
+            "commentbox_4": {
+              "name": "Others",
+              "value": "$HHEX#Other$",
+              "comment":"$HHEX#OtherRemark$",
+              "setvalue": "$HHEX1#Other$",
+              "setcomment":"$HHEX1#OtherRemark$",
+
+              "Placeholder": "Enter Others"
+            }
+          }
+        ]
+      }
+    },
+    "Row_4": {
+      "Fields": [
+        {
+          "title": {
+            "label": "Irregular Expenses (Annually)",
+            "style": {
+              "width": "100%",
+              "background": "darkgray",
+              "padding": "10px",
+              "borderRadius": "5px",
+              "display": "flex",
+              "position": "relative",
+              "top": "5px"
+            }
+          }
+        }
+      ]
+    },
+    "Row_5": {
+      "col_1": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "Medical/Health"
+            },
+            "commentbox": {
+              "name": "Medical/Health",
+              "value": "$HHEXIR#MedicalHeath$",
+              "comment":"$HHEXIR#MedicalHeathRemark$",
+              "setvalue": "$HHEXIR1#MedicalHeath$",
+              "setcomment":"$HHEXIR1#MedicalHeathRemark$",
+
+              "Placeholder": "Enter Medical/Health"
+            },
+            "label_2": {
+              "children": "Purchase of Household goods"
+            },
+            "commentbox_1": {
+              "name": "Purchase of Household goods",
+              "value": "$HHEXIR#PurchaseOfHouseHoldGoods$",
+              "comment":"$HHEXIR#PurchaseOfHouseHoldGoodsRemark$",
+              "setvalue": "$HHEXIR1#PurchaseOfHouseHoldGoods$",
+              "setcomment":"$HHEXIR1#PurchaseOfHouseHoldGoodsRemark$",
+
+              "Placeholder": "Enter Purchase of Household goods"
+            },
+            "label_3": {
+              "children": "Education"
+            },
+            "commentbox_2": {
+              "name": "Education",
+              "value": "$HHEXIR#Education$",
+              "comment":"$HHEXIR#EducationRemark$",
+              "setvalue": "$HHEXIR1#Education$",
+              "setcomment":"$HHEXIR1#EducationRemark$",
+
+              "Placeholder": "Enter Education"
+            },
+            "label_4": {
+              "children": "Total Regular Expenses (Monthly)"
+            },
+            "text_1": {
+              "name": "Total Regular Expenses",
+              "value": "$HHEXIR#TotalIrregularExpenseMothly$",
+              "setvalue": "$HHEXIR1#TotalIrregularExpenseMothly$",
+              
+
+           
+
+              "Placeholder": "Enter Total Regular Expenses"
+            }
+          }
+        ]
+      },
+      "col_2": {
+        "Fields": [
+          {
+            "label_1": {
+              "children": "House Renovation"
+            },
+            "commentbox_1": {
+              "name": "House Renovation",
+              "value": "$HHEXIR#HouseRenovation$",
+              "comment":"$HHEXIR#HouseRenovationRemark$",
+              "setvalue": "$HHEXIR1#HouseRenovation$",
+              "setcomment":"$HHEXIR1#HouseRenovationRemark$",
+
+              "Placeholder": "Enter House Renovation"
+            },
+            "label_2": {
+              "children": "Functions"
+            },
+            "commentbox_2": {
+              "name": "Functions",
+              "value": "$HHEXIR#Functions$",
+              "comment":"$HHEXIR#FunctionsRemark$",
+              "setvalue": "$HHEXIR1#Functions$",
+              "setcomment":"$HHEXIR1#FunctionsRemark$",
+
+              "Placeholder": "Enter Functions"
+            },
+            "label_3": {
+              "children": "Others"
+            },
+            "commentbox_3": {
+              "name": "Others",
+              "value": "$HHEXIR#Others$",
+              "comment":"$HHEXIR#OthersRemark$",
+              "setvalue": "$HHEXIR1#Others$",
+              "setcomment":"$HHEXIR1#OthersRemark$",
+
+              "Placeholder": "Enter Others"
+            },
+            "label_4": {
+              "children": "Total Regular Expenses (Annually)"
+            },
+            "text_2": {
+              "name": "Total Regular Expenses",
+              "value": "$HHEXIR#TotalIrregularExpenseAnnually$",
+              "setvalue": "$HHEXIR1#TotalIrregularExpenseAnnually$",
+
+      
+
+              "Placeholder": "Enter Total Regular Expenses"
+            }
+          }
+        ]
+      }
+    },
+    "Row_6": {
+      "Fields": [
+        {
+          "EventButton": {
+            "label": " Save & Next",
+            "command": "NextPage"
+          }
+        }
+      ]
+    }}
+  }]
+}

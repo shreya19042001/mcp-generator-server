@@ -1,0 +1,50 @@
+{
+    "FeeCollectionReceiptAuthentication":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "_Section": {
+       
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                  "table": {
+                      "title": "Lead Details",
+                      "Rowvalues": "$T3_Row$",
+                      "columnTitles": ["", "Lead Id", " Branch","Customer ID","Customer Name", "Product Category ","Product","Loan Amount","Mobile No","PAN Number"],
+                      "rowVar": [["", "LSS00014", "Test4", "142776","Testing","THired One", "Non","One","Two","Three","Four"]],
+                      "rowTypes": ["", "", "","", "","","","","",""],
+                      "rowVisible": ["false", "true", "true","true", "true","true","false","false","false","false"],
+                      "rowFilter": ["false", "true", "true", "true","true","true","true","true","true","true"],
+                      "rowFilterType": ["", "text", "text","text","text","text","text","","",""]
+                    }
+              }
+            ]
+          }
+               },
+               "Row_3": {
+            "col_1": {
+                "Fields": [
+                  {
+                    "table": {
+                        "title": "Fees And Charges",
+                        "Rowvalues": "$T3_Row$",
+                        "columnTitles": ["", "Fee Name", "Fee Amount","Waiver","GST","Collectable Fee","Mode of Pay","Cash/Bank Ledger","Receipt No","Tran Ref No", "MR Date","MR Document"],
+                        "rowVar": [["", "LSS00014", "Test4", "142776","Testing","THired One", "Non","","","","",""]],
+                        "rowTypes": ["", "", "","", "","","","","","","",""],
+                        "rowVisible": ["false", "true", "true","true", "true","true","true","true","true","true","true","true"],
+                        "rowFilter": ["false", "false", "false", "false","false","false","false","false","false","false","false","false"],
+                        "rowFilterType": ["", "", "","","text","text","","","","","",""]
+                      }
+                  }
+                ]
+              }
+                 
+          }
+      }
+    }]
+  }
+  
+  
+  

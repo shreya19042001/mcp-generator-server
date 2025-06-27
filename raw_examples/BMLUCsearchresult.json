@@ -1,0 +1,120 @@
+{
+    "BMLUCsearchresult": [{
+        "section":{
+            "style":{
+                "marginTop":"60px",
+                "width":"80%"
+              },
+            "table":[
+                {
+                    "name": "Mast_Village_Info",
+                    "Alias":"T1",
+                    "type":"select"
+                },
+                {
+                    "name": "Mast_Center_Info",
+                    "Alias":"T2",
+                    "type":"select"
+                },
+                {
+                    "name": "Mast_Member_Details_Info",
+                    "Alias":"T3",
+                    "type":"select"
+                }
+              ],
+        "Row_1":{
+                "col_1":{
+
+                 "Fields":[{
+                    "label_1": {
+                        "children": "Search Client By"
+                      },
+                      "dropDown_1": {
+                        "options": "$T1#MVI_Name$",
+                        "select":"",
+                        "defaultOption": "Select option",          
+                        "validation": {
+                          "required": true
+                        }
+                      }
+                  }]
+                },
+                "col_2":{
+                    "Fields":[{
+                        "label_1": {
+                            "children": "Product"
+                          },
+                          "dropDown_1": {
+                            "options": "$T2#MCI_Name$",
+                            "select":"",
+                            "defaultOption": "Select option",          
+                            "validation": {
+                              "required": true
+                            }
+                          }
+                      }]
+                }
+                    },
+                    "Row_2":{
+                        "col_1":{
+                        "Fields":[{
+                                "EventButton": {
+                                "label": "Reset"
+                            }
+                            }]
+                            },
+                            "col_2":{
+                        "Fields":[{
+                                "EventButton": {
+                                    "label": "Search"
+                                }
+                            }]
+                        }
+                    },
+                    "Row_3": 
+                        {
+                        "col_1":{
+                        "Fields":[{
+                            "nextbutton": {
+                                "label": "Search"
+                            }
+                        }]} 
+                        },
+                     
+                    "Row_4": 
+                        {
+                            "style":{
+                                "background": "#fbfbfb",
+                                "borderRadius": "14px",
+                                "padding": "20px" 
+                                 },
+
+                                    "col_1":{
+                                    "Fields": [{
+
+                                    "label_1": {"children": "Applicant Name"},
+                                    "label_2": {"children": "$T3#ApplicantName$"},
+                                    "label_4": {"children": "FCO Name", "style": {}}
+                                    }]
+                                    },
+                                    "col_2":{
+                                    "Fields": [{
+
+                                        "label_1": {"children": "Spouse "},
+                                        "label_2": {"children": "$T3#Mem_SpouseName$ "},
+                                        "label_5": {"children": "Product Name", "style": {}}
+                                    }]
+                                    },
+                                    "col_3":{
+                                    "Fields": [{
+
+                                        "label_1": {"children": "Voter Id"},
+                                        "label_2": {"children": "$T3#VoterId$"},
+                                        "label_5": {"children": "Group Name", "style": {}}
+
+                                    }]
+                                    }
+                        }
+                    }
+                }]
+            }

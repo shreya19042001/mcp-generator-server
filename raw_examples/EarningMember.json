@@ -1,0 +1,145 @@
+{
+  "EarningMember": {
+    "css": "",
+    "Row_1":{
+    
+      "col_1":{
+        "style":{
+          "display": "flex",
+          "flexWrap": "nowrap",
+          "justifyContent": "space-between"
+        },
+
+      "Fields": [{
+        "image_1": {
+          "image": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/search-user.png",
+          "style": {
+            "fontFamily": "Roboto",
+            "width": "75px",
+            "height": "62px"          }
+        },
+      "label_1": {"children": "Name", "style":{    "position": "relative", "right": "61vh"} },
+      "iconButton": {
+        "icon": "PersonOutlined", 
+        "label": "Add Earning Member",
+        "style": {
+          "background":"#fff",
+         "color":"black",
+          "border-color": "var(--mdc-outlined-button-outline-color",
+          "padding": "10px",
+          "cursor": "pointer",
+          "border-radius": "5px",
+          "fontWeight": "700",
+          "border": "1px solid #02026a"}
+      }
+
+      }]}
+    },
+    "Row_2": {
+        
+      "col_1":{
+        "Fields": [{
+     
+      "label_1": {"children": "Spouse"},
+      "label_4": {"children": "POI KYC Type"},
+      "label_7": {"children": "Earning members"}
+      }]},
+      "col_2":{
+        "Fields": [{
+      "label_2": {"children": "Father"},
+      "label_5": {"children": "POI KYC ID"}
+
+      }]},
+      "col_3":{
+        "Fields": [{
+       
+      "label_3": {"children": "Mobile Number"},
+        "label_6": {"children": "KYC Images"},
+        "iconButton_2": {
+          "icon": "Gallery", 
+          "label": "View Images",
+          "style": {
+            "background":"#fff",
+           "color":"black",
+            "width":"100%",
+            "padding": "10px",
+            "cursor": "pointer",
+            "margin-top": "6px",
+            "border-radius": "5px",
+            "fontWeight": "700"
+           }
+        }
+        }]}
+
+
+    },
+"Row_3": 
+{
+  "col_1":{
+  "Fields":[{
+    "title": {"name": "Image Data"},
+    "label_1": { 
+            "children": "Click on the thumbnail for Full Image Preview",
+            "style": {
+              "textAlign": "-webkit-center",
+              "color":"blue"
+            } 
+          },
+
+    
+    "img":{
+      "images": [
+        { "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0KehqXBrMLd32HsfjDoaq098WeNA0b3g_2A&s","label": "Client " },
+        { "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFaMfnIqUSEfHAF8ljzN6tvOZr-aUjzF44Tg&s" , "label": "POI Front "},
+        { "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeTSS-IfO-Yw-ZUQ2fVA2zMvtuq2pN3pf46A&s", "label": "POI Rear " },
+        { "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLZZRTZfxfwEH2zC2DPqhdYdHMTeXGMMDBUw&s", "label": "POA Front " },
+        { "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0KehqXBrMLd32HsfjDoaq098WeNA0b3g_2A&s", "label": "POA Rear " }
+      ]
+    }
+    
+    }]}
+},
+"Row_4": {
+  
+      "col_1":{
+        "Fields": [{
+      "label_1": {"children": "PAN ID"},
+        "text_1": {"name": "PAN ID","Placeholder": "Enter PAN ID"},
+      "label_2": {"children": "Applied Amount"},
+        "text_3": {"name": "Applied Amount","Placeholder": "Enter Amount"}
+      }]},
+      "col_2":{
+        "Fields": [{
+      "label_2": {"children": "Loan Purpose"},
+        "dropDown_1": {
+          "placeholder": "Select ",
+          "search": true,
+          "selection": true,
+          "options": [
+            { "key": "EDE", "value": "EDE", "text": "Education" },
+            { "key": "BUS", "value": "BUS", "text": "Bussiness" }
+          ],
+          "style":{
+            "width": "100%"
+
+          }
+        }
+      }]}
+
+    
+    
+},
+"Row_5": {
+"EventButton": {
+"label": "Next",
+"command": "NextPage"
+
+}
+}
+ 
+
+
+
+
+  }}
+

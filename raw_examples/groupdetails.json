@@ -1,0 +1,86 @@
+{
+  "groupdetails": {
+    "css": "/Formstyles.css",
+    "title": "Group Details",
+    "sections": [
+      {
+        "type": "table",
+        "table":[
+          {
+            "name": "Mast_Branch_Info",
+            "alias": "B",
+            "whereID": "MBRI_Id"
+
+          },
+          {
+            "name": "Mast_Village_Info",
+            "alias": "V",
+            "joinType": "JOIN",
+            "joinCondition": "V.MBRI_Id = B.MBRI_ID"
+          },
+          {
+            "name": "Mast_Center_Info",
+            "alias": "C",
+            "joinType": "JOIN",
+            "joinCondition": "C.MVI_ID = V.MVI_Id"
+          },
+          {
+            "name": "Mast_Group_Info",
+            "alias": "G",
+            "joinType": "JOIN",
+            "joinCondition": "G.MCI_Id = C.MCI_Id"
+          }
+        
+
+      ],
+      
+        "columns": [
+          {
+            "name": "Branch ID",
+            "label": "Branch ID",
+            "fields": "MBRI_Id",
+            "alias": "B",
+            "storeid":"B.MBRI_Id"
+          },
+          {
+            "name": "Branch name",
+            "label": "Branch name",
+            "fields": "B.MBRI_Name",
+            "alias": "B"
+          },
+          {
+            "name": "Village Id",
+            "label": "Village ID",
+            "fields": "V.MVI_Id",
+            "alias": "V",
+            "storeid":"MVI_Id"
+          },
+          {
+              "name": "Village Name",
+              "label": "Village Name",
+              "fields": "V.MVI_Name",
+              "alias": "V"
+            },
+            {
+              "name": "Group ID",
+              "label": "Group ID",
+              "fields": "G.MGI_Id",
+              "alias": "G",
+              "storeid":"MGI_Id"
+            },
+            {
+              "name": "Group Name",
+              "label": "Group Name",
+              "fields": "G.MGI_Name",
+              "alias": "G"
+            }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+
+

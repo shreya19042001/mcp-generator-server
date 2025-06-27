@@ -1,0 +1,298 @@
+{
+    "MasterLevels": [
+      {
+        "table": [
+          {
+            "name": "Mast_LOS_Levels_API",
+            "Alias": "T1",
+            "type": "select"
+          },
+          {
+            "name": "Mast_LOS_Levels_API",
+            "Alias": "T2",
+            "type": "insert"
+          },
+          {
+            "name": "Mast_LOS_Levels_API",
+            "Alias": "T3",
+            "type": "select",
+            "depends": [
+              "$T3_Row[0]$"
+            ],
+            "wherecolumnname": "$Txn_id$"
+          }
+        ],
+        "Section_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "table": {
+                    "title": "Levels",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["", "Code", "Name", "Description"],
+                    "rowVar": ["$T1#Txnid$", "$T1#Mllai_Code$", "$T1#Mllai_Name$", "$T1#Mllai_Desctiption$"],
+                    "rowTypes": ["", "", "", ""],
+                    "rowVisible": ["false", "true", "true", "true"],
+                    "rowFilter": ["false", "true", "true", "true"],
+                    "rowFilterType": ["text", "dropdown", "text"],
+                    "rowFilterValues": [
+                      "", 
+                      ["VP", "AO", "AM"], 
+                      ""
+                    ]
+                  }
+                }
+              ]
+            }
+                 }
+        },
+        "Page_1": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Level's",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Code"
+                  },
+                  "label_2": {
+                    "children": "Name"
+                  },
+                  "label_3": {
+                    "children": "Description"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "text_1": {
+                    "placeholder": "",
+                    "value": "$T2#Mllai_Code$",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_2": {
+                    "placeholder": "",
+                    "value": "$T2#Mllai_Name$",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_3": {
+                    "placeholder": "",
+                    "value": "$T2#Mllai_Desctiption$",
+                    "type": "Text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Submit",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_2": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "style": {
+              "width": "100%",
+              "margin": "auto"
+            },
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Level's",
+                    "style": {
+                      "color": "blue"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Code"
+                  },
+                  "label_2": {
+                    "children": "Name"
+                  },
+                  "label_3": {
+                    "children": "Description"
+                  }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "text_1": {
+                    "placeholder": "",
+                    "value": "",
+                    "setvalue": "$T3#Mllai_Code$",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_2": {
+                    "placeholder": "",
+                    "value": "",
+                    "setvalue": "T3#Mllai_Name",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  },
+                  "text_3": {
+                    "placeholder": "",
+                    "value": "",
+                    "setvalue": "$T3#Mllai_Desctiption$",
+                    "type": "text",
+                    "validation": {
+                      "required": true,
+                      "pattern": "^[a-zA-Z ]+$"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_4": {
+            "col_2": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Update",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Page_3": {
+          "css": "/Formstyles.css",
+          "Row_1": {
+            "col_1": {
+              "Fields": [
+                {
+                  "title": {
+                    "label": "Confirm",
+                    "style": {
+                      "background": "rgb(161 197 205)",
+                      "color": " white"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Are you sure you want to remove this Data ?"
+                  }
+                }
+              ]
+            }
+          },
+          "Row_3": {
+            "col_1": {
+              "style": {
+                "display": "flex",
+                "flexWrap": "nowrap",
+                "justifyContent": "center",
+                "gap": " 15px"
+              },
+              "Fields": [
+                {
+                  "EventButton": {
+                    "label": "Cancel",
+                    "className": "whiteButton",
+                    "style": {}
+                  },
+                  "EventButton_1": {
+                    "label": "Remove",
+                    "className": "whiteButton",
+                    "style": {}
+                  }
+                }
+              ]
+            }
+          }
+        }
+  
+      }
+    ]
+  }

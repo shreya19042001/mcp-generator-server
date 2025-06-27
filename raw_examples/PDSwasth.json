@@ -1,0 +1,175 @@
+{
+    "PDSwasth": [{
+    "section":{
+      "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+      "Row_1":  {
+        "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Applied   Amount"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                    "label_2": { "children": "Fco Name"},
+                    "text_2": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_3": { "children": "PD Status"},
+                    "dropDown_1": {
+                      "options": ["VoterID"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                 
+                    "label_1": { "children": "PD Date"},
+                    "date_1": {
+                    "validation": {
+                      "required": true
+                    }}, 
+                     "label_2": { "children": "PD Score"},
+                    "text_2": {"placeholder": "","type":"number",
+                    "validation": {
+                      "required": true
+                    }}
+                  }
+                ]
+              }} ,
+        "Row_3": {
+            "Fields": [ {
+              "label_8": { "children": "Remarks"},
+                    "text": {"placeholder": "Enter Address", "style": {}}
+              }
+            ]
+          },
+        "Row_4": {
+          "col_1": {
+            "Fields": [{
+               
+                    "label_1": { "children": "Verified By"},
+                    "text_1": {"placeholder": "Enter",
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    
+                  
+                    "label_3": { "children": "Clients Rsidential Background"},
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                  
+                    "label_5": { "children": "Literacy level      "},
+                    "dropDown_3": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                    ,
+                    "label_6": { "children": " No of earning member in the household              "},
+                    "dropDown_4": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_7": { "children": " Present income of the customer"},
+                    "dropDown_5": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]},
+                "col_2":  {
+                  "Fields":[{
+                    "label_3": { "children": "Clients  Applicant"},
+                    "dropDown_1": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+  
+                    "label_5": { "children": "Current water and sanitation condition  "},
+                    "dropDown_3": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                 
+                    "label_7": { "children": "Marital status of household"},
+                    "dropDown_5": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_8": { "children": "No of women beneficiaries in the household "},
+                    "dropDown_6": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    },
+                    "label_9": { "children": " Regularity in savings"},
+                    "dropDown_7": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }
+                  }
+                ]
+              }} ,
+  
+              "Row_5": {
+                "Fields": [ {
+                  "label_8": { "children": "Transactions with Banks and other Fis (Credit History)"},
+                   "dropDown_7": {
+                      "options": ["VoterID", "LoanId", "MobileNumber"],
+                      "defaultOption": "Select option",          
+                      "validation": {
+                        "required": true
+                      }
+                    }                  }
+                ]
+              },
+              "Row_6": {
+                "Fields": [ {
+                  "EventButton": { "label": "Submit"}
+                  }
+                ]
+              }
+            }
+          }]
+    }
+  

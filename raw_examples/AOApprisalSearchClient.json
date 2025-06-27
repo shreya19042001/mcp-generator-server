@@ -1,0 +1,78 @@
+{
+    "AOApprisalSearchClient": [{
+      "css": "",
+      "Section":{
+        "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+      "Row_1":   
+        {
+          "style":{
+            "display": "flex",
+            "width": "38%",
+            "flexWrap": "wrap",
+            "justifyContent": "center",
+            "borderRadius": "12px",
+            "border": "2px solid green",
+            "background": "#fff",
+            "margin": "auto",
+            "padding": "18px"
+          },
+          "col_1": {
+          "Fields": [
+            {
+              "image_1": {
+                "image": "https://annapurnalosfcov2.jayamsolutions.com/assets/images/search-user.png",
+                "style": {
+                  "fontFamily": "Roboto",
+                  "width": "140px",
+                  "height": "140px",
+                  "marginTop": "20px",
+                  "justifySelf": "center"
+                }
+              },
+        
+                  "title": {
+                    "name": " Search Client",
+                    "style": {
+                      "display": "flex"
+                    }
+              },
+              "label_1": {
+                "children": "Choose Search Type"
+              },
+              "dropDown_1": {
+                "options": "",
+                "select":"",
+                "defaultOption": "Select option",          
+               
+                "validation": {
+                  "required": true
+                }
+              },
+            
+              "label_2": {
+                "children": "Enter Detail"
+              },
+              "text_2": {
+                "placeholder": "Enter Details",
+                "label": "",
+                 "type": "number",
+                "validation": {
+                  "required": true,
+                  "min": 1,
+                  "max": 1000
+                }
+              },
+              "EventButton": {
+                "label": "Search"
+              }
+            }
+          ]
+        }
+        }
+      }
+    }]
+  }
+  

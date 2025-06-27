@@ -1,0 +1,173 @@
+{
+    "AOApprisalClientDetails":[{
+      "css": "./Formstyles1.css",
+      "table": [
+        {
+          "name": "AOAppraisalClientDetail",
+          "Alias": "T1",
+          "type": "select"
+        }
+      ],
+      "Section":{
+        "style":{
+        "marginTop":"60px",
+        "width":"80%"
+      },
+    "Row_1": {
+      "style": {
+        "background": "#fbfbfb",
+        "borderRadius": "14px",
+        "padding": "20px",
+        "marginBottom": "10px"
+    },
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": { "children": "Member Name" },
+              "label_2": { "children": "$T1#MemberName$" },
+              "label_3": { "children": "Household EMI" },
+              "label_4": { "children": "$T1#HouseholdEMI$" },
+              "label_5": { "children": "ROI" },
+              "label_6": { "children": "$T1#ROI$" }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": { "children": "Household Income" },
+              "label_2": { "children": "$T1#HouseholdIncome$" },
+              "label_3": { "children": "Household Expenditure" },
+              "label_4": { "children": "$T1#HouseholdExpenditure$" }
+
+            }
+          ]
+        },
+        "col_3": {
+          "Fields": [
+            {
+              "label_1": { "children": "No.Of Earning Member" },
+              "label_2": { "children": "$T1#NoofEarningMember$" },
+              "label_3": { "children": "Loan Eligibility" },
+              "label_4": { "children": "$T1#LoanEligibility$" }
+              
+            }
+          ]
+        }
+      },
+      "Row_2":{
+        "style": {
+          "background": "#fbfbfb",
+          "borderRadius": "14px",
+          "padding": "20px"
+      },
+        "col_1":{
+            "Fields": [
+              {
+                  "label_1": {"children": " Appraisal Date", "style": {}},
+                  "label_2": {"children": "$T1#AppraisalDate$"}
+              }
+            ]},
+            "col_2":{
+              "Fields": [
+                {
+                    "label_1": {"children": "Name Of AO", "style": {}},
+                  "label_2": {"children": "$T1#NameofAO$"}
+                }
+              ]},
+              "col_3":{
+                "Fields": [
+                  {
+                      "label_1": {"children": "ID Of AO", "style": {}},
+                  "label_2": {"children": "$T1#IDofAO$"}
+                  }
+                ]}
+    },
+    "Row_3": {
+        "col_1": {
+          "Fields": [
+            {
+              "label_1": { "children": "Village", "style": { "width": "100%" } },
+              "text_1": {
+                "name": "Search",
+                "Placeholder": "Search",
+                "setvalue": "",
+                "value": ""
+              },
+              "label_2": { "children": "Group Name" },
+              "text_2": {
+                "name": "Search",
+                "Placeholder": "Search",
+                "setvalue": "",
+                "value": ""
+              },
+              "label_3": { "children": "Loan Recommended" },
+              "text_3": {
+                "name": "Loan Recommended",
+                "Placeholder": "Enter Loan Recommended",
+                "setvalue": "",
+                "value": "",
+                "validation": { "required": true, "pattern": "^[0-9]+$", "message": "Must be a numeric value" }
+              },
+              "label_4": { "children": "Total Loan Amount approved by AO" },
+              "text_4": {
+                "name": "Total Loan Amount",
+                "Placeholder": "Enter Total Loan Amount",
+                 "setvalue": "",
+                "value": "",
+                "validation": { "required": true, "pattern": "^[0-9]+$", "message": "Must be a numeric value" }
+              },
+              "label_5": { "children": "Tenure" },
+              "dropDown_1": {
+                "options": "",
+                "select":"",
+                "defaultOption": "Select option",
+                "style": { "width": "100%" },
+                "validation": { "required": true, "message": "Please select an income frequency" }
+              }
+            }
+          ]
+        },
+        "col_2": {
+          "Fields": [
+            {
+              "label_1": { "children": "Center" },
+              "text_1": {
+                "name": "Search",
+                "Placeholder": "Enter Search",
+                "setvalue": "",
+                "value": "",
+                "validation": { "required": true, "pattern": "^[a-zA-Z ]+$", "message": "Only letters are allowed" }
+              },
+              "label_2": { "children": "Loan Details" },
+              "text_2": {
+                "name": "Loan Details",
+                "Placeholder": "Enter Loan Details",
+                "setvalue": "",
+                "value": "",
+                "validation": { "required": true, "pattern": "^[0-9]+$", "message": "Must be a numeric value" }
+              },
+              "label_3": { "children": "Loan Status" },
+              "dropDown_1": {
+                "options":"",
+                "select":"",
+                "defaultOption": "Select",
+                "style": { "width": "100%" },
+                "validation": { "required": true, "message": "Please select an income frequency" }
+              }
+            }
+          ]
+        }
+      },
+      "Row_4":{
+        "col_2":{
+
+          "Fields":[{
+              "EventButton": {
+                  "label": "Save"
+              }
+          }]}
+       }
+      }
+}]
+}

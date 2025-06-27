@@ -1,0 +1,205 @@
+{
+    "LeadGenerationApplicantDetails":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+  
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Applicant Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Customer Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Family Details",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Employer Details",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Business Details",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "Contact Details",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "Address Details",
+                      "currentPage": 7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+            "col_1": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Member Profile"
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select ",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": "Primary Id Type"
+                  },
+                  "dropDown_2": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select ",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Sccondary Id Type"
+                  },
+                  "dropDown_3": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select ",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Other Id Type"
+                  },
+                  "dropDown_4": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select ",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_5": {
+                    "children": "Branch "
+                  },
+                "text_5": {
+                    "Placeholder": "Enter ",
+                    "value": "",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                "label_6": {
+                  "children": "Contact No"
+                },
+                "text_6": {
+                    "Placeholder": "Enter ",
+                    "value": "",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "OTP": {
+                    "children": "OTP",
+                    "style": {
+                      "marginTop": "15px"
+                    }
+                  },
+                  "checkbox":{
+                  "checkboxes":["Option 1"]
+                }
+                }
+              ]
+            },
+            "col_2": {
+              "Fields": [
+                {
+                  "label_1": {
+                    "children": "Applicant Type"
+                  },
+                  "dropDown_1": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select ",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_2": {
+                    "children": " Primary Id"
+                  },
+                  "text_2": {
+                    "Placeholder": "Enter ",
+                    "value": "",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_3": {
+                    "children": "Secondary Id "
+                  },
+                  "text_3": {
+                    "Placeholder": "Enter ",
+                    "value": "",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "label_4": {
+                    "children": "Other Id"
+                  },
+                  "text_4": {
+                    "Placeholder": "Enter ",
+                    "value": ""
+                  },
+                  "label_5": {
+                    "children": "Type"
+                  },
+                 "dropDown_2": {
+                    "options": "",
+                    "select": "",
+                    "defaultOption": "Select ",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                "label_6": {
+                  "children": "OTP Number"
+                },
+                "text_6": {
+                    "Placeholder": "Enter ",
+                    "value": "",
+                    "validation": {
+                      "required": true
+                    }
+                  },
+                  "checkbox":{
+                    "checkboxes":["Option 2"]
+                  }
+                 
+                }
+              ]
+            }
+                 
+          }
+      }
+    }]
+  }
+  
+  
+  

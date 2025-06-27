@@ -1,0 +1,304 @@
+{
+  "GuarantorsDetails": [
+    {
+      "css": "/Formstyles1.css",
+      "_table": [
+        {
+          "name": "Mast_Salutation_info",
+          "Alias": "GAT",
+          "type": "select"
+        },
+        {
+          "name": "Mast_Gender_info",
+          "Alias": "GAT1",
+          "type": "select"
+        },
+        {
+          "name": "Mast_Marital_Status_info",
+          "Alias": "GAT2",
+          "type": "select"
+        },
+        {
+          "name": "Mast_POI_info",
+          "Alias": "GAT3",
+          "type": "select"
+        },
+        {
+          "name": "GuarantorsDetailsDetails",
+          "Alias": "GATI",
+          "type": "insert"
+        }
+      ],
+      "section": {
+        "style":{
+          "width": "75%"
+        },
+        "Row_1": {
+          "styles": {},
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "Client Picture",
+                      "currentPage": 5
+                    },
+                    {
+                      "label": "ID Verification",
+                      "currentPage": 6
+                    },
+                    {
+                      "label": "OKYC Profile Review",
+                      "currentPage": 7
+                    },
+                    {
+                      "label": "Basic Details",
+                      "currentPage": 8
+                    },
+                    {
+                      "label": "Earning Member",
+                      "currentPage": 9
+                    },
+                    {
+                      "label": "HouseHold Details",
+                      "currentPage": 10
+                    },
+                    {
+                      "label": "HH Monthly Income",
+                      "currentPage": 11
+                    },
+                    {
+                      "label": "HH Expenses",
+                      "currentPage": 12
+                    },
+                    {
+                      "label": "HH Liability",
+                      "currentPage": 13
+                    },
+                    {
+                      "label": "Loan Eligibility",
+                      "currentPage": 14
+                    },
+                    {
+                      "label": "Loan Details",
+                      "currentPage": 15
+                    },
+                    {
+                      "label": "Guarantor's Details",
+                      "currentPage": 16
+                    },
+                    {
+                      "label": "Insurance Details",
+                      "currentPage": 17
+                    },
+                    {
+                      "label": "Bank Details",
+                      "currentPage": 18
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Select"
+                },
+                "dropDown_1": {
+                  "options": "$GAT#TitleName$",
+                  "select": "",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Date of Birth"
+                },
+                "date": {
+                  "placeholder": "Select",
+                  "value": "$GATI#DateodBirth$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Gender"
+                },
+                "dropDown_2": {
+                  "options": "$GAT3#Name$",
+                  "select": "GATI#Gender",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": "Spouse"
+                },
+                "text_1": {
+                  "placeholder": "Enter Name",
+                  "value": "$GATI#Spouse$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_5": {
+                  "children": "Mobile Number"
+                },
+                "text_2": {
+                  "placeholder": "Enter ",
+                  "type": "number",
+                  "value": "$GATI#MobileNumber$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_6": {
+                  "children": "Primary Kyc"
+                },
+                "dropDown_4": {
+                  "options": "$GAT1#Name$",
+                  "select": "GATI#PrimaryKYC",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_7": {
+                  "children": " Guarantor`s Occupation"
+                },
+                "text": {
+                  "placeholder": "Enter Guarantor`s Occupation",
+                  "value": "$GATI# GuarantorOccupation$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "label_1": {
+                  "children": "Guarantor’s Name"
+                },
+                "text": {
+                  "placeholder": "Select",
+                  "value": "$GATI#GuarantorName$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_2": {
+                  "children": "Guarantor’ Age"
+                },
+                "text_1": {
+                  "placeholder": "Select",
+                  "type": "number",
+                  "value": "$GATI#GuarantorAge$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_3": {
+                  "children": "Marital Status"
+                },
+                "dropDown_3": {
+                  "options": "$GAT2#Name$",
+                  "select": "GATI#MaritalStatus",
+                  "defaultOption": "Select option",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_4": {
+                  "children": " Father"
+                },
+                "text_2": {
+                  "placeholder": "Enter Father",
+                  "value": "$GATI#Father$",
+                  "validation": {
+                    "required": true
+                  }
+                },
+                "label_5": {
+                  "children": " "
+                },
+                "iconButton": {
+                  "label": "Send OTP",
+                  "style": {
+                    "float": "left",
+                    "textDecoration": "underline",
+                    "textDecorationColor": "blue",
+                    "color": "blue",
+                    "fontSize": "15px",
+                    "borderRadius": "5px",
+                    "position": "relative",
+                    "top": "30px"
+                
+                  }
+                },
+                "label_6": {
+                  "children": " KYC No",
+                  "style": {
+                    "marginTop": "75px"
+                  }
+                },
+                "text_3": {
+                  "placeholder": "Enter Primary KYC",
+                  "value": "$GATI#KYCNo$",
+                  "validation": {
+                    "required": true
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "Row_3": {
+          "Fields": [
+            {
+              "label_8": {
+                "children": " Present Address"
+              },
+              "textarea": {
+                "placeholder": "Enter Address",
+                "value": "$GATI#PresentAddress$",
+                "style": {}
+              }
+            }
+          ]
+        },
+        "Row_4": {
+          "col_1": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Back"
+                }
+              }
+            ]
+          },
+          "col_2": {
+            "Fields": [
+              {
+                "EventButton": {
+                  "label": "Next",
+              "command": "NextPage"
+
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

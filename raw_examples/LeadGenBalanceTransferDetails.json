@@ -1,0 +1,67 @@
+{
+    "LeadGenBalanceTransferDetails":[ {
+      "css": "/Formstyles.css",
+    
+  
+      "Section":{
+
+        "Row_1": {
+          "col_1": {
+            "Fields": [
+              {
+                "tabs": {
+                  "pages": [
+                    {
+                      "label": "All Details",
+                      "currentPage": 1
+                    },
+                    {
+                      "label": "Loan Details",
+                      "currentPage": 2
+                    },
+                    {
+                      "label": "Documents Upload",
+                      "currentPage": 3
+                    },
+                    {
+                      "label": "Charges",
+                      "currentPage": 4
+                    },
+                    {
+                      "label": "Balance Transfer Details",
+                      "currentPage": 5
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+               
+        },
+        "Row_2": {
+          "col_1": {
+            "Fields": [
+            {
+                "table": {
+                    "title": "Balance Transfer Details",
+                    "addButtonLabel": "+ Add New",
+                    "Rowvalues": "$T3_Row$",
+                    "columnTitles": ["","Name Of Organization", "LAN", "Loan Amount","O/S Principal","OD Principal","OD Interest","Due Charges","O/S Amount","Disbursement Amount","EMI Amount","IFSC Code","Loan Bank Name","Bank A/C No"],
+                    "rowVar": [["","7576", "BOI", "Test","345345234","Group","34343","1992","Yes","Yes","6487","jtfh","hdgfs","htdfd"]],
+                    "rowTypes": ["", "", "", "","","", "", "", "","","","",""],
+                    "rowVisible": ["false", "true", "true", "true","true","true", "true", "true","true","true", "true", "true","true","true"],
+                    "rowFilter": ["", "", "", "","","", "", "", "","", "", "", "",""],
+                    "rowFilterType": ["", "", "", "","","", "", "", "","", "", "", "",""],
+                    "rowFilterValues": ["", "", "", "","","", "", "", "","", "", "", "",""]
+                }
+            }
+            ]
+          }
+               
+        }
+      }
+    }]
+  }
+  
+  
+  
